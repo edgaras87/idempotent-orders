@@ -36,6 +36,7 @@ The starting picture; a project trims or extends per its own surface:
 
 | Internal truth | Projects as | How much |
 |---|---|---|
+| intent | README's "why this exists" | one paragraph |
 | definition, L2 statement | README's "what this is" | one paragraph, no parts named |
 | definition's concern map | README's invariant list (demonstrated / planned) | one line per invariant |
 | correctness spec + slice docs | one public write-up per slice | ~1 page: invariant, adversity, guarantees, enforcement + why, evidence + how to run |
@@ -62,8 +63,12 @@ dictated here. The starting picture, shaped for the portfolio-facing case: **eve
 projection at the realization map's own exits** (`workbench-backend-realization.map.md`),
 thickness growing with substance:
 
-- **at *working ground prepared*** — the thin README, the whole surface: the L2 paragraph,
-  the method note, stack, an honest status line;
+- **at *problem framed*** *(unlived — anchored by the first adopting project's fork: the
+  reasoning chain's exit is where its substance freezes)* — the thin README, the whole
+  starting surface: the why (intent, one paragraph), the what (the L2 paragraph), the
+  planned-invariants list (from the registry), the method note, an honest status line;
+- **at *system bootstrapped*** — the README grows its delta: stack, and how to run what
+  now exists;
 - **at each *slice completed*** — the slice's public write-up (the `document` stage pointed
   outward, nearly free because the substance is frozen); the `public/` plane is earned at
   the first of these; the README grows its demonstrated-invariants list;
@@ -87,6 +92,11 @@ just-become-true, won't-change substance is projected, keeping sync cost near ze
 
 ## Lifecycle note
 
-Skeleton v1, wholly unlived — shipped as a starting picture, not distilled practice. Each
-projecting project's finalization owes this doc a correction pass; graduation of any part
-into a model happens only after lived use, through the workbench steward.
+Skeleton v1, unlived, molded by its first adopting project's fork (the why:
+that fork's `fork.log.md`, entry 0006): the projection cadence anchored one exit
+earlier — a *problem framed* anchor added (the thin README fed by the whole reasoning
+chain: intent, definition, registry), the former first anchor renamed to the map's
+current vocabulary (*system bootstrapped*) and trimmed to its delta, and the intent row
+added to the what-projects table. Each projecting project's finalization owes this doc a
+correction pass; graduation of any part into a model happens only after lived use,
+through the workbench steward.

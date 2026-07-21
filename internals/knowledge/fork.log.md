@@ -118,3 +118,32 @@ against the skeleton, so the rule lands there rather than as a separate note art
 (one more doc to remember defeats the recall purpose) or in the vision (engineering
 method, not node law). Marked unlived; owed confirmation at this project's
 finalization pass.
+
+**0006 — Projection anchored at problem framed's exit; skeleton names synced to the
+map.** Sixth deviation; `realization/workbench-doc-projection.skeleton.md` amended in
+place — the fork's first deviation outside the realization map. One decision in three
+moves:
+
+1. **A new first cadence anchor, *at problem framed*** — the thin README as the whole
+   starting surface: the why (intent, one paragraph), the what (the L2 paragraph), the
+   planned-invariants list (from the registry), the method note, an honest status
+   line. The reasoning chain's exit is where its substance freezes — exactly the
+   skeleton's own only-frozen-truth rule — so the exit-anchored cadence extends to it.
+
+2. **The former first anchor renamed and trimmed to its delta** — *working ground
+   prepared* → *system bootstrapped* (the map's current vocabulary, per this fork's
+   entry 0004); its content reduced to what that exit newly freezes: stack, and how to
+   run what now exists.
+
+3. **The intent row added to the what-projects table** — intent → README's "why this
+   exists" → one paragraph.
+
+Why this shape and not more: no separate `public/` overview or methodology docs at
+this exit — the depth rule keeps everything projectable at problem framed inside a
+README-shaped page (`public/` stays earned at the first slice write-up), and the
+method note's never-restated rule already forbids a methodology doc on the project's
+surface (the method is the workbench's truth, linked, not mirrored). Why in the
+skeleton and not the map: projection is not an inner step of the chain — the map's
+exits are the hooks; the cadence is the skeleton's territory, and whether this
+project commits to the anchor is a vision setting, decided separately in the node's
+own log. Marked unlived; owed confirmation at this project's finalization pass.
