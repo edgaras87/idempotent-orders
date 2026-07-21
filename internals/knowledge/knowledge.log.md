@@ -19,3 +19,17 @@ deviation — see the vision). One role: **steward**, sole writer of both planes
 artifacts. Logs are per-repo and never inherited: this log starts here; the workbench's
 log records the seed's own history. Earlier work, if any exists, reaches this node only
 through the human, as ordinary input.
+
+**0002 — Projection cadence adopted: exit-anchored from problem framed on.** This
+project commits to the fork's doc-projection skeleton
+(`realization/workbench-doc-projection.skeleton.md`) as its projection rules, on the
+skeleton's exit-anchored cadence **including the *problem framed* anchor** (the anchor
+itself molded into the skeleton by fork deviation 0006): the thin README owed at
+*problem framed*'s exit, its delta at *system bootstrapped*, a slice write-up at each
+*slice completed* (the `public/` plane earned at the first), a polish pass at
+*finalization*. Stated in the vision's project section, where the skeleton says the
+setting must live. Why now: the anchor was just molded — deciding at the molding keeps
+the option and the commitment adjacent, and gives *problem framed* its full exit
+picture (chain standing, README owed) before the step runs. What it binds: projection
+is owed at the named exits — event-driven, never calendar-driven; skipping one is a
+logged decision, not drift.

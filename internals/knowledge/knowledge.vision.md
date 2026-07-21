@@ -98,8 +98,10 @@ realization is oriented by the fork's own
 place under the fork rules; execution state lives entirely in the problem plane's record,
 coupled to the map by shared step and phase names, never by reference-to-read; a separate
 live map artifact is born only by need, per the map's own adoption rule. The project's
-doc projection is instantiated from `realization/workbench-doc-projection.skeleton.md`
-when the work reaches it.
+doc projection follows the fork's
+`realization/workbench-doc-projection.skeleton.md` as its projection rules, on the
+skeleton's exit-anchored cadence from the *problem framed* anchor on — projection owed
+at each of the map's named exits, thickness per the skeleton.
 
 ## Roles, and the steward
 
@@ -117,8 +119,8 @@ planes**. The expected shape, carried as the narrow-roles hypothesis in
 **knowledge plane** — the node's docs, the fork, the roles — while producing problem
 artifacts is different work with different context; the steward thins into a custodian
 (record, orientation, context-preparation) and delegates to a **thinker** role — the
-problem's reasoning and its projection: the prepare-thinking-part chain (intent,
-definition, registry-birth), the slice-registry (the concern map made actionable — the
+problem's reasoning and its projection: the problem-framing chain (intent, definition,
+registry-birth), the slice-registry (the concern map made actionable — the
 execution phase's control point), slice selection, closing slices on evidence, and
 internal truth projected to the public surface. That thinker is precisely the separate
 role that uses the working knowledge to produce the problem artifacts. The split is
@@ -251,8 +253,9 @@ request**.
 
 ## Open now
 
-- **Prepare the thinking part** — per the fork's map: project-intent, then the
+- **Problem framed** — per the fork's map: project-intent, then the
   definition (`definition` kind born at that step), then the slice-registry's birth;
-  the problem plane's record born with the first problem decisions.
-- Then the working ground, and into execution.
+  the problem plane's record born with the first problem decisions; the thin README
+  owed at the step's exit, per the adopted projection cadence.
+- Then infrastructure established, system bootstrapped, and into execution.
 - **Visibility** — this repo starts private; publish only on a real reason.
