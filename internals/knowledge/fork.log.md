@@ -42,3 +42,20 @@ adoption.** First deviation of the fork.
 
 Owed confirmation, correction, or reversal at this project's finalization pass;
 flow-back to the workbench batched per the vision's fork rules.
+
+**0002 — Map vocabulary molded to the project's working language.** Second deviation;
+`realization/workbench-backend-realization.map.md` amended in place, names only — no
+structural or meaning change:
+
+- the first phase renamed **`initialization` → `preparation`** — the project's lived
+  working word for everything before real project work runs;
+- the composite step of entry 0001 renamed **`prepare-thinking-part` → `problem
+  framed`** — outcome-shaped like its siblings (*node bootstrapped*, *working ground
+  prepared*), matching the map's exit-condition discipline, and no longer repeating
+  the phase word; its exit ("the chain stands, the first slice named") is precisely
+  the problem framed. Inner step names unchanged.
+
+Why one entry: both renames are one decision — cosmetic vocabulary molding, accepted
+as flow-back weight for a map read in the project's own words. Records couple by
+names, so the renames cost only this entry and the status's session rewrite; no other
+doc speaks the old names authoritatively.

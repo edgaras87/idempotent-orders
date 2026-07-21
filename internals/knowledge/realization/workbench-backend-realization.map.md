@@ -21,10 +21,10 @@
 ## The flow
 
 ```text
-initialization → execution → finalization
+preparation → execution → finalization
 ```
 
-- **initialization** — everything needed before project work can run: the node, the
+- **preparation** — everything needed before project work can run: the node, the
   problem's reasoning chain, the working ground.
 - **execution** — the planned work itself: for a correctness-driven backend, the
   definition's concern map worked slice by slice through
@@ -33,7 +33,7 @@ initialization → execution → finalization
 - **finalization** — closing up after the goals are met: evidence and docs made legible,
   reusable material distilled back upstream, the node brought to rest.
 
-## Initialization — the step pattern
+## Preparation — the step pattern
 
 Outcome-steps in rough dependency order, each with the exit condition that makes it *left
 behind*. A project copies, trims, or extends these at adoption:
@@ -41,10 +41,10 @@ behind*. A project copies, trims, or extends these at adoption:
 1. **Node bootstrapped.** Vision, log, status, steward — the node runs by its rhythm.
    *Exit: sessions proceed without re-deciding the basics.*
 
-2. **Prepare-thinking-part.** *(unlived — a composite step grouping the problem's
+2. **Problem framed.** *(unlived — a composite step grouping the problem's
    reasoning chain: one nature of work, the thinker's territory under the narrow-roles
    hypothesis below; adopted from one project's decided-but-not-yet-lived
-   initialization, owed confirmation at that project's finalization correction pass.)*
+   preparation, owed confirmation at that project's finalization correction pass.)*
    Its inner steps, in order:
 
     - **project-intent** *(unlived)* — why the project exists, for whom, and what "done"
@@ -94,7 +94,7 @@ and history live entirely in the project's record, coupled by names per the map
 discipline above. A **separate live map artifact** is born only when project-specific
 redrawing — lazy zoom on the current phase, cut steps, project-only reordering that is
 no knowledge claim — would pollute the fork's diff against upstream; that birth is a
-project decision at its moment of need, never an initialization step.
+project decision at its moment of need, never a preparation step.
 
 ## Execution — known shape only
 
@@ -107,7 +107,7 @@ carries the record, not all content; asked *what next, and with which role*; pla
 the **context-preparer**, gathering per-slice only what the next role needs. The roles,
 plausibly:
 
-- **thinker** — the problem's one reasoning role: it owns the prepare-thinking-part
+- **thinker** — the problem's one reasoning role: it owns the problem-framing
   chain (intent, definition, registry-birth); keeps the **slice-registry** — the
   **control point of the execution phase** (chosen-next, closed-on-evidence), carrying
   the *where-we-are* of slices with the project's status stating it — the division
@@ -149,10 +149,11 @@ the first projecting project.
 
 ## Lifecycle note
 
-Skeleton v1 amended by its first adopting project's fork (the deviation and its why:
-that fork's `fork.log.md`, entry 0001): the reasoning chain grouped as
-`prepare-thinking-part` (intent, definition, registry-birth — folding the former
-first-slice step), and scheduled map instantiation replaced by need-driven adoption;
-both unlived, owed confirmation at that project's finalization correction pass. Each
+Skeleton v1 amended by its first adopting project's fork (the deviations and their
+why: that fork's `fork.log.md`, entries 0001–0002): the reasoning chain grouped as one
+composite step (intent, definition, registry-birth — folding the former first-slice
+step), scheduled map instantiation replaced by need-driven adoption, and the vocabulary
+molded to the project's working language (phase `preparation`, step `problem framed`);
+all unlived, owed confirmation at that project's finalization correction pass. Each
 project's finalization owes this doc a correction pass — that is how the skeleton earns
 generality.
