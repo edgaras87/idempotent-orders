@@ -25,7 +25,7 @@ preparation → execution → finalization
 ```
 
 - **preparation** — everything needed before project work can run: the node, the
-  problem's reasoning chain, the working ground.
+  problem's reasoning chain, the infrastructure, the born system.
 - **execution** — the planned work itself: for a correctness-driven backend, the
   definition's concern map worked slice by slice through
   `specify-correctness → plan → write → document`
@@ -41,7 +41,10 @@ territory: human-only, pre-session, upstream of this map. Step 1's work is what 
 after: making the born node actually *run*.
 
 Outcome-steps in rough dependency order, each with the exit condition that makes it *left
-behind*. A project copies, trims, or extends these at adoption:
+behind*. A project copies, trims, or extends these at adoption. *(Their carving mirrors
+role territory under the narrow-roles hypothesis below — thinker, infrastructure, coder —
+the grouping principle of the first adopting project's fork, extended across the phase's
+tail; whether it generalizes further stays an open question.)*
 
 1. **Node bootstrapped.** Vision, log, status, steward — the node runs by its rhythm.
    *Exit: sessions proceed without re-deciding the basics.*
@@ -79,10 +82,30 @@ behind*. A project copies, trims, or extends these at adoption:
    step again? Does the grouping principle — map steps mirroring role territory —
    generalize?
 
-3. **Working ground prepared.** The repo ready for real work: layout settled (node beside
-   code), stack and tooling chosen, an empty-but-running service skeleton, an evidence
-   harness able to run one adversity-generating test end to end.
-   *Exit: a trivial test runs green; the chosen slice has somewhere to land.*
+3. **Infrastructure established.** *(unlived — promoted from the narrow-roles
+   hypothesis' candidate refinement: infrastructure before the system's bootstrap, so
+   the bootstrap wires up to real services and validates the ground; the infrastructure
+   role's territory.)* The governed ground the system will run on: the environment
+   chosen and running, then the services the problem's reasoning chain requires —
+   evaluated from problem framed's outputs (the definition's environment reasoning, the
+   registry's reasoning), **constrained by need**, never provisioned ahead of it.
+   Manuals written for two audiences: the coder (what services exist, how to use them)
+   and the human (set up and use everything manually). Re-entered on new dependencies
+   during execution.
+   *Exit: the chosen environment runs; the services the reasoning chain requires are
+   up, constrained to need; both manuals exist.*
+
+4. **System bootstrapped.** *(re-carved from the former working-ground step — it is the
+   system being built that is born here; the coder's territory.)* The system brought to
+   life on the established infrastructure: stack and tooling chosen and initialized —
+   the system's name, description, starting dependencies; layout settled (node beside
+   code); the project's conventions and baselines stated where the work demands them
+   (folder layout, naming, recurring code patterns); an empty-but-running system
+   skeleton wired to the real services; an evidence harness able to run one
+   adversity-generating test end to end.
+   *Exit: the system skeleton runs wired to the real services; layout and conventions
+   settled; a trivial adversity-generating test runs green; the chosen slice has
+   somewhere to land.*
 
 **Phase exit — into `execution`:** the chosen slice's `specify-correctness` can start
 with nothing missing around it. The **worklog** is born at the first real executed step.
@@ -124,15 +147,17 @@ plausibly:
 - **infrastructure** — the governed ground: environment, then required services (input:
   the registry reasoning); writes **manuals for two audiences** — the coder (handoff: what
   services exist, how to use them) and the human reader (set up and use everything
-  manually); re-entered on new dependencies. Candidate refinement of the
-  working-ground step: infrastructure before bootstrap, so bootstrap wires up to real
-  services and validates the ground;
+  manually); re-entered on new dependencies. *Its preparation territory is the
+  `infrastructure established` step — the former candidate refinement (infrastructure
+  before bootstrap, so bootstrap wires up to real services and validates the ground),
+  promoted into the step sequence by the first adopting project's fork;*
 - **slice-reasoning** — possibly its own role: an isolated **correctness-construction**
   stage — the spec built in a context-trimmed session fed by the steward's prepared
   context, rather than inside the thinker;
 - **coder** — plan → build → validate; owns the enforcement choice; receives the
   correctness spec plus a ready ground: environment and service knowledge, a bootstrapped
-  project, the project's conventions.
+  system, the project's conventions. *Its preparation territory is the `system
+  bootstrapped` step.*
 
 To be confirmed, corrected, or discarded by lived work — then modeled.
 
@@ -155,10 +180,12 @@ the first projecting project.
 ## Lifecycle note
 
 Skeleton v1 amended by its first adopting project's fork (the deviations and their
-why: that fork's `fork.log.md`, entries 0001–0002): the reasoning chain grouped as one
+why: that fork's `fork.log.md`, entries 0001–0004): the reasoning chain grouped as one
 composite step (intent, definition, registry-birth — folding the former first-slice
-step), scheduled map instantiation replaced by need-driven adoption, and the vocabulary
-molded to the project's working language (phase `preparation`, step `problem framed`);
-all unlived, owed confirmation at that project's finalization correction pass. Each
-project's finalization owes this doc a correction pass — that is how the skeleton earns
-generality.
+step), scheduled map instantiation replaced by need-driven adoption, the vocabulary
+molded to the project's working language (phase `preparation`, step `problem framed`),
+and preparation's tail re-carved to mirror role territory — `infrastructure
+established` inserted (the candidate refinement promoted), the working-ground step
+re-carved as `system bootstrapped`; all unlived, owed confirmation at that project's
+finalization correction pass. Each project's finalization owes this doc a correction
+pass — that is how the skeleton earns generality.

@@ -71,3 +71,34 @@ is a real step. It is: the guide ends at "first session"; the step's exit — se
 running by the rhythm without re-deciding basics — is earned working, not copying.
 Territory named, never referenced-to-read; the map stays self-contained. Boundary
 clarified, no meaning changed.
+
+**0004 — Preparation's tail re-carved to mirror role territory: infrastructure
+established, system bootstrapped.** Fourth deviation;
+`realization/workbench-backend-realization.map.md` amended in place, one decision in
+two moves:
+
+1. **`Infrastructure established` inserted** after *problem framed* — the narrow-roles
+   hypothesis' candidate refinement (infrastructure before bootstrap, so bootstrap
+   wires up to real services and validates the ground) promoted from parked note into
+   the step sequence: environment chosen and running, then the services the reasoning
+   chain requires — evaluated from problem framed's outputs, constrained by need —
+   plus the two-audience manuals. The infrastructure role's territory.
+   Exit: environment runs; required services up, constrained to need; both manuals
+   exist.
+
+2. **The former `working ground prepared` re-carved as `system bootstrapped`** — it is
+   the *system being built* that is born there, now on real infrastructure: stack
+   chosen and initialized (name, description, starting dependencies), layout settled,
+   conventions and baselines stated where the work demands them, the skeleton wired to
+   the real services, the evidence harness running. The coder's territory.
+   Exit: skeleton runs wired to real services; layout and conventions settled; a
+   trivial adversity-generating test green; the chosen slice has somewhere to land.
+
+Why now, before problem framed runs: the map is orientation — the step's existence
+aims problem framed's outputs (the definition's environment reasoning, the registry's
+reasoning become infrastructure's named input); its content (which services, which
+constraints, which stack) stays the steps' own execution, never the map's. Why one
+entry: one decision — the phase's tail carved by role territory (thinker /
+infrastructure / coder), answering entry 0001's open question affirmatively for
+preparation; noted in the map, kept open for further generalization. Marked unlived;
+owed confirmation at this project's finalization pass.
