@@ -102,3 +102,19 @@ entry: one decision — the phase's tail carved by role territory (thinker /
 infrastructure / coder), answering entry 0001's open question affirmatively for
 preparation; noted in the map, kept open for further generalization. Marked unlived;
 owed confirmation at this project's finalization pass.
+
+**0005 — The step/how-doc coupling stated in the map's adoption section.** Fifth
+deviation; `realization/workbench-backend-realization.map.md` amended in place — a
+subsection *Steps and how-docs* added under *Map adoption*, stating how the map
+couples to `realization/` knowledge: a step needs no how-doc to run (the how is worked
+live — the first lived pass); the record is the process documentation (outputs + log +
+worklog, never a separate narrative); after a lived step one test — did a
+generalizable method emerge? no → nothing born, the common ending; yes → a how-doc
+born in `realization/` as a fork addition, and only then the step gains its pointer;
+direction of dependency lived work → knowledge → pointer, never a map slot awaiting a
+doc. Why: recall — the working rule was comprehended in session and would otherwise
+live only in conversation; the adoption section is where a project reads how to work
+against the skeleton, so the rule lands there rather than as a separate note artifact
+(one more doc to remember defeats the recall purpose) or in the vision (engineering
+method, not node law). Marked unlived; owed confirmation at this project's
+finalization pass.

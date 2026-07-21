@@ -2,18 +2,19 @@
 
 *Rewritten freely (at minimum at session end); owes nothing to its previous version.*
 
-**Where things stand:** the node runs; the fork carries four deviations (all in the
+**Where things stand:** the node runs; the fork carries five deviations (all in the
 realization map, all unlived, owed confirmation at finalization —
-`fork.log.md` 0001–0004). Latest: preparation's tail re-carved to mirror role
-territory — **`infrastructure established`** inserted after *problem framed* (the
-narrow-roles candidate refinement promoted: environment, then need-constrained
-services evaluated from problem framed's outputs, plus two-audience manuals; the
-infrastructure role's territory), and the former *working ground prepared* re-carved
-as **`system bootstrapped`** (stack init, layout, conventions/baselines, skeleton
-wired to real services, evidence harness; the coder's territory). Preparation now
-reads: node bootstrapped → problem framed → infrastructure established → system
-bootstrapped. The project remains deliberately undefined; the problem plane is empty —
-its artifacts and record earned when problem work starts.
+`fork.log.md` 0001–0005). Latest: the **step/how-doc coupling** stated under the map's
+*Map adoption* section — a step needs no how-doc to run (the how is worked live); the
+record is the process documentation; after a lived step, the reuse test decides
+whether a how-doc is born in `realization/` (a fork addition) and only then pointed at;
+direction always lived work → knowledge → pointer. Before that (0004): preparation's
+tail re-carved to mirror role territory — *infrastructure established* inserted after
+*problem framed* (infrastructure role's territory), *working ground prepared* re-carved
+as *system bootstrapped* (coder's territory). Preparation reads: node bootstrapped →
+problem framed → infrastructure established → system bootstrapped. The project remains
+deliberately undefined; the problem plane is empty — its artifacts and record earned
+when problem work starts.
 
 Position, in the map's names: **`preparation`** — *node bootstrapped* done, standing
 before **`problem framed`**, at its first inner step, **project-intent** (unlived; may
@@ -33,7 +34,7 @@ repo root
         ├── knowledge.log.md             entry 0001
         ├── knowledge.status.md
         ├── knowledge-steward.instructions.md
-        ├── fork.log.md                  entries 0001–0004
+        ├── fork.log.md                  entries 0001–0005
         ├── core/                        general node-system knowledge
         │   ├── workbench-nodes.model.md
         │   ├── workbench-roles.model.md
@@ -42,7 +43,7 @@ repo root
         └── realization/                 the backend-shaped set
             ├── workbench-five-layer-system.model.md
             ├── workbench-correctness-driven-backend.model.md
-            ├── workbench-backend-realization.map.md   ← amended (fork.log 0001–0004)
+            ├── workbench-backend-realization.map.md   ← amended (fork.log 0001–0005)
             └── workbench-doc-projection.skeleton.md
 ```
 

@@ -124,6 +124,27 @@ redrawing — lazy zoom on the current phase, cut steps, project-only reordering
 no knowledge claim — would pollute the fork's diff against upstream; that birth is a
 project decision at its moment of need, never a preparation step.
 
+### Steps and how-docs — how the map couples to knowledge
+
+*(unlived — stated by the first adopting project ahead of its first lived step; owed
+confirmation with the rest.)*
+
+The map carries *what steps and when*; where the **how** of a step is distilled, it
+lives as a knowledge doc in `realization/` and the step **points** at it (as
+*system-definition* points at the five-layer model). The coupling rules:
+
+- **A step needs no how-doc to run.** With none, the how is worked out live, in
+  session — that *is* the first lived pass; nothing is missing.
+- **The record documents the process — never a separate narrative.** Outputs plus the
+  problem log plus the worklog are the process documentation; a "how we did the step"
+  doc beside them would duplicate the record.
+- **After a lived step, one test: did a generalizable method emerge?** No — nothing is
+  born; the record holds the story; the common ending. Yes — a how-doc is born in
+  `realization/` (a fork addition, logged, a flow-back candidate), and only then the
+  step gains its pointer.
+- **Direction of dependency: lived work → knowledge → pointer.** Never a map slot
+  awaiting a doc, never a how-doc authored ahead of the living.
+
 ## Execution — known shape only
 
 Slices, each carried to evidence through the method's flow; order and count belong to the
@@ -180,12 +201,13 @@ the first projecting project.
 ## Lifecycle note
 
 Skeleton v1 amended by its first adopting project's fork (the deviations and their
-why: that fork's `fork.log.md`, entries 0001–0004): the reasoning chain grouped as one
+why: that fork's `fork.log.md`, entries 0001–0005): the reasoning chain grouped as one
 composite step (intent, definition, registry-birth — folding the former first-slice
 step), scheduled map instantiation replaced by need-driven adoption, the vocabulary
 molded to the project's working language (phase `preparation`, step `problem framed`),
-and preparation's tail re-carved to mirror role territory — `infrastructure
+preparation's tail re-carved to mirror role territory — `infrastructure
 established` inserted (the candidate refinement promoted), the working-ground step
-re-carved as `system bootstrapped`; all unlived, owed confirmation at that project's
-finalization correction pass. Each project's finalization owes this doc a correction
-pass — that is how the skeleton earns generality.
+re-carved as `system bootstrapped` — and the step/how-doc coupling stated under *Map
+adoption*; all unlived, owed confirmation at that project's finalization correction
+pass. Each project's finalization owes this doc a correction pass — that is how the
+skeleton earns generality.
