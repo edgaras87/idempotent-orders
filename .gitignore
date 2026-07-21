@@ -1,0 +1,3 @@
+# JetBrains IDE state — machine-local, never project truth
+.idea/
+*.iml
