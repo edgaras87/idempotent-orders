@@ -59,3 +59,15 @@ Why one entry: both renames are one decision — cosmetic vocabulary molding, ac
 as flow-back weight for a map read in the project's own words. Records couple by
 names, so the renames cost only this entry and the status's session rewrite; no other
 doc speaks the old names authoritatively.
+
+**0003 — The map's entry seam marked: birth precedes step 1.** Third deviation;
+`realization/workbench-backend-realization.map.md` amended in place — a two-line entry
+note opening the preparation section: the map begins *after* the mechanical birth
+(repo, git ground, seed copy, session vehicle), which is the workbench birth guide's
+territory — human-only, pre-session, upstream of the map; step 1's work is making the
+born node run. Why: lived confusion at the seam — a project asking whether repo-init
+belongs on the map, and whether node-bootstrapped (arriving "done" at birth's handoff)
+is a real step. It is: the guide ends at "first session"; the step's exit — sessions
+running by the rhythm without re-deciding basics — is earned working, not copying.
+Territory named, never referenced-to-read; the map stays self-contained. Boundary
+clarified, no meaning changed.

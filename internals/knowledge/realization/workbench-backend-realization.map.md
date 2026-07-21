@@ -35,6 +35,11 @@ preparation → execution → finalization
 
 ## Preparation — the step pattern
 
+**Where the map begins:** after birth. The mechanical birth — repo created, git ground
+earned, the seed copied in, the session vehicle set up — is the workbench birth guide's
+territory: human-only, pre-session, upstream of this map. Step 1's work is what comes
+after: making the born node actually *run*.
+
 Outcome-steps in rough dependency order, each with the exit condition that makes it *left
 behind*. A project copies, trims, or extends these at adoption:
 
