@@ -69,11 +69,10 @@ The fork rules:
   prefix is lineage — which upstream master the copy forks — kept through any local
   amendment; divergence is the fork log's story, not the filename's (and a refresh
   matches by name).
-- **The fork's own record:** a **`fork.log.md`** is born at this dir's root at the first
-  deviation (earned by need, like any artifact), under this node's log law but with a
-  **strictly separate subject**: changes to `core/` and `realization/`, and why — never
-  this node's own decisions, never the problem. It lives beside the branches, outside
-  them, so a refresh never touches it.
+- **The fork's own record:** **`fork.log.md`** at this dir's root, born at the first
+  deviation, under this node's log law but with a **strictly separate subject**: changes
+  to `core/` and `realization/`, and why — never this node's own decisions, never the
+  problem. It lives beside the branches, outside them, so a refresh never touches it.
 - **Batched flow-back:** learnings return to the workbench batched — at finalization, or
   when something big surfaces mid-project — as `fork.log.md` plus the branches' diffs
   against upstream, handed through the human as ordinary input. This project never edits
@@ -94,10 +93,13 @@ here. Until then, nothing in this node assumes what the system is.
 The project follows the workbench's engineering conventions:
 `realization/workbench-five-layer-system.model.md` (how a system is *seen*) and
 `realization/workbench-correctness-driven-backend.model.md` (how it is *worked*). Its
-realization is oriented by a map instantiated from
-`realization/workbench-backend-realization.map.md` at the realization-mapped step; its doc
-projection is instantiated from `realization/workbench-doc-projection.skeleton.md` when
-the work reaches it.
+realization is oriented by the fork's own
+`realization/workbench-backend-realization.map.md` directly — the map adopted, molded in
+place under the fork rules; execution state lives entirely in the problem plane's record,
+coupled to the map by shared step and phase names, never by reference-to-read; a separate
+live map artifact is born only by need, per the map's own adoption rule. The project's
+doc projection is instantiated from `realization/workbench-doc-projection.skeleton.md`
+when the work reaches it.
 
 ## Roles, and the steward
 
@@ -115,13 +117,13 @@ planes**. The expected shape, carried as the narrow-roles hypothesis in
 **knowledge plane** — the node's docs, the fork, the roles — while producing problem
 artifacts is different work with different context; the steward thins into a custodian
 (record, orientation, context-preparation) and delegates to a **thinker** role — the
-problem's reasoning and its projection: the definition, the slice-registry (the concern
-map made actionable — the execution phase's control point), slice selection, closing
-slices on evidence, and internal truth projected to the public surface. That thinker is
-precisely the separate role that uses the working knowledge to produce the problem
-artifacts. The split is enacted **only by need**, at
-its step — a decision of this node, in its log — and confirmed, corrected, or discarded
-by the lived work.
+problem's reasoning and its projection: the prepare-thinking-part chain (intent,
+definition, registry-birth), the slice-registry (the concern map made actionable — the
+execution phase's control point), slice selection, closing slices on evidence, and
+internal truth projected to the public surface. That thinker is precisely the separate
+role that uses the working knowledge to produce the problem artifacts. The split is
+enacted **only by need** — a decision of this node, in its log — and confirmed,
+corrected, or discarded by the lived work.
 
 ## Naming
 
@@ -145,12 +147,12 @@ Born at the first instance, one agreed line each (the mechanism:
   the kind of the problem plane's status.
 - **instructions** — a role's lens: identity, sources, bootstrap summaries.
 
-Expected next (born when their first instance arrives, not before): `definition`, `map`,
-the worklog's kind. The shipped knowledge's kind-words (`model`, `convention`,
-`skeleton`, `map`) are the **workbench's vocabulary**, carried in the fork's fixed
-filenames — not this node's kinds: amending a fork copy is fork work under the fork
-rules, never an authored instance; a kind enters this list only when this node authors
-its first artifact of it.
+Expected next (born when their first instance arrives, not before): `definition`, the
+slice-registry's kind, the worklog's kind. The shipped knowledge's kind-words (`model`,
+`convention`, `skeleton`, `map`) are the **workbench's vocabulary**, carried in the
+fork's fixed filenames — not this node's kinds: amending a fork copy is fork work under
+the fork rules, never an authored instance; a kind enters this list only when this node
+authors its first artifact of it.
 
 ## Artifact genres in use
 
@@ -249,8 +251,8 @@ request**.
 
 ## Open now
 
-- **Define the project** — the definition arrives as ordinary input or is worked in
-  session; `definition` kind born at that step; the problem plane's record born with the
-  first problem decisions.
-- Then per the realization skeleton: map instantiated, working ground, first slice.
+- **Prepare the thinking part** — per the fork's map: project-intent, then the
+  definition (`definition` kind born at that step), then the slice-registry's birth;
+  the problem plane's record born with the first problem decisions.
+- Then the working ground, and into execution.
 - **Visibility** — this repo starts private; publish only on a real reason.

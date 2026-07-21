@@ -1,18 +1,20 @@
 # workbench-backend-realization.map.md
 
-> **A workbench map — a reusable skeleton, not a live map.** A project **instantiates**
-> this at its
-> birth: it becomes the starting picture of the project's own map artifact, redrawn freely
-> from then on — the skeleton is never the project's master.
+> **A workbench map — a reusable skeleton, not a live map.** A project **adopts**
+> this at its birth: the fork copy itself serves as the project's map, molded in place
+> under the project's fork rules; a separate live map artifact is born only by need
+> (see *Map adoption* below) — the skeleton is never any project's master.
 >
 > **Map discipline — the three-way execution-state division.** Realization tracking splits
 > into three responsibilities that must not collapse into each other: the **map** is
-> orientation only — phases as outcomes with exit conditions, only the current phase
-> zoomed (lazy zoom), redrawn freely, no checkmarks, no execution state; the node's
-> **present-state snapshot** is the single master of *where we are*, pointing into the
-> map; the **worklog** (born at the first executed step) is the append-only record of
-> what actually happened. The map yields to the worklog when reality corrects it, never
-> the reverse. Which artifacts and kinds carry these is the project's own vocabulary.
+> orientation only — phases as outcomes with exit conditions, redrawn by decision, no
+> checkmarks, no execution state; the project's **present-state snapshot** (its status)
+> is the single master of *where we are*; the **worklog** (born at the first executed
+> step) is the append-only record of what actually happened. The record couples to the
+> map by **shared step and phase names, never by reference-to-read**: every record
+> entry is self-contained — a future reader needs no map open to understand what was
+> decided or done. The map yields to the worklog when reality corrects it, never the
+> reverse. Which artifacts and kinds carry these is the project's own vocabulary.
 
 ---
 
@@ -23,7 +25,7 @@ initialization → execution → finalization
 ```
 
 - **initialization** — everything needed before project work can run: the node, the
-  project's definition, the working ground.
+  problem's reasoning chain, the working ground.
 - **execution** — the planned work itself: for a correctness-driven backend, the
   definition's concern map worked slice by slice through
   `specify-correctness → plan → write → document`
@@ -31,38 +33,68 @@ initialization → execution → finalization
 - **finalization** — closing up after the goals are met: evidence and docs made legible,
   reusable material distilled back upstream, the node brought to rest.
 
-## Initialization — the proven step pattern
+## Initialization — the step pattern
 
 Outcome-steps in rough dependency order, each with the exit condition that makes it *left
-behind*. A project copies, trims, or extends these at instantiation:
+behind*. A project copies, trims, or extends these at adoption:
 
 1. **Node bootstrapped.** Vision, log, status, steward — the node runs by its rhythm.
    *Exit: sessions proceed without re-deciding the basics.*
-2. **Project intent stated.** *(unlived — adopted from one project's decided-but-not-yet-
-   lived initialization; confirmed or cut at that project's finalization correction
-   pass.)* Why the project exists, for whom, and what "done" means: purpose, audience,
-   success criteria, deliberate tradeoffs — the *why* upstream of the definition's
-   *what*. Intent never describes what the system is or does — that is the definition's
-   job.
-   *Exit: downstream scope and cadence questions are answerable by reference, not
-   re-argued.*
-3. **Project defined.** What is being built, authoritatively stated
-   (`definition` kind; for a backend, drawn with
-   `workbench-five-layer-system.model.md`); reasoning conventions adopted.
-   *Exit: the definition is mastered and referenced by the vision; its concern map names the
-   candidate slices.*
-4. **Realization mapped.** This skeleton instantiated as the project's own map.
-   *Exit: the status can point into the map to say where the work stands.*
-5. **Working ground prepared.** The repo ready for real work: layout settled (node beside
+
+2. **Prepare-thinking-part.** *(unlived — a composite step grouping the problem's
+   reasoning chain: one nature of work, the thinker's territory under the narrow-roles
+   hypothesis below; adopted from one project's decided-but-not-yet-lived
+   initialization, owed confirmation at that project's finalization correction pass.)*
+   Its inner steps, in order:
+
+    - **project-intent** *(unlived)* — why the project exists, for whom, and what "done"
+      means: purpose, audience, success criteria, deliberate tradeoffs — the *why*
+      upstream of the definition's *what*. Intent never describes what the system is or
+      does — that is the definition's job.
+      *Exit: downstream scope and cadence questions are answerable by reference, not
+      re-argued.*
+    - **system-definition** — what is being built, authoritatively stated
+      (`definition` kind; for a backend, drawn with
+      `workbench-five-layer-system.model.md`); reasoning conventions adopted.
+      *Exit: the definition is mastered and referenced by the project's vision; its
+      concern map names the candidate slices.*
+    - **slice-registry born** — the definition's concern map made actionable: the
+      registry populated with the candidate slices and their standing, the first slice
+      marked chosen-next — the ordering decision the definition deliberately does not
+      make, with its why in the project's record. The *living* registry remains the
+      **control point of the execution phase** (chosen-next, closed-on-evidence); only
+      its birth sits here.
+      *Exit: the registry exists, populated, with one slice chosen-next.*
+
+   *Phase-step exit: the reasoning chain stands — intent, definition, registry — and
+   the first slice is named.*
+
+   *Open questions the first lived pass must answer:* does folding the first-slice
+   choice into registry-birth survive lived work, or does the choice deserve its own
+   step again? Does the grouping principle — map steps mirroring role territory —
+   generalize?
+
+3. **Working ground prepared.** The repo ready for real work: layout settled (node beside
    code), stack and tooling chosen, an empty-but-running service skeleton, an evidence
    harness able to run one adversity-generating test end to end.
-   *Exit: a trivial test runs green; a first slice would have somewhere to land.*
-6. **First slice chosen.** One concern picked from the definition's concern map — the
-   ordering decision the definition deliberately does not make.
-   *Exit: the choice and its why are in the project log; the status names the slice.*
+   *Exit: a trivial test runs green; the chosen slice has somewhere to land.*
 
-**Phase exit — into `execution`:** the first slice's `specify-correctness` can start with
-nothing missing around it. The **worklog** is born at the first real executed step.
+**Phase exit — into `execution`:** the chosen slice's `specify-correctness` can start
+with nothing missing around it. The **worklog** is born at the first real executed step.
+
+## Map adoption — need-driven, not scheduled
+
+*(unlived — replaces the former scheduled "realization mapped" step; owed confirmation
+at the proposing project's finalization pass.)*
+
+A project **adopts** this skeleton as its map by working against its fork copy directly,
+molding it in place under the project's fork rules — grouping, trimming, extending,
+each molding a logged fork deviation. Execution state never enters the copy: position
+and history live entirely in the project's record, coupled by names per the map
+discipline above. A **separate live map artifact** is born only when project-specific
+redrawing — lazy zoom on the current phase, cut steps, project-only reordering that is
+no knowledge claim — would pollute the fork's diff against upstream; that birth is a
+project decision at its moment of need, never an initialization step.
 
 ## Execution — known shape only
 
@@ -75,20 +107,21 @@ carries the record, not all content; asked *what next, and with which role*; pla
 the **context-preparer**, gathering per-slice only what the next role needs. The roles,
 plausibly:
 
-- **thinker** — the problem's one reasoning role: it draws the definition (step 3);
-  keeps the **slice-registry** — the definition's concern map made actionable: the
-  candidate slices and their standing, the **control point of the execution phase**
-  (chosen-next, closed-on-evidence), carrying the *where-we-are* of slices with the
-  status pointing at it — the division otherwise unchanged (the map orientation-only,
-  the worklog the happened-record); selects each slice and closes it on its evidence;
-  and **projects internal truth to the public surface**
-  (`workbench-doc-projection.skeleton.md` the starting picture). Whether projection
-  drifts to the steward in practice is an open question the first project answers;
+- **thinker** — the problem's one reasoning role: it owns the prepare-thinking-part
+  chain (intent, definition, registry-birth); keeps the **slice-registry** — the
+  **control point of the execution phase** (chosen-next, closed-on-evidence), carrying
+  the *where-we-are* of slices with the project's status stating it — the division
+  otherwise unchanged (the map orientation-only, the worklog the happened-record);
+  selects each slice and closes it on its evidence; and **projects internal truth to
+  the public surface** (`workbench-doc-projection.skeleton.md` the starting picture).
+  Whether projection drifts to the steward in practice is an open question the first
+  project answers;
 - **infrastructure** — the governed ground: environment, then required services (input:
   the registry reasoning); writes **manuals for two audiences** — the coder (handoff: what
   services exist, how to use them) and the human reader (set up and use everything
-  manually); re-entered on new dependencies. Candidate refinement of step 5: infrastructure
-  before bootstrap, so bootstrap wires up to real services and validates the ground;
+  manually); re-entered on new dependencies. Candidate refinement of the
+  working-ground step: infrastructure before bootstrap, so bootstrap wires up to real
+  services and validates the ground;
 - **slice-reasoning** — possibly its own role: an isolated **correctness-construction**
   stage — the spec built in a context-trimmed session fed by the steward's prepared
   context, rather than inside the thinker;
@@ -107,7 +140,7 @@ skeleton corrections included) distilled back upstream; the node closed out.
 internal truth projected to a public surface — `definition/vision → internal docs →
 public/ docs → README` — derived from internals and **never a second master**. What
 projects, what never does, how much, and the exit-anchored cadence are the skeleton's
-starting picture, instantiated by the project as its own projection rules; **cadence is
+starting picture, adopted by the project as its own projection rules; **cadence is
 the project's own decision**, stated in its vision. Runs through the **thinker** (the
 narrow-roles hypothesis folds projection into it); confirmed, corrected, or discarded by
 the first projecting project.
@@ -116,7 +149,10 @@ the first projecting project.
 
 ## Lifecycle note
 
-Skeleton v1, from one project's initialization actually lived and its later phases only
-shaped; the intent step (2) is unlived, owed confirmation by the proposing project's
-finalization pass. Each project's finalization owes this doc a correction pass — that is
-how the skeleton earns generality.
+Skeleton v1 amended by its first adopting project's fork (the deviation and its why:
+that fork's `fork.log.md`, entry 0001): the reasoning chain grouped as
+`prepare-thinking-part` (intent, definition, registry-birth — folding the former
+first-slice step), and scheduled map instantiation replaced by need-driven adoption;
+both unlived, owed confirmation at that project's finalization correction pass. Each
+project's finalization owes this doc a correction pass — that is how the skeleton earns
+generality.
