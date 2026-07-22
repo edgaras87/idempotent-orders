@@ -1,0 +1,7 @@
+name: idempotent-orders
+
+# The Execution Environment's single declaration: every Infrastructure Service this
+# project runs is declared here — a service is added only once it has been evaluated
+# and constrained by need, never ahead of it. Setup and manual operation:
+# internals/infrastructure.manual.md
+services: {}
