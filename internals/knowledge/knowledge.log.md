@@ -137,3 +137,19 @@ kind-birth precedes the instance by one commit solely because the separation law
 splits the planes' acts; the instance lands in the change plan's next step. The
 placement is the map's unlived claim — living it here is evidence for the exit test
 and the flow-back batch.
+
+**0010 — Manual kind born at its first instance.** The node's law gains the
+**manual** kind — operating truth for a stated audience: how to set up and use what
+exists; written from the lived setup, kept current with the ground it describes;
+carries genre (capture until the ground it covers stands whole) — one line in the
+vision's kinds list, born for the first instance now landing on the problem plane:
+**`infrastructure.manual.md`** at `internals/` root (bare subject), the human
+operator's manual of the *infrastructure established* step, accreting section by
+section as each piece of ground is lived (per the change plan's redraw: born with the
+Execution Environment section at podman's setup, grown at the service's). Placement
+settled with it: **internal, never in `public/`** — the manual's reader is an
+operator, not the surface's reviewer; the surface links it (the "run it yourself"
+commands at *system bootstrapped*'s cadence anchor), never contains or copies it —
+one master, no surface duplicate. The audience split is the kind's own shape: the
+coder-facing manual is a second instance of this kind at the step's close, per the
+plan.

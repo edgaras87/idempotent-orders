@@ -137,9 +137,9 @@ it: the node's docs carry the subject `knowledge` (`knowledge.vision.md`,
 `knowledge.log.md`, `knowledge.status.md`, `knowledge-steward.instructions.md`); the
 fork's record is `fork.log.md`; problem-plane artifacts carry **bare subjects**
 (`log.md`, `status.md`, `worklog.md`, `project.intent.md`, `system.definition.md`,
-`slices.registry.md`) — the repo name plus `internals/` scope them; the shipped
-knowledge files keep their **`workbench-`** prefix, their provenance. The convention's
-flattening guard is satisfied here by construction.
+`slices.registry.md`, `infrastructure.manual.md`) — the repo name plus `internals/`
+scope them; the shipped knowledge files keep their **`workbench-`** prefix, their
+provenance. The convention's flattening guard is satisfied here by construction.
 
 ## Artifact kinds in use
 
@@ -168,12 +168,14 @@ Born since:
   shared step and phase names, every entry self-contained; appended as work happens,
   entries never rewritten, no genre (record handling); the map yields to it when
   reality corrects orientation.
+- **manual** — operating truth for a stated audience: how to set up and use what
+  exists; written from the lived setup, kept current with the ground it describes;
+  carries genre (capture until the ground it covers stands whole).
 
-All expected kinds are now born. The shipped knowledge's kind-words (`model`,
-`convention`, `skeleton`, `map`) are the **workbench's vocabulary**, carried in the
-fork's fixed filenames — not this node's kinds: amending a fork copy is fork work under
-the fork rules, never an authored instance; a kind enters this list only when this node
-authors its first artifact of it.
+The shipped knowledge's kind-words (`model`, `convention`, `skeleton`, `map`) are the
+**workbench's vocabulary**, carried in the fork's fixed filenames — not this node's
+kinds: amending a fork copy is fork work under the fork rules, never an authored
+instance; a kind enters this list only when this node authors its first artifact of it.
 
 ## Artifact genres in use
 
@@ -272,14 +274,15 @@ plan versions piling up.
 **Delivery form:** touched artifacts are delivered as **documents — streamed artifacts
 by default**; file attachments only on the human's request, or where a download
 genuinely fits better — never inline in the chat reply. The chat reply itself stays
-short — what changed, what's next, what needs a decision — and never restates a
+short — what changed, what's next, what needs a decision — and never restating a
 delivered doc's content. Inline display of an artifact happens **only on explicit
 request.**
 
 ## Open now
 
 - **Infrastructure established** — underway per its change plan: podman decided
-  (problem log 0005); the worklog born next; then PostgreSQL under its constraints,
-  the Postgres role model, the two manuals, and the exit's map reeval test.
+  (problem log 0005), the worklog and the human manual born at the environment's setup;
+  next PostgreSQL under its constraints, the Postgres role model, the coder manual, and
+  the exit's map reeval test.
 - Then system bootstrapped, and into execution.
 - **Visibility** — this repo starts private; publish only on a real reason.
