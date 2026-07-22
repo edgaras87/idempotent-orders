@@ -33,3 +33,18 @@ the option and the commitment adjacent, and gives *problem framed* its full exit
 picture (chain standing, README owed) before the step runs. What it binds: projection
 is owed at the named exits — event-driven, never calendar-driven; skipping one is a
 logged decision, not drift.
+
+**0003 — Intent kind born at its first instance.** The node's law gains the **intent**
+kind — why the project exists, for whom, and what "done" means; upstream of the
+definition's *what*, referenced by downstream scope and cadence decisions — one line in
+the vision's kinds list, born for the first instance now landing on the problem plane
+(`project.intent.md`, the *project-intent* inner step of *problem framed*). Two
+questions resolved with it: the portfolio-arc input is **not landed as an artifact** —
+its one load-bearing claim (project 1 of a two-project arc; project 2 takes the
+cross-service scope at the L4/L5 seam) is folded into the intent itself, the full note
+remaining ordinary input retrievable from the human, so no `note` kind is born and no
+artifact exists ahead of need; and a **`problem-framing/` subdirectory is deferred** —
+crowding is hypothetical at three root files, the naming convention makes a later move
+reference-free, and a step-named dir would couple storage to process rather than to
+what artifacts are. The intent's own landing and genre are the problem plane's
+decisions, recorded in its log.

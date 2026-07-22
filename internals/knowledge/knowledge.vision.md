@@ -133,9 +133,10 @@ Naming follows `core/workbench-naming.convention.md`. This node's own vocabulary
 it: the node's docs carry the subject `knowledge` (`knowledge.vision.md`,
 `knowledge.log.md`, `knowledge.status.md`, `knowledge-steward.instructions.md`); the
 fork's record is `fork.log.md`; problem-plane artifacts carry **bare subjects**
-(`log.md`, `status.md`, later e.g. `system.definition.md`) — the repo name plus
-`internals/` scope them; the shipped knowledge files keep their **`workbench-`** prefix,
-their provenance. The convention's flattening guard is satisfied here by construction.
+(`log.md`, `status.md`, `project.intent.md`, later e.g. `system.definition.md`) — the
+repo name plus `internals/` scope them; the shipped knowledge files keep their
+**`workbench-`** prefix, their provenance. The convention's flattening guard is
+satisfied here by construction.
 
 ## Artifact kinds in use
 
@@ -148,6 +149,11 @@ Born at the first instance, one agreed line each (the mechanism:
 - **status** — the snapshot of the present (handling: *The node's record*, below); also
   the kind of the problem plane's status.
 - **instructions** — a role's lens: identity, sources, bootstrap summaries.
+
+Born since:
+
+- **intent** — why the project exists, for whom, and what "done" means; upstream of the
+  definition's *what*, referenced by downstream scope and cadence decisions.
 
 Expected next (born when their first instance arrives, not before): `definition`, the
 slice-registry's kind, the worklog's kind. The shipped knowledge's kind-words (`model`,
@@ -196,7 +202,7 @@ Handling rules, shared by all of them on their own subjects:
   stays the master of shape). Mid-session rewrites are checkpoints; each costs the human
   an apply-and-commit.
 
-**Session rhythm:** read this vision, then the statuses; record decisions in the right
+**Session rhythm:** read this vision, then the statuses, record decisions in the right
 log while working; end by rewriting the touched statuses.
 
 ## How work happens
@@ -249,13 +255,12 @@ by default**; file attachments only on the human's request, or where a download
 genuinely fits better — never inline in the chat reply. The chat reply itself stays
 short — what changed, what's next, what needs a decision — and never restates a
 delivered doc's content. Inline display of an artifact happens **only on explicit
-request**.
+request.**
 
 ## Open now
 
-- **Problem framed** — per the fork's map: project-intent, then the
-  definition (`definition` kind born at that step), then the slice-registry's birth;
-  the problem plane's record born with the first problem decisions; the thin README
-  owed at the step's exit, per the adopted projection cadence.
+- **Problem framed** — per the fork's map: intent landed; next the definition
+  (`definition` kind born at that step), then the slice-registry's birth; the thin
+  README owed at the step's exit, per the adopted projection cadence.
 - Then infrastructure established, system bootstrapped, and into execution.
 - **Visibility** — this repo starts private; publish only on a real reason.
