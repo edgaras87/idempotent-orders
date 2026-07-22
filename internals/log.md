@@ -77,3 +77,24 @@ fifth's fold-in (request identity as contract inside S1) was a disposition the m
 itself anticipated by naming it upstream of the others; no concern needed redrawing,
 splitting, or discarding. `system.definition.md` is settled — revised henceforth only
 by logged decision, like the intent.
+
+**0005 — Execution Environment decided: podman local containers; infrastructure
+vocabulary adopted.** The *infrastructure established* phase-step opened — the first
+decision of its execution. **(a)** Vocabulary adopted, spoken by this step's work and
+mastered in the coder manual at its birth: **Execution Environment** — the local
+runtime host for infrastructure; **Infrastructure Service** — a capability provided
+to the system; **Infrastructure Service Constraint** — a requirement or limitation
+imposed on an infrastructure service. **(b)** **Podman local containers chosen as the
+Execution Environment** — the choice arrived as the human's input; its reasoning
+against the chain's outputs: the slices' adversity needs are the deciding constraint —
+S4's evidence requires killing a process mid-work as a first-class, repeatable act,
+and S2's requires real concurrency against a real store, both of which disposable,
+restartable containers serve directly; L1's runtime facts (the process can die and
+restart; the datastore is relied on, not owned) fit a containerized local ground with
+no host pollution; daemonless local containers keep the ground fully manual-operable,
+which the human manual (owed at this step's exit) must describe anyway. Alternatives
+weighed: bare-host installs (pollutes the host, poor kill/restart ergonomics, weakens
+the manual's reproducibility) and docker (equivalent capability; podman preferred as
+daemonless and the human's working practice — no slice discriminates between them).
+Services themselves are deliberately *not* decided here — their evaluation is this
+step's own later act, constrained by need.
