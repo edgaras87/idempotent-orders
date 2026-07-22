@@ -61,3 +61,14 @@ strain; the hypothesis itself stays untouched in the map, unconfirmed and undisc
 Cheap to reverse: enacting the split later costs a lens and a log entry; enacting it
 now, ahead of strain, would be role-creation ahead of need against the vision's own
 rule.
+
+**0005 — Definition kind born at its first instance.** The node's law gains the
+**definition** kind — what the target system authoritatively is, drawn with
+`realization/workbench-five-layer-system.model.md`; mastered on the problem plane,
+referenced — never restated — by every downstream artifact — one line in the vision's
+kinds list, born for the first instance now landing on the problem plane
+(`system.definition.md`, the *system-definition* inner step of *problem framed*). The
+vision's "expected next" trims to the registry's and worklog's kinds; the naming
+vocabulary's example becomes the real name. The instance's own landing decisions —
+the evaluation's revisions, the adversity-model call, genre capture — are the problem
+plane's, recorded in its log.

@@ -125,7 +125,9 @@ execution phase's control point), slice selection, closing slices on evidence, a
 internal truth projected to the public surface. That thinker is precisely the separate
 role that uses the working knowledge to produce the problem artifacts. The split is
 enacted **only by need** — a decision of this node, in its log — and confirmed,
-corrected, or discarded by the lived work.
+corrected, or discarded by the lived work. *(Standing: deferred at the definition step
+on strain-free evidence — `knowledge.log.md` 0004; re-judged at the registry's birth or
+the first slice.)*
 
 ## Naming
 
@@ -133,10 +135,10 @@ Naming follows `core/workbench-naming.convention.md`. This node's own vocabulary
 it: the node's docs carry the subject `knowledge` (`knowledge.vision.md`,
 `knowledge.log.md`, `knowledge.status.md`, `knowledge-steward.instructions.md`); the
 fork's record is `fork.log.md`; problem-plane artifacts carry **bare subjects**
-(`log.md`, `status.md`, `project.intent.md`, later e.g. `system.definition.md`) — the
-repo name plus `internals/` scope them; the shipped knowledge files keep their
-**`workbench-`** prefix, their provenance. The convention's flattening guard is
-satisfied here by construction.
+(`log.md`, `status.md`, `project.intent.md`, `system.definition.md`) — the repo name
+plus `internals/` scope them; the shipped knowledge files keep their **`workbench-`**
+prefix, their provenance. The convention's flattening guard is satisfied here by
+construction.
 
 ## Artifact kinds in use
 
@@ -154,13 +156,16 @@ Born since:
 
 - **intent** — why the project exists, for whom, and what "done" means; upstream of the
   definition's *what*, referenced by downstream scope and cadence decisions.
+- **definition** — what the target system authoritatively is, drawn with
+  `realization/workbench-five-layer-system.model.md`; mastered on the problem plane,
+  referenced — never restated — by every downstream artifact.
 
-Expected next (born when their first instance arrives, not before): `definition`, the
-slice-registry's kind, the worklog's kind. The shipped knowledge's kind-words (`model`,
-`convention`, `skeleton`, `map`) are the **workbench's vocabulary**, carried in the
-fork's fixed filenames — not this node's kinds: amending a fork copy is fork work under
-the fork rules, never an authored instance; a kind enters this list only when this node
-authors its first artifact of it.
+Expected next (born when their first instance arrives, not before): the slice-registry's
+kind, the worklog's kind. The shipped knowledge's kind-words (`model`, `convention`,
+`skeleton`, `map`) are the **workbench's vocabulary**, carried in the fork's fixed
+filenames — not this node's kinds: amending a fork copy is fork work under the fork
+rules, never an authored instance; a kind enters this list only when this node authors
+its first artifact of it.
 
 ## Artifact genres in use
 
@@ -259,8 +264,8 @@ request.**
 
 ## Open now
 
-- **Problem framed** — per the fork's map: intent landed; next the definition
-  (`definition` kind born at that step), then the slice-registry's birth; the thin
-  README owed at the step's exit, per the adopted projection cadence.
+- **Problem framed** — per the fork's map: intent and definition landed; next the
+  slice-registry's birth (its kind born at that instance); the thin README owed at the
+  step's exit, per the adopted projection cadence.
 - Then infrastructure established, system bootstrapped, and into execution.
 - **Visibility** — this repo starts private; publish only on a real reason.
