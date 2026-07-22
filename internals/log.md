@@ -46,3 +46,25 @@ not the definition's. Genre **capture at landing**: the concern map is the defin
 untested claim — the registry's birth is its first proof; the flip to define is judged
 there, a logged decision. Step exit satisfied: the definition is mastered on the
 problem plane and its concern map names the candidate slices.
+
+**0003 — Slice registry born; slice 1 chosen-next.** The *slice-registry born* inner
+step of *problem framed* executed: `slices.registry.md` born — the definition's
+concern map made actionable. The decisions and their why: **(a)** **concern 4
+(request identity) is not a slice** — it carries no invariant-under-adversity of its
+own; it is the contract the other invariants are defined against, and its
+correctness (key scope, validation, collision behaviour) surfaces as guarantees of
+the duplicate-suppression invariant — so it is **folded into S1's
+`specify-correctness`** as its opening work; folded, not dropped, the reconciliation
+stated in the registry's notes. **(b)** **S1 — duplicate suppression — chosen-next**:
+the dominant invariant, the service's reason to exist, the adversity ladder's base
+rung, and the natural home of the absorbed contract — every later slice is defined
+against what S1 settles. **(c)** The **working order S1 → S2 → S3 → S4** (race, then
+replay, then crash-during-creation) is an expectation, not a commitment — re-decided
+at each close, each re-decision a log entry; S4 runs last because its convergence
+reasoning leans on the mechanisms the earlier slices settle. **(d)** Registry
+structure at birth: standing vocabulary (candidate → chosen-next → in-progress
+stage-annotated → closed-on-evidence), the slice table (one-line invariants,
+adversity, standing, evidence pointers), and a notes section carrying the fold —
+lean by design; the definition masters concern content, the log masters whys, the
+worklog (unborn) will master the happened-record. Step exit satisfied: the registry
+exists, populated, one slice chosen-next — the reasoning chain stands.
