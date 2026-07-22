@@ -2,36 +2,40 @@
 
 *Rewritten freely (at minimum at session end); owes nothing to its previous version.*
 
-**Where things stand:** the node runs; the problem plane's reasoning chain is two steps
-in. Since the last snapshot, two node decisions landed: the **thinker-role question
-deferred at its named trigger** (`knowledge.log.md` 0004 — two strain-free data points;
-the steward keeps both planes; re-judged at the registry's birth or the first slice),
-and the **definition kind born** (`knowledge.log.md` 0005) for its first instance —
-`system.definition.md`, landed as **capture** on the problem plane (the landing's
-decisions: problem `log.md` 0002; its position mastered in the problem `status.md`).
-The fork stands unchanged at six deviations (all unlived, owed confirmation at
-finalization — `fork.log.md` 0001–0006); the adopted projection cadence
-(`knowledge.log.md` 0002) is unchanged — the thin README owed at *problem framed*'s
-exit, its planned-invariants list now waiting only on the registry.
+**Where things stand:** the node runs, and **`problem framed` is exited** — the
+reasoning chain stands whole on the problem plane (intent define, definition define,
+registry live with S1 chosen-next), and the exit's owed projection ran: the thin
+README born at repo root per the adopted cadence (`knowledge.log.md` 0002), its
+planned-invariants list drawn from the registry. Since the last snapshot, two node
+decisions: the **registry kind born** (`knowledge.log.md` 0007 — status-like handling,
+no genre, `slices.registry.md`) and the **thinker-role question re-judged and deferred
+on scope grounds** (`knowledge.log.md` 0006 — a single-service project is expected to
+run steward-only throughout; the first-slice judgment point formally open but expected
+to confirm; the map's hypothesis owed a scope note at finalization). The fork stands
+unchanged at six deviations (all unlived — `fork.log.md` 0001–0006); notably the
+*problem framed* composite step and the projection's first anchor are now **lived**,
+their confirmation still owed at the finalization pass.
 
-Position, in the map's names: **`preparation` → `problem framed`** — *project-intent*
-and *system-definition* done; the problem stands before **slice-registry born**, the
-chain's last inner step. Two node items sit at it: the **registry's kind** born at its
-first instance, and the **thinker-role question's next judgment point** — the
-registry's birth is the first of the two named re-judgment moments.
+Position, in the map's names: **`preparation` → before `infrastructure established`** —
+the next phase-step: environment and services evaluated from the chain's outputs (the
+definition's L1 reasoning, the registry's needs), constrained by need; the two-audience
+manuals its exit. The problem's own position is mastered in the problem plane's
+`status.md`.
 
 **Shape** *(snapshot; the repo is the master)*:
 
 ```text
 repo root
+├── README.md                            the projected surface — thin, at problem framed's exit
 └── internals/
     ├── project.intent.md                the why — define
-    ├── system.definition.md             the what — capture (flip judged at the registry)
-    ├── log.md                           problem log, entries 0001–0002
+    ├── system.definition.md             the what — define (flipped: problem log 0004)
+    ├── slices.registry.md               the control point — S1 chosen-next
+    ├── log.md                           problem log, entries 0001–0004
     ├── status.md                        problem status
     └── knowledge/                       ← the working node
-        ├── knowledge.vision.md          definition kind added; deferral standing noted
-        ├── knowledge.log.md             entries 0001–0005
+        ├── knowledge.vision.md          registry kind added; role-split standing synced
+        ├── knowledge.log.md             entries 0001–0007
         ├── knowledge.status.md
         ├── knowledge-steward.instructions.md
         ├── fork.log.md                  entries 0001–0006
@@ -48,18 +52,21 @@ repo root
 ```
 
 **Unsettled:**
-- **The registry's kind** — born at its first instance, the chain's last inner step;
-  the worklog's kind still further out (born at the first executed step of execution).
-- **The thinker-role question** — deferred per 0004; re-judged at the registry's birth
-  (next) or the first slice, whichever first shows strain.
-- **The definition's genre flip** — a problem-plane decision, judged at the registry's
-  proof of the concern map.
-- **Steward lens refresh** — `knowledge-steward.instructions.md` now lags the old map
-  picture, both kind births (intent, definition), and the deferral standing;
-  non-authoritative (the vision wins on conflict), so not urgent — refresh when the
-  lens is next touched.
-- **Doc projection's first run** — owed at *problem framed*'s exit per the adopted
-  cadence; the thin README its first artifact, one step away.
+- **Infrastructure established** — the next phase-step; its content (environment,
+  which services, both manuals) is the step's own execution, evaluated from the
+  chain's outputs.
+- **The worklog's kind** — the last expected kind; born at the first real executed
+  step (the map: the worklog is born there), plausibly at infrastructure's or the
+  first slice's start.
+- **The per-slice artifact pattern** — deliberately unprescribed (the map's
+  steps-and-how-docs rule): decided at S1's own start, the human's prior-work pattern
+  arriving then as ordinary input; a how-doc born in `realization/` only if a
+  generalizable shape emerges from the lived slice.
+- **The first-slice judgment point** — the thinker-role question's last formal check
+  (per 0006, expected to confirm steward-only).
+- **Steward lens refresh** — now lags the old map picture, three kind births, and the
+  deferral standing; non-authoritative (the vision wins), so still not urgent —
+  refresh when the lens is next touched.
 
-**Next:** the slice-registry's birth — the chain's last inner step, then the README at
-the exit.
+**Next:** infrastructure established — evaluating the environment and services from
+the chain's outputs.
