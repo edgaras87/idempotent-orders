@@ -25,3 +25,24 @@ from settled prior thinking, not exploration — revisions are ordinary logged d
 This landing is the problem plane's first act; this log and `status.md` are born with
 it. Step exit satisfied: downstream scope and cadence questions are answerable by
 reference to the intent, not re-argued.
+
+**0002 — System definition landed as capture.** The *system-definition* inner step of
+*problem framed* executed: `system.definition.md` landed — the human's prior draft
+evaluated against the five-layer model and revised in session, not adopted as-is. The
+revisions and their why: **(a)** the identity section trimmed to the motivating
+guarantee — ownership, boundary, and authority stated solely in L2, removing the
+one-statement-two-places overlap; **(b)** L3's stop rule restated on **ownership
+cohesion** (the model's own criterion) instead of readme size — same conclusion,
+undivided, with the intake/persistence seam noted not drawn; **(c)** the adversity
+model extended with **crash during creation**: the process's own death added to L1 as
+an environment fact and to the concern map as concern 5 (partial failure, scoped
+strictly to the creation path — the retry converges to one order), with post-creation
+recovery named explicitly in the deferred line — included because a crash mid-creation
+is creation's own subject and the first question a reviewer asks of an idempotency
+service, scoped so lifecycle territory stays the later project's; **(d)** **request
+identity kept a slice-candidate** (concern 4) — whether it is its own slice or a
+contract worked inside another slice's spec is deliberately the registry's decision,
+not the definition's. Genre **capture at landing**: the concern map is the definition's
+untested claim — the registry's birth is its first proof; the flip to define is judged
+there, a logged decision. Step exit satisfied: the definition is mastered on the
+problem plane and its concern map names the candidate slices.
