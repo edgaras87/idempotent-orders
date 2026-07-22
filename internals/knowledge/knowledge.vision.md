@@ -136,7 +136,7 @@ Naming follows `core/workbench-naming.convention.md`. This node's own vocabulary
 it: the node's docs carry the subject `knowledge` (`knowledge.vision.md`,
 `knowledge.log.md`, `knowledge.status.md`, `knowledge-steward.instructions.md`); the
 fork's record is `fork.log.md`; problem-plane artifacts carry **bare subjects**
-(`log.md`, `status.md`, `project.intent.md`, `system.definition.md`,
+(`log.md`, `status.md`, `worklog.md`, `project.intent.md`, `system.definition.md`,
 `slices.registry.md`) — the repo name plus `internals/` scope them; the shipped
 knowledge files keep their **`workbench-`** prefix, their provenance. The convention's
 flattening guard is satisfied here by construction.
@@ -164,12 +164,16 @@ Born since:
   standing, exactly one chosen-next; status-like handling (rewritten freely as slices
   move, no genre), every standing change's why in the problem log; the definition
   masters what each concern is.
+- **worklog** — the append-only happened-record of executed work; coupled to the map by
+  shared step and phase names, every entry self-contained; appended as work happens,
+  entries never rewritten, no genre (record handling); the map yields to it when
+  reality corrects orientation.
 
-Expected next (born when its first instance arrives, not before): the worklog's kind.
-The shipped knowledge's kind-words (`model`, `convention`, `skeleton`, `map`) are the
-**workbench's vocabulary**, carried in the fork's fixed filenames — not this node's
-kinds: amending a fork copy is fork work under the fork rules, never an authored
-instance; a kind enters this list only when this node authors its first artifact of it.
+All expected kinds are now born. The shipped knowledge's kind-words (`model`,
+`convention`, `skeleton`, `map`) are the **workbench's vocabulary**, carried in the
+fork's fixed filenames — not this node's kinds: amending a fork copy is fork work under
+the fork rules, never an authored instance; a kind enters this list only when this node
+authors its first artifact of it.
 
 ## Artifact genres in use
 
@@ -181,13 +185,14 @@ This node's genre vocabulary and law (the axis itself — kind × genre, indepen
 
 Handling: genre is stated **in the doc's header text, never in the filename** (genre
 moves; renames chase references). A **genre flip** — capture → define, or a demotion
-back — is a decision, recorded in the log; it never changes the kind. The record docs,
-lenses, and the registry carry no genre — their handling rules already say how they
-move.
+back — is a decision, recorded in the log; it never changes the kind. The record docs
+(the worklog included), lenses, and the registry carry no genre — their handling rules
+already say how they move.
 
 ## The node's record
 
-Vision = direction; **log = why**; **status = now** — this node's own division. Three
+Vision = direction; **log = why**; **status = now** — this node's own division, with the
+**worklog = happened** joining it on the problem plane at its birth. Three decision
 records live in this repo, one per subject, never mixed:
 
 - **`knowledge.log.md` / `knowledge.status.md`** — this node: its rules, roles, and
@@ -195,7 +200,8 @@ records live in this repo, one per subject, never mixed:
 - **`fork.log.md`** — the fork: changes to `core/` and `realization/` (born at the first
   deviation).
 - **The problem plane's `log.md` / `status.md`** — the problem: definition, slices,
-  progress (born when problem work starts).
+  progress (born when problem work starts) — joined by **`worklog.md`**, the problem's
+  happened-record (its kind line above).
 
 Handling rules, shared by all of them on their own subjects:
 
@@ -207,6 +213,9 @@ Handling rules, shared by all of them on their own subjects:
   next entry **freezes** it; frozen entries are never rewritten — a correction or
   reversal is a new entry referencing the old. Reference, not reading. **Logs are
   per-repo and never inherited.**
+- **The worklog** — happenings, not decisions (the log's mirror test: *what was actually
+  done, that the outputs alone don't show?*); append-only as work happens; entries
+  self-contained, never rewritten.
 - **Statuses** — rewritten **freely, at minimum at session end**; owe nothing to their
   previous versions; the problem status carries a small repo-shape snapshot (the repo
   stays the master of shape). Mid-session rewrites are checkpoints; each costs the human
@@ -269,8 +278,8 @@ request.**
 
 ## Open now
 
-- **Problem framed** — per the fork's map: intent, definition, and the registry's birth
-  underway; the thin README owed at the step's exit, per the adopted projection
-  cadence.
-- Then infrastructure established, system bootstrapped, and into execution.
+- **Infrastructure established** — underway per its change plan: podman decided
+  (problem log 0005); the worklog born next; then PostgreSQL under its constraints,
+  the Postgres role model, the two manuals, and the exit's map reeval test.
+- Then system bootstrapped, and into execution.
 - **Visibility** — this repo starts private; publish only on a real reason.

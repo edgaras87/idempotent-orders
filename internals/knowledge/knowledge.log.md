@@ -118,3 +118,22 @@ column** is the extension a multi-area project would need (surfaced by compariso
 the human's prior system-of-systems registry, arriving as ordinary input). Trigger
 clause: if the workbench births another project before preparation's exit, the
 flow-back runs early so no stale skeleton is seeded.
+
+**0009 — Worklog kind born at its first instance; the last expected kind.** The
+node's law gains the **worklog** kind — the append-only happened-record of executed
+work: what was actually done, that the outputs alone don't show — coupled to the map
+by shared step and phase names, every entry self-contained; entries appended as work
+happens and never rewritten; **no genre** (record handling, beside the logs and
+statuses); the map yields to the worklog when reality corrects orientation, never the
+reverse. One line in the vision's kinds list; the "expected next" line retired — all
+expected kinds are now born. Born for the first instance now landing on the problem
+plane: **`worklog.md`** at `internals/` root (bare subject per the vision's naming
+vocabulary), birthing at *infrastructure established*'s environment setup — the map's
+placement ("the worklog is born at the first real executed step") judged to mean work
+whose happening is not identical to its output: *problem framed* was authoring
+(outputs + log + commits already the full record — a worklog there would duplicate);
+the environment setup is the first work happening outside the documents. The
+kind-birth precedes the instance by one commit solely because the separation law
+splits the planes' acts; the instance lands in the change plan's next step. The
+placement is the map's unlived claim — living it here is evidence for the exit test
+and the flow-back batch.
