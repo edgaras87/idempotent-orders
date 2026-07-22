@@ -68,3 +68,12 @@ adversity, standing, evidence pointers), and a notes section carrying the fold �
 lean by design; the definition masters concern content, the log masters whys, the
 worklog (unborn) will master the happened-record. Step exit satisfied: the registry
 exists, populated, one slice chosen-next — the reasoning chain stands.
+
+**0004 — Definition genre flipped: capture → define.** Entry 0002 set the judgment
+point: the flip on the registry's proof of the concern map. The proof arrived at the
+registry's birth (entry 0003): the map populated the registry cleanly — four of the
+five concerns became slices with one-line invariants and named adversities, and the
+fifth's fold-in (request identity as contract inside S1) was a disposition the map
+itself anticipated by naming it upstream of the others; no concern needed redrawing,
+splitting, or discarding. `system.definition.md` is settled — revised henceforth only
+by logged decision, like the intent.

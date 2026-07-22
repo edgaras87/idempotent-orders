@@ -1,9 +1,9 @@
 # system.definition.md
 
-> **Genre: capture.** The authoritative statement of what the system is, drawn with
-> `workbench-five-layer-system.model.md` — provisional until the slice registry proves
-> the concern map carves right; the flip to define is a logged decision. Downstream
-> artifacts reference this doc, never restate it.
+> **Genre: define.** The authoritative statement of what the system is, drawn with
+> `workbench-five-layer-system.model.md` — settled; revised only by decision, recorded
+> in the problem log (flipped from capture at the registry's birth: `log.md` 0004).
+> Downstream artifacts reference this doc, never restate it.
 
 ---
 
