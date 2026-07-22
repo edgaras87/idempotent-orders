@@ -72,3 +72,18 @@ vision's "expected next" trims to the registry's and worklog's kinds; the naming
 vocabulary's example becomes the real name. The instance's own landing decisions —
 the evaluation's revisions, the adversity-model call, genre capture — are the problem
 plane's, recorded in its log.
+
+**0006 — Thinker-role question re-judged at the registry's birth; deferred, with a
+sharpened expectation.** Entry 0004 named two judgment points; the first is reached
+and checked deliberately. The chain's three inner steps have now run in session
+steward-only without strain — and a sharper reason joins the evidence: **this
+project's scope is a single service**, the L2 system of interest deliberately small
+(one responsibility area, five slices); the strain the narrow-roles hypothesis
+predicts is proportional to problem size, and this problem likely never grows enough
+to produce it. Decision: deferred again — the working expectation is now that this
+project runs **steward-only throughout**, and the hypothesis is properly exercised by
+a larger project (plausibly project 2, a system of services). The first-slice
+judgment point remains formally open (strain there would still enact the split), but
+is expected to confirm, not reverse. The hypothesis in the map stays untouched —
+unconfirmed, undiscarded; this project's finalization owes the map a note that a
+single-service project declined the split on scope grounds.
