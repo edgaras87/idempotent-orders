@@ -125,9 +125,10 @@ execution phase's control point), slice selection, closing slices on evidence, a
 internal truth projected to the public surface. That thinker is precisely the separate
 role that uses the working knowledge to produce the problem artifacts. The split is
 enacted **only by need** — a decision of this node, in its log — and confirmed,
-corrected, or discarded by the lived work. *(Standing: deferred at the definition step
-on strain-free evidence — `knowledge.log.md` 0004; re-judged at the registry's birth or
-the first slice.)*
+corrected, or discarded by the lived work. *(Standing: deferred twice on strain-free
+evidence, the second time on scope grounds — a single-service project is expected to
+run steward-only throughout; `knowledge.log.md` 0004, 0006. The first-slice judgment
+point remains formally open.)*
 
 ## Naming
 
@@ -135,10 +136,10 @@ Naming follows `core/workbench-naming.convention.md`. This node's own vocabulary
 it: the node's docs carry the subject `knowledge` (`knowledge.vision.md`,
 `knowledge.log.md`, `knowledge.status.md`, `knowledge-steward.instructions.md`); the
 fork's record is `fork.log.md`; problem-plane artifacts carry **bare subjects**
-(`log.md`, `status.md`, `project.intent.md`, `system.definition.md`) — the repo name
-plus `internals/` scope them; the shipped knowledge files keep their **`workbench-`**
-prefix, their provenance. The convention's flattening guard is satisfied here by
-construction.
+(`log.md`, `status.md`, `project.intent.md`, `system.definition.md`,
+`slices.registry.md`) — the repo name plus `internals/` scope them; the shipped
+knowledge files keep their **`workbench-`** prefix, their provenance. The convention's
+flattening guard is satisfied here by construction.
 
 ## Artifact kinds in use
 
@@ -159,13 +160,16 @@ Born since:
 - **definition** — what the target system authoritatively is, drawn with
   `realization/workbench-five-layer-system.model.md`; mastered on the problem plane,
   referenced — never restated — by every downstream artifact.
+- **registry** — the living control doc of the execution phase: the slices and their
+  standing, exactly one chosen-next; status-like handling (rewritten freely as slices
+  move, no genre), every standing change's why in the problem log; the definition
+  masters what each concern is.
 
-Expected next (born when their first instance arrives, not before): the slice-registry's
-kind, the worklog's kind. The shipped knowledge's kind-words (`model`, `convention`,
-`skeleton`, `map`) are the **workbench's vocabulary**, carried in the fork's fixed
-filenames — not this node's kinds: amending a fork copy is fork work under the fork
-rules, never an authored instance; a kind enters this list only when this node authors
-its first artifact of it.
+Expected next (born when its first instance arrives, not before): the worklog's kind.
+The shipped knowledge's kind-words (`model`, `convention`, `skeleton`, `map`) are the
+**workbench's vocabulary**, carried in the fork's fixed filenames — not this node's
+kinds: amending a fork copy is fork work under the fork rules, never an authored
+instance; a kind enters this list only when this node authors its first artifact of it.
 
 ## Artifact genres in use
 
@@ -177,8 +181,9 @@ This node's genre vocabulary and law (the axis itself — kind × genre, indepen
 
 Handling: genre is stated **in the doc's header text, never in the filename** (genre
 moves; renames chase references). A **genre flip** — capture → define, or a demotion
-back — is a decision, recorded in the log; it never changes the kind. The record docs and
-lenses carry no genre — their handling rules already say how they move.
+back — is a decision, recorded in the log; it never changes the kind. The record docs,
+lenses, and the registry carry no genre — their handling rules already say how they
+move.
 
 ## The node's record
 
@@ -264,8 +269,8 @@ request.**
 
 ## Open now
 
-- **Problem framed** — per the fork's map: intent and definition landed; next the
-  slice-registry's birth (its kind born at that instance); the thin README owed at the
-  step's exit, per the adopted projection cadence.
+- **Problem framed** — per the fork's map: intent, definition, and the registry's birth
+  underway; the thin README owed at the step's exit, per the adopted projection
+  cadence.
 - Then infrastructure established, system bootstrapped, and into execution.
 - **Visibility** — this repo starts private; publish only on a real reason.

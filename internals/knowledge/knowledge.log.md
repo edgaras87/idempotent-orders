@@ -87,3 +87,18 @@ judgment point remains formally open (strain there would still enact the split),
 is expected to confirm, not reverse. The hypothesis in the map stays untouched —
 unconfirmed, undiscarded; this project's finalization owes the map a note that a
 single-service project declined the split on scope grounds.
+
+**0007 — Registry kind born at its first instance.** The node's law gains the
+**registry** kind — the living control doc of the execution phase: the slices and
+their standing, exactly one chosen-next — one line in the vision's kinds list, born
+for the first instance now landing on the problem plane (`slices.registry.md`, the
+*slice-registry born* inner step of *problem framed*; subject plural — the doc is
+about the slice set, one registry over many slices). Handling chosen with it:
+**status-like** — rewritten freely as slices move, carrying **no genre** (the vision's
+no-genre rule extended to name it beside the record docs and lenses), because the
+registry is control state, not settled claim — its reliability is its currency, like a
+status's, not a genre's; every standing change's why lands in the problem log, and the
+definition stays the master of what each concern *is* — the registry never restates
+concern content, only names, invariant one-liners, standing, and evidence pointers.
+The instance's own decisions — structure, concern 4's fold, slice 1 chosen-next — are
+the problem plane's, recorded in its log.
