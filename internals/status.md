@@ -38,5 +38,9 @@ internals/
   planned-invariants list (the registry's four lines), the method note, a status line.
 - **Infrastructure established** — the next phase-step after the exit: environment and
   services evaluated from the chain's outputs, constrained by need.
+- **A discovery register** — parked idea, not yet earned: where mid-execution
+  discoveries land (slice-shaped ones are definition revisions + registry rows via
+  existing mechanisms; an unshaped one would earn a small registry section at its
+  first instance).
 
 **Next:** the definition's flip, then the README — closing *problem framed*.
