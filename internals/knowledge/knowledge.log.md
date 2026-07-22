@@ -102,3 +102,19 @@ definition stays the master of what each concern *is* — the registry never res
 concern content, only names, invariant one-liners, standing, and evidence pointers.
 The instance's own decisions — structure, concern 4's fold, slice 1 chosen-next — are
 the problem plane's, recorded in its log.
+
+**0008 — Flow-back set at preparation's exit; a registry-structure note joins the
+batch.** The fork's first flow-back to the workbench is scheduled: **at the
+preparation phase's exit** (after *system bootstrapped*), not now and not deferred to
+finalization. Why this point: mid-project flow-back is the vision's own provision for
+"something big", and the preparation re-carving qualifies — but of the six deviations
+only two are lived at *problem framed*'s exit; by preparation's exit essentially all
+will be, so the batch ships confirmations with lived evidence rather than proposals,
+and the workbench steward integrates once, not twice. The finalization pass still owes
+its correction sweep regardless (including the map hypothesis' scope note per 0006).
+One flow-back candidate noted for the batch beyond the fork log itself: the registry
+structure proved out at birth but is single-area-shaped — a **responsibility-area
+column** is the extension a multi-area project would need (surfaced by comparison with
+the human's prior system-of-systems registry, arriving as ordinary input). Trigger
+clause: if the workbench births another project before preparation's exit, the
+flow-back runs early so no stale skeleton is seeded.

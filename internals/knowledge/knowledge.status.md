@@ -14,7 +14,9 @@ run steward-only throughout; the first-slice judgment point formally open but ex
 to confirm; the map's hypothesis owed a scope note at finalization). The fork stands
 unchanged at six deviations (all unlived — `fork.log.md` 0001–0006); notably the
 *problem framed* composite step and the projection's first anchor are now **lived**,
-their confirmation still owed at the finalization pass.
+their confirmation still owed at the finalization pass. The fork's first **flow-back
+is scheduled at preparation's exit** (`knowledge.log.md` 0008 — evidence-backed batch,
+one integration; early only if the workbench births a project before then).
 
 Position, in the map's names: **`preparation` → before `infrastructure established`** —
 the next phase-step: environment and services evaluated from the chain's outputs (the
@@ -64,6 +66,8 @@ repo root
   generalizable shape emerges from the lived slice.
 - **The first-slice judgment point** — the thinker-role question's last formal check
   (per 0006, expected to confirm steward-only).
+- **Flow-back at preparation's exit** — per 0008: the fork log plus branch diffs,
+  through the human; the registry's responsibility-area-column note rides with it.
 - **Steward lens refresh** — now lags the old map picture, three kind births, and the
   deferral standing; non-authoritative (the vision wins), so still not urgent —
   refresh when the lens is next touched.
