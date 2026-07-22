@@ -48,3 +48,16 @@ crowding is hypothetical at three root files, the naming convention makes a late
 reference-free, and a step-named dir would couple storage to process rather than to
 what artifacts are. The intent's own landing and genre are the problem plane's
 decisions, recorded in its log.
+
+**0004 — Thinker-role question deferred at its named trigger; the steward keeps both
+planes.** The definition step is the question's earliest natural trigger
+(`knowledge.status.md` carried it there); judged now on the lived evidence: two data
+points — the intent step and the definition's evaluation both worked in session by the
+steward without strain — and none of the strain the narrow-roles hypothesis predicts
+(context competing, the planes crowding one conversation) has appeared. Decision:
+**defer, not discard** — the steward continues as sole writer of both planes; the split
+is re-judged at the **registry's birth or the first slice**, whichever first shows
+strain; the hypothesis itself stays untouched in the map, unconfirmed and undiscarded.
+Cheap to reverse: enacting the split later costs a lens and a log entry; enacting it
+now, ahead of strain, would be role-creation ahead of need against the vision's own
+rule.
