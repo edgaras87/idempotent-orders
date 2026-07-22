@@ -2,23 +2,23 @@
 
 *Rewritten freely (at minimum at session end); owes nothing to its previous version.*
 
-**Where things stand:** the node runs, and the problem plane is **born**: the
-*project-intent* step executed — the **intent kind** born in the vision
-(`knowledge.log.md` 0003, with the arc-note fold-in and the deferred `problem-framing/`
-subdirectory resolved there), and `project.intent.md` landed as **define** on the
-problem plane, its record (`log.md`, `status.md`) born with it (the landing's why:
-problem `log.md` 0001). The problem's own status now carries the problem's position;
-this status carries only the node's. The fork still stands at six deviations (all
-unlived, owed confirmation at finalization — `fork.log.md` 0001–0006); the adopted
-projection cadence (`knowledge.log.md` 0002) is unchanged — the thin README owed at
-*problem framed*'s exit.
+**Where things stand:** the node runs; the problem plane's reasoning chain is two steps
+in. Since the last snapshot, two node decisions landed: the **thinker-role question
+deferred at its named trigger** (`knowledge.log.md` 0004 — two strain-free data points;
+the steward keeps both planes; re-judged at the registry's birth or the first slice),
+and the **definition kind born** (`knowledge.log.md` 0005) for its first instance —
+`system.definition.md`, landed as **capture** on the problem plane (the landing's
+decisions: problem `log.md` 0002; its position mastered in the problem `status.md`).
+The fork stands unchanged at six deviations (all unlived, owed confirmation at
+finalization — `fork.log.md` 0001–0006); the adopted projection cadence
+(`knowledge.log.md` 0002) is unchanged — the thin README owed at *problem framed*'s
+exit, its planned-invariants list now waiting only on the registry.
 
 Position, in the map's names: **`preparation` → `problem framed`** — *project-intent*
-done; the problem stands before **system-definition** (its position mastered in the
-problem plane's `status.md`). The node's own next decision sits at that step: the
-**thinker-role question** — the definition is its earliest natural trigger, judged on
-lived evidence from the intent step (which the steward worked in session without
-strain; one data point, not yet a verdict).
+and *system-definition* done; the problem stands before **slice-registry born**, the
+chain's last inner step. Two node items sit at it: the **registry's kind** born at its
+first instance, and the **thinker-role question's next judgment point** — the
+registry's birth is the first of the two named re-judgment moments.
 
 **Shape** *(snapshot; the repo is the master)*:
 
@@ -26,11 +26,12 @@ strain; one data point, not yet a verdict).
 repo root
 └── internals/
     ├── project.intent.md                the why — define
-    ├── log.md                           problem log, entry 0001
+    ├── system.definition.md             the what — capture (flip judged at the registry)
+    ├── log.md                           problem log, entries 0001–0002
     ├── status.md                        problem status
     └── knowledge/                       ← the working node
-        ├── knowledge.vision.md          intent kind added; naming + open-now synced
-        ├── knowledge.log.md             entries 0001–0003
+        ├── knowledge.vision.md          definition kind added; deferral standing noted
+        ├── knowledge.log.md             entries 0001–0005
         ├── knowledge.status.md
         ├── knowledge-steward.instructions.md
         ├── fork.log.md                  entries 0001–0006
@@ -47,15 +48,18 @@ repo root
 ```
 
 **Unsettled:**
-- **The thinker-role question** — split the steward, or keep working in session: decided
-  at the definition step's start, on lived evidence; a node decision, in this log.
-- **`definition` kind and the registry's kind** — born at their first instances, in the
-  chain's remaining inner steps.
-- **Steward lens refresh** — `knowledge-steward.instructions.md` still summarizes the
-  old map picture (old phase/step names, pre-0004 sequence, no cadence line) and now
-  also lags the intent-kind birth; non-authoritative (the vision wins on conflict), so
-  not urgent — refresh when the lens is next touched.
+- **The registry's kind** — born at its first instance, the chain's last inner step;
+  the worklog's kind still further out (born at the first executed step of execution).
+- **The thinker-role question** — deferred per 0004; re-judged at the registry's birth
+  (next) or the first slice, whichever first shows strain.
+- **The definition's genre flip** — a problem-plane decision, judged at the registry's
+  proof of the concern map.
+- **Steward lens refresh** — `knowledge-steward.instructions.md` now lags the old map
+  picture, both kind births (intent, definition), and the deferral standing;
+  non-authoritative (the vision wins on conflict), so not urgent — refresh when the
+  lens is next touched.
 - **Doc projection's first run** — owed at *problem framed*'s exit per the adopted
-  cadence; the thin README its first artifact.
+  cadence; the thin README its first artifact, one step away.
 
-**Next:** the definition — starting with the thinker-role call.
+**Next:** the slice-registry's birth — the chain's last inner step, then the README at
+the exit.
