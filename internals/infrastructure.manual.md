@@ -3,9 +3,10 @@
 > **Genre: capture** — written at the ground's setup, verified against a real machine
 > as the setup is lived; flips to define by logged decision once the whole ground
 > stands. **Audience: the human operator** — how to set up and use everything
-> manually. The coder-facing handoff is its own manual (born at this phase-step's
-> close). Vocabulary (Execution Environment, Infrastructure Service, Infrastructure
-> Service Constraint) is mastered in the coder manual; this doc uses it.
+> manually. The coder-facing handoff is its own manual
+> (`infrastructure-coder.manual.md`), which also masters the infrastructure
+> vocabulary (Execution Environment, Infrastructure Service, Infrastructure Service
+> Constraint) this doc uses.
 
 ## Execution Environment — podman local containers
 
@@ -90,6 +91,11 @@ them; changing one is a committed decision, not configuration.
 The project's only Infrastructure Service (the evaluation and its constraints:
 `internals/log.md` 0006). Runs as the `postgres` service: `postgres:17`, data on the
 named volume, host port 5432 (or `POSTGRES_PORT`), healthchecked.
+
+**Reaching it:** from the host (psql, an IDE, a locally run application) the service
+is `localhost:5432` — the published port; the service name `postgres:5432` works
+only container-to-container on the compose network (which is why Flyway's config
+says `postgres` while every command run from the machine says `localhost`).
 
 **Authority split** (the reasoning:
 `knowledge/realization/workbench-postgres-role.model.md`): the database itself is
