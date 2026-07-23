@@ -55,7 +55,7 @@ most easily on the machine):
 - Podman Desktop installs can already carry a provider — run the Verify step first;
   install one only if the front door reports no provider found.
 
-### Verify
+### Verify the environment
 
 ```sh
 podman --version
@@ -63,21 +63,102 @@ podman info              # daemonless engine answers; rootless is fine
 podman compose config    # parses and echoes compose.yaml — the toolchain proof
 ```
 
-`config` printing the normalized file (name + services) and exiting clean proves the
-file, the front door, and the provider chain — **this is the whole verification while
-`services` is empty**: strict providers (docker-compose v2) refuse `up` on a file
-with zero services ("no service selected"), and that refusal is correct — there is
-nothing to start.
+`config` printing the normalized file and exiting clean proves the file, the front
+door, and the provider chain. Note: `config` also reveals compose's
+project-namespacing — the named volume renders as
+`idempotent-orders_postgres-data`; that prefix is compose's own, never written in
+the file.
+
+## Credentials — `.env`
+
+Secrets and machine-local variance live in **`./.env`** (git-ignored); the committed
+template is **`.env.example`**:
+
+```sh
+cp .env.example .env     # then edit values if desired — any value works locally
+```
+
+Keys: `POSTGRES_BOOTSTRAP_PASSWORD` (the bootstrap identity's password),
+`FLYWAY_MIGRATOR_PASSWORD` (**must equal** the migrator password set literally in
+`infrastructure/postgres/init/bootstrap.sql`), and optional `POSTGRES_PORT`
+(host-side port, default 5432 — set only on conflict). **Decided identities are not
+variables**: database, schema, and role names live literal in the files that use
+them; changing one is a committed decision, not configuration.
+
+## Infrastructure Service — PostgreSQL
+
+The project's only Infrastructure Service (the evaluation and its constraints:
+`internals/log.md` 0006). Runs as the `postgres` service: `postgres:17`, data on the
+named volume, host port 5432 (or `POSTGRES_PORT`), healthchecked.
+
+**Authority split** (the reasoning:
+`knowledge/realization/workbench-postgres-role.model.md`): the database itself is
+created by the container from `POSTGRES_DB` (compose.yaml), owned by the bootstrap
+identity; at the container's **first start**,
+`infrastructure/postgres/init/bootstrap.sql` then runs once, connected to that
+database, as the bootstrap identity (`postgres`) and creates —
+
+- `idempotent_orders_migrator` — owns schema `idempotent_orders`; the only DDL
+  identity; what Flyway connects as;
+- `idempotent_orders_runtime` — DML-only via default privileges; what the
+  application will connect as;
+- the database itself stays owned by the bootstrap identity; database CONNECT is
+  revoked from PUBLIC and granted only to the two working identities; the `public`
+  schema is stripped of PUBLIC privileges — no application surface.
 
 ### Operate
 
-From the repo root, once Infrastructure Services are declared:
-
 ```sh
-podman compose up -d     # bring the declared services up
-podman compose ps        # what is running
-podman compose down      # stop and remove the containers
+podman compose up -d     # start (first start runs the bootstrap SQL)
+podman compose ps        # expect: idempotent-orders-postgres Up (healthy)
+podman compose down      # stop and remove the container (data volume survives)
 ```
 
-The compose file is the single declaration of the ground: services are added there
-as they are evaluated and constrained, never started ad hoc.
+**Full reset** (drops all data; the next `up` re-runs the bootstrap SQL — needed
+after any change to `bootstrap.sql`, which only runs against an empty volume):
+
+```sh
+podman compose down --volumes
+```
+
+### Verify the service and its constraints
+
+Two checks, complementary — the catalog state and the live behavior:
+
+```sh
+# 1) the catalog check — roles, ownerships, schema privileges, and the
+#    default-privileges mechanism (invisible to \dn+), with expected results
+#    commented per section:
+podman exec -i idempotent-orders-postgres \
+  psql -U postgres -d idempotent_orders \
+  < infrastructure/postgres/verify-database-model.sql
+
+# 2) THE behavioral check — runtime attempting DDL must FAIL:
+podman exec -it idempotent-orders-postgres \
+  psql -U idempotent_orders_runtime -d idempotent_orders -c 'CREATE TABLE t(i int);'
+# expected: ERROR: permission denied for schema idempotent_orders
+```
+
+The refusal is the ground's governing rule demonstrated live: *the running
+application must not control database structure* — enforced by the database's grant
+system, not by convention.
+
+## Migrations — Flyway
+
+Flyway is the **only DDL path** (constraint: `internals/log.md` 0006) and connects
+as the migrator identity. It is not a running service: a one-shot behind the
+`migrate` profile, so plain `up` ignores it. Config:
+`infrastructure/flyway/conf/flyway.conf` (no credentials — the compose service
+passes them from `.env`); migrations: `infrastructure/flyway/migrations/`
+(**empty until a slice earns schema** — the location is provisional and may move to
+live with the system's code at *system bootstrapped*; only the compose mount line
+would change).
+
+```sh
+podman compose run --rm flyway info      # connection + history status, applies nothing
+podman compose run --rm flyway migrate   # apply pending migrations (none yet)
+podman compose run --rm flyway validate  # applied vs. on-disk consistency
+```
+
+`info` against the fresh ground correctly reports: schema empty, history table not
+yet created, no migrations found.

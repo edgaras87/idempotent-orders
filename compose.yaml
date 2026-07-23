@@ -4,4 +4,48 @@ name: idempotent-orders
 # project runs is declared here — a service is added only once it has been evaluated
 # and constrained by need, never ahead of it. Setup and manual operation:
 # internals/infrastructure.manual.md
-services: {}
+# Credentials and machine-local variance come from ./.env (git-ignored;
+# template: .env.example). Decided identities (db, schema, role names) are literal
+# in the files that use them — changing one is a committed decision, not config.
+
+services:
+  # PostgreSQL — the project's only Infrastructure Service (evaluation: internals/log.md 0006).
+  # Constraints: Flyway is the only DDL path; authority split per the postgres role
+  # model (roles created at first start by infrastructure/postgres/init/).
+  postgres:
+    image: docker.io/library/postgres:17
+    container_name: idempotent-orders-postgres
+    environment:
+      POSTGRES_PASSWORD: ${POSTGRES_BOOTSTRAP_PASSWORD}
+      POSTGRES_DB: idempotent_orders
+    ports:
+      # host side is machine-local variance: override in .env only on conflict
+      - "${POSTGRES_PORT:-5432}:5432"
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+      # runs once at first start, as the bootstrap identity, against POSTGRES_DB
+      - ./infrastructure/postgres/init:/docker-entrypoint-initdb.d:ro,Z
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d idempotent_orders"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+  # Flyway — the migration one-shot, the only identity holding DDL. Not a running
+  # service: hidden behind the "migrate" profile, so plain `up` ignores it.
+  # Run: podman compose run --rm flyway migrate   (or: info, validate)
+  flyway:
+    image: docker.io/flyway/flyway:11
+    profiles: ["migrate"]
+    environment:
+      FLYWAY_USER: idempotent_orders_migrator
+      FLYWAY_PASSWORD: ${FLYWAY_MIGRATOR_PASSWORD}
+    depends_on:
+      postgres:
+        condition: service_healthy
+    volumes:
+      - ./infrastructure/flyway/conf:/flyway/conf:ro,Z
+      - ./infrastructure/flyway/migrations:/flyway/sql:ro,Z
+
+volumes:
+  postgres-data:

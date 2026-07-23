@@ -158,21 +158,28 @@ the **migrator/runtime** split with the bootstrap identity named as the server's
 (with the bootstrap identity — a dedicated database-owner tier named as an
 extension for shared clusters, not the base model); the **own-schema rule** (a
 project-named schema owned by `migrator`, never `public` — the default-privileges
-mechanism hangs off that ownership); the grant boundaries with default privileges
-as the load-bearing line; the **cluster naming seam** (roles are cluster-wide —
-project-prefixed, underscored names); the why-not-less reasoning; and the
-using-project seam (concrete wiring in project manuals, never the model).
-Provenance: the human's prior-work practice, arriving as ordinary input at this
-project's PostgreSQL evaluation (problem log 0006 sets the constraints the model
-generalizes), sharpened in session before first use — the session's correction
-pass moved database ownership out of `migrator` (an owner can drop the database;
-more than structure authority means) and settled `runtime` over `runner` as the
-data identity's name. Two standing decisions: **prefix-now** — named `workbench-`
-at birth although not yet workbench-mastered: the file is authored *for* the
-workbench, the prefix is its destination lineage, a refresh matches by name, and
-the model's own header states the not-yet-mastered standing so the prefix cannot
-mislead; and **provisional, unlived by this project** — its first lived
-application is the PostgreSQL setup in the next plan step; it rides the flow-back
-batch (knowledge log 0008) with that evidence, not as a bare proposal. Owed at
+mechanism hangs off that ownership, and `public` stripped of PUBLIC privileges so
+unused is enforced); **explicit database connect control** (CONNECT revoked from
+PUBLIC, granted to the working identities — access at every level by grant, never
+by default); the grant boundaries with default privileges as the load-bearing
+line; the **cluster naming seam** (roles are cluster-wide — project-prefixed,
+underscored names); the why-not-less reasoning; and the using-project seam
+(concrete wiring and verification in project manuals and ground files, never the
+model). Provenance: the human's prior-work practice, arriving as ordinary input in
+two waves — the role split at this project's PostgreSQL evaluation (problem log
+0006 sets the constraints the model generalizes), sharpened in session before
+first use (database ownership moved out of `migrator` — an owner can drop the
+database, more than structure authority means; `runtime` settled over `runner`);
+then the prior work's bootstrap/verification scripts after the first lived
+application, from which the connect control and the public revoke were adopted
+into the shape (their idempotent re-run machinery and dedicated-admin tier
+deliberately not adopted — the first is dead weight under run-once initdb.d, the
+second already placed as the shared-cluster extension). Two standing decisions:
+**prefix-now** — named `workbench-` at birth although not yet workbench-mastered:
+the file is authored *for* the workbench, the prefix is its destination lineage, a
+refresh matches by name, and the model's own header states the not-yet-mastered
+standing so the prefix cannot mislead; and **provisional** — first lived
+application: this project's PostgreSQL setup; it rides the flow-back batch
+(knowledge log 0008) with that evidence, not as a bare proposal. Owed at
 flow-back: the workbench steward's acceptance makes it workbench-mastered; until
 then this fork copy is its only instance.

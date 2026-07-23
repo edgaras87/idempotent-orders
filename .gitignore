@@ -1,3 +1,6 @@
 # JetBrains IDE state — machine-local, never project truth
 .idea/
 *.iml
+
+# local credentials — template committed as .env.example
+.env

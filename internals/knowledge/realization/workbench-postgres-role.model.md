@@ -55,7 +55,8 @@ schema, and everything below hangs off that ownership. The default `public` sche
 the wrong home — it is a shared, legacy surface (owned by `pg_database_owner`, its
 default privileges a moving target across Postgres versions), and ownership of it is
 not the migrator's to have. A **project-named schema** makes the authority boundary a
-created, owned, explicit thing; the application's `search_path` names it.
+created, owned, explicit thing; the application's `search_path` names it — and
+`public` is stripped of PUBLIC privileges so "unused" is enforced, not assumed.
 
 ## The grant boundaries
 
@@ -67,9 +68,15 @@ CREATE ROLE migrator LOGIN;
 CREATE ROLE runtime  LOGIN;
 CREATE DATABASE app;                    -- owned by the bootstrap identity
 
+-- database access is explicit: nobody by default, the working identities by grant
+REVOKE CONNECT ON DATABASE app FROM PUBLIC;
+GRANT  CONNECT ON DATABASE app TO migrator;
+GRANT  CONNECT ON DATABASE app TO runtime;
+
 -- connected to app, as the bootstrap identity
 CREATE SCHEMA app AUTHORIZATION migrator;
 GRANT USAGE ON SCHEMA app TO runtime;
+REVOKE ALL ON SCHEMA public FROM PUBLIC;   -- public is no application surface
 
 -- future objects migrator creates arrive consumable by runtime automatically
 ALTER DEFAULT PRIVILEGES FOR ROLE migrator IN SCHEMA app
@@ -80,7 +87,9 @@ ALTER DEFAULT PRIVILEGES FOR ROLE migrator IN SCHEMA app
 
 The load-bearing line is the **default privileges** pair: every table and sequence a
 future migration creates arrives already granted to `runtime` — the split needs no
-per-migration grant discipline, so it cannot erode migration by migration.
+per-migration grant discipline, so it cannot erode migration by migration. The
+connect revoke closes the outermost door the same way: access at every level —
+database, schema, object — exists by grant, never by default.
 
 `runtime` deliberately receives no `TRUNCATE`, no `REFERENCES`, no `CREATE` anywhere;
 `migrator` deliberately owns one schema, not the database and not the server.
@@ -110,9 +119,10 @@ inside the project's database, may carry the bare project name.
 The model is generic; a project wires it: concrete role names under the cluster
 naming rule and their credentials (secrets handling is the project's), the schema
 name and the application's `search_path`, which migration tool connects as
-`migrator` (Flyway in the first using project), and where the bootstrap SQL lives
-and how it is applied — all of that belongs in the project's manuals, referencing
-this model, never restating it.
+`migrator` (Flyway in the first using project), where the bootstrap SQL lives and
+how it is applied, and how the model is verified on the ground (catalog checks plus
+a behavioral DDL-refusal check) — all of that belongs in the project's manuals and
+ground files, referencing this model, never restating it.
 
 ---
 
@@ -121,8 +131,10 @@ this model, never restating it.
 Born inside its first using project from prior-work input; corrected in the same
 session before first use (database ownership moved out of `migrator`; the
 application-schema rule stated; `runtime` as the data identity's name; the cluster
-naming seam added). First lived application: that project's PostgreSQL setup (its
-worklog is the happened-record). Owed with the project's flow-back batch:
+naming seam added), and extended after the first lived application from the same
+prior work's scripts (explicit database connect control; the public-schema revoke
+made part of the shape). First lived application: that project's PostgreSQL setup
+(its worklog is the happened-record). Owed with the project's flow-back batch:
 confirmation or correction from the lived wiring, then workbench mastery.
 Corrections arrive as ordinary model updates, logged at the node that masters this
 doc.
