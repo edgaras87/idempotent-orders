@@ -98,3 +98,32 @@ the manual's reproducibility) and docker (equivalent capability; podman preferre
 daemonless and the human's working practice — no slice discriminates between them).
 Services themselves are deliberately *not* decided here — their evaluation is this
 step's own later act, constrained by need.
+
+**0006 — Infrastructure Services evaluated: PostgreSQL local service, and nothing
+else — under two constraints and one authority principle.** The *infrastructure
+established* step's evaluation act, run against the chain's outputs. **(a)** **The
+service set is PostgreSQL alone.** The need, slice by slice: S1's invariant rests on
+uniqueness the datastore must enforce (L1: the service relies on atomic primitives —
+unique constraints, transactions — as its last line of defence); S2's contention
+evidence needs real concurrent transactions against a real store with row-level
+atomicity; S3's replay needs the persisted order and its response durably readable;
+S4's partial-failure evidence needs a store that survives the process's death and
+holds a consistent state the retry converges from. PostgreSQL serves all four; the
+human's working practice with it removes any discriminating cost. **(b)** **The
+not-provisioned list, stated:** no message queue (no slice crosses a service
+boundary — the definition defers everything cross-service), no cache (no latency
+concern is in scope; a cache would add a second copy of state, the exact thing the
+invariants guard against), no second datastore, no orchestration beyond compose.
+Anything joining later re-enters this evaluation as a logged decision. **(c)** **Two
+Infrastructure Service Constraints on PostgreSQL**, both realizations of one
+authority principle — *database availability → database authority control*: **the
+running application must not control database structure.** This is ground
+governance — a constraint on the service, deliberately *not* a registry invariant
+(it is no property of persisted state under adversity). The constraints: **Flyway is
+the only DDL path** — schema exists solely through versioned migrations; nothing
+else, the application included, creates or alters structure; and **database roles
+split authority** — a migration-side identity holds DDL, the application connects as
+a DML-only identity, so the principle is enforced by the database's own grant
+system, not by convention. The concrete role model is worked knowledge — born next
+into the fork's `realization/` (its record there); this project's wiring of it lands
+in the manuals.
