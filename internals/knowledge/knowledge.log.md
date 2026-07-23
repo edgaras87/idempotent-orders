@@ -153,3 +153,29 @@ commands at *system bootstrapped*'s cadence anchor), never contains or copies it
 one master, no surface duplicate. The audience split is the kind's own shape: the
 coder-facing manual is a second instance of this kind at the step's close, per the
 plan.
+
+**0011 — Infrastructure established exited; the map's test run — nothing born;
+flow-back notes joined the batch.** The phase-step's exit conditions checked against
+reality: the Execution Environment runs (podman, the canonical front door), the one
+required Infrastructure Service is up under its demonstrated constraints (the
+catalog suite and the behavioral DDL refusal both clean against the hardened
+ground), both manuals exist (`infrastructure.manual.md` for the operator,
+`infrastructure-coder.manual.md` as the coder handoff and vocabulary master). The
+map's steps-and-how-docs test run deliberately: **did a generalizable inner shape
+emerge from the lived step? No** — the lived sequence (environment decided and
+stood up → services evaluated → stood up under constraints → manuals) matched the
+step's own prose; no structure beyond it, no distillable method; the record holds
+the story — the common ending, as the rule predicts. Nothing born, no fork
+deviation. **Flow-back notes joining the batch** (per 0008), beyond the fork log
+itself: **(a)** the infrastructure vocabulary (Execution Environment /
+Infrastructure Service / Infrastructure Service Constraint) proved out in use —
+candidate workbench material; **(b)** the **manual-accretion pattern** — manuals
+written contemporaneously with the setup they describe, accreting section by
+section, correcting against the lived machine — a candidate handling note for the
+manual kind or the map's step prose; **(c)** the **per-service manual question** —
+one manual held for a one-service ground; whether the kind splits per service at
+scale is answered by a project with more services; **(d)** the worklog placement
+claim (0009) lived successfully — born at the first executed step, duplicating
+nothing. The role model's lived evidence already rides via fork 0007. Position
+advances: *system bootstrapped* is the next phase-step — and preparation's exit
+after it triggers the flow-back itself.
