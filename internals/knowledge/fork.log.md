@@ -183,3 +183,31 @@ application: this project's PostgreSQL setup; it rides the flow-back batch
 (knowledge log 0008) with that evidence, not as a bare proposal. Owed at
 flow-back: the workbench steward's acceptance makes it workbench-mastered; until
 then this fork copy is its only instance.
+
+**0008 — Infrastructure-establishment guide born; the map's step gains its pointer.**
+Eighth entry, the fork's second addition plus one map amendment — one decision in two
+moves, the steps-and-how-docs coupling rule's **first exercise**:
+
+1. **`realization/workbench-infrastructure-establishment.guide.md` born** — the
+   *infrastructure established* step's walked sequence generalized from this
+   project's lived pass: inputs (the chain's outputs), then decide the Execution
+   Environment against the slices' adversity needs (operator manual born
+   contemporaneously), evaluate services constrained by need with the
+   not-provisioned list stated, name each service's constraints as governance
+   principles, apply or birth the governing knowledge (the postgres role model the
+   worked example), stand services up and verify both ways (catalog + behavioral),
+   write the coder handoff, run the exit test. First use of the **guide** kind in
+   `realization/` — a walkable how for a recurring step: not a model (no what-is
+   claim), not a manual (no single project's operating truth). Standing: **lived
+   once, not yet workbench-mastered**, owed confirmation by the next establishing
+   project — deviations a different ground forces are the next revision's evidence.
+
+2. **The map's infrastructure step gains its pointer** to the guide (and the
+   lifecycle/coupling notes updated to lived-once) — pointer strictly after the
+   living, per the rule's own direction: lived work → knowledge → pointer.
+
+Provenance and why now: the step's exit test first returned nothing-born (knowledge
+log 0011, then soft); the human's recall evidence — a next project would have to
+re-derive the sequence from nothing — refined the outcome to yes-as-method in the
+same session; 0011 records the refinement on its side. Rides the flow-back batch
+(knowledge log 0008) with the rest.

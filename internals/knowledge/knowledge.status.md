@@ -11,11 +11,14 @@ node's law grew two kinds at their first instances — **worklog**
 standing) — and the fork gained its **first addition**:
 `realization/workbench-postgres-role.model.md` (fork 0007 — prefix-now, provisional;
 its first lived application succeeded: the catalog suite and the behavioral DDL
-refusal both clean). The **map's exit test ran at the step's close** (0011): nothing
-born — the lived inner shape matched the step's prose; four flow-back notes joined
-the batch instead (the infrastructure vocabulary, the manual-accretion pattern, the
-per-service manual question, the worklog placement evidence). The fork stands at
-**six deviations + one addition**; the *problem framed* carving, the projection's
+refusal both clean). The **map's exit test ran at the step's close and was refined in session**
+(0011): first nothing-born, then **yes-as-method** on the human's recall evidence —
+`realization/workbench-infrastructure-establishment.guide.md` born (fork 0008, the
+guide kind's first use, the steps-and-how-docs coupling exercised for the first
+time: lived work → guide → the map's pointer), with four flow-back notes riding
+alongside (the infrastructure vocabulary and manual-accretion pattern — both
+carried into the guide — the per-service manual question, the worklog placement
+evidence). The fork stands at **six deviations + two additions**; the *problem framed* carving, the projection's
 first anchor, the infrastructure step, and the worklog placement are now **lived**;
 confirmation owed at the finalization pass. The thinker-role standing is unchanged
 (steward-only expected throughout; first-slice check formally open — 0006).
@@ -33,7 +36,7 @@ internals/knowledge/
 ├── knowledge.log.md             entries 0001–0011
 ├── knowledge.status.md
 ├── knowledge-steward.instructions.md
-├── fork.log.md                  entries 0001–0007 (0007: the model addition)
+├── fork.log.md                  entries 0001–0008 (0007–0008: the additions)
 ├── core/                        general node-system knowledge (unchanged)
 │   ├── workbench-nodes.model.md
 │   ├── workbench-roles.model.md
@@ -42,16 +45,17 @@ internals/knowledge/
 └── realization/                 the backend-shaped set
     ├── workbench-five-layer-system.model.md
     ├── workbench-correctness-driven-backend.model.md
-    ├── workbench-backend-realization.map.md       ← amended (fork 0001–0005)
+    ├── workbench-backend-realization.map.md       ← amended (fork 0001–0005, 0008)
     ├── workbench-doc-projection.skeleton.md       ← amended (fork 0006)
-    └── workbench-postgres-role.model.md           ← born (fork 0007), lived
+    ├── workbench-postgres-role.model.md           ← born (fork 0007), lived
+    └── workbench-infrastructure-establishment.guide.md  ← born (fork 0008), lived once
 ```
 
 **Unsettled:**
 - **System bootstrapped** — the next phase-step; the coder manual is its ready
   handoff. Whether its work runs as a change plan or its own shape is the vision's
   still-open question, decided at its start.
-- **Flow-back at preparation's exit** — one step away; the batch: fork log (seven
+- **Flow-back at preparation's exit** — one step away; the batch: fork log (eight
   entries), branch diffs, the 0011 notes, the registry-structure note (0008).
 - **The manuals' genre flips** — problem-plane decisions, watched from here as the
   manual kind's first genre exercise.
