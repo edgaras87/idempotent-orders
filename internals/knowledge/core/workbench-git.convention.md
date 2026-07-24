@@ -5,9 +5,11 @@
 > defines, lists, or snapshots any repo's structure — the live repo and its node docs carry
 > the shape; this convention only defines how commit messages are prepared.
 >
-> **Scope today: doc work.** The types below were proven on node/doc work. Extending the
-> convention for **code commits** is deliberately deferred until project code exists and
-> surfaces the need.
+> **Scope of the convention: doc work, plus the first code extension.** The types below
+> were proven on node/doc work and — so far — carry code commits unchanged. The one
+> extension lived need has forced is the **`app` scope** for the system's own source
+> (§Scope); further code-commit needs extend this convention when they surface, not
+> before.
 
 For a given change: pick a **type**, pick a **scope**, write an **action**, add a **body**
 only if the reason is not obvious. Combine them in the format below.
@@ -76,19 +78,29 @@ scopes.
 ### How to derive a scope token
 
 ```text
-- Changed doc lives inside a node/folder → scope to that node/folder name.
-                                         Name the specific file in the action when useful.
+- Changed thing is the system's own source   → scope `app`.
+                                             The system's code, build files, and application
+                                             resources (e.g. src/, pom.xml, the build wrapper)
+                                             are one subject — the application — wherever the
+                                             build tool's layout physically puts them.
 
-- Changed doc lives in the repo root     → scope to that doc filename, without extension.
+- Changed doc lives inside a node/folder     → scope to that node/folder name.
+                                             Name the specific file in the action when useful.
 
-- Change spans several docs              → prefer splitting into one logical change per commit.
-                                         If it is genuinely one change, scope to the primary
-                                         touched node/doc.
+- Changed doc lives in the repo root         → scope to that doc filename, without extension.
+
+- Change spans several docs                  → prefer splitting into one logical change per commit.
+                                             If it is genuinely one change, scope to the primary
+                                             touched node/doc.
 ```
 
-The location does the work. A doc inside a node/folder reports that node/folder. A loose doc in
-root reports itself. If a file or folder is renamed, the derived scope follows the new name;
-this convention does not need a scope-list update.
+The location does the work, with one deliberate exception: **`app`** is a *subject* scope,
+not a folder name — source layouts are the build tool's shape (`src/main/java/...`), and
+folder-derived tokens there name plumbing, not the thing changed; a record doc riding in a
+code commit does not change the scope (the code is the primary touched thing). A doc inside
+a node/folder reports that node/folder. A loose doc in root reports itself. If a file or
+folder is renamed, the derived scope follows the new name; this convention does not need a
+scope-list update.
 
 There is no fixed `root` scope. Use the root doc's own filename as the scope, or split the
 change if multiple root docs changed for different reasons.
@@ -172,6 +184,7 @@ Rules:
    Walk the first-match order.
 
 2. Pick the scope
+   The system's own source → app.
    Use the node/folder name if the changed doc lives inside one.
    Use the root doc filename if the changed doc lives in the repo root.
 
@@ -199,6 +212,7 @@ decide = resolved choice,
 map = state/current-position upkeep.
 
 Scope is derived from location:
+app for the system's own source,
 node/folder name for docs inside a node/folder,
 root doc filename for docs in the repo root.
 ```

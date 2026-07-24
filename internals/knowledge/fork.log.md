@@ -271,3 +271,24 @@ Marked lived-once with the late-creation caveat; owed confirmation at this
 project's finalization pass; rides the flow-back batch (knowledge log 0008) —
 with a note that the workbench birth guide's boundary may want a matching
 mention (birth: local only; the remote deliberately deferred to this step).
+
+**0011 — Git convention extended: the `app` scope for the system's own source.**
+Eleventh entry; `core/workbench-git.convention.md` amended in place — the
+convention's own deferred seam ("extending for code commits… until project code
+exists and surfaces the need") exercised at its first need. One rule added to
+scope derivation: **the system's source code — `src/`, build files, application
+resources — scopes as `app`**, a *subject* scope rather than a folder-derived one,
+with the rider that a record doc riding in a code commit does not change the scope
+(the code is the primary touched thing). Types deliberately untouched: the existing
+six carried the first code commits without strain — extension stays need-driven.
+Provenance, the lived need in two observations from *system bootstrapped*'s first
+commits: **(a)** the general location rule derived `src` — lawful but naming the
+build tool's folder shape, not the thing changed; once execution starts, code
+commits dominate and an invariant scope carries no information; **(b)** the
+skeleton's commit touched `internals/worklog.md` while saying `src` — the folder
+token misdescribed even the commit that coined it. The coining commit
+(`define(src): bootstrap Spring Boot application skeleton`) stays as committed —
+history fixed forward, and it is this entry's own evidence. Rides the flow-back
+batch (knowledge log 0008); owed the usual confirmation — whether `app` generalizes
+or projects want the system's name as the token is the next adopting project's
+question.
