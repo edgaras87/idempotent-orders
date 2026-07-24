@@ -82,7 +82,19 @@ tail; whether it generalizes further stays an open question.)*
    step again? Does the grouping principle — map steps mirroring role territory —
    generalize?
 
-3. **Infrastructure established.** *(lived once — promoted from the narrow-roles
+3. **Remote established.** *(human-only, mechanical — no session work; lived once by
+   the first adopting project, which created its remote late, mid-preparation, and
+   placed the step here from that lesson.)* The repo gets its private off-machine
+   home: the project's name **confirmed against the framing** (a birth name may be
+   provisional; rename now, while it's local and free), description projected from
+   the thin README (owed at *problem framed*'s exit under an exit-anchored
+   projection cadence), remote created, history pushed. Before *problem framed* the
+   local repo suffices — the project may still dissolve or be renamed at zero cost;
+   after it, the project is committed-to, named for sure, and about to grow code.
+   Private by default; publishing is a separate decision, never this step's.
+   *Exit: the remote exists, private, under the confirmed name, current.*
+
+4. **Infrastructure established.** *(lived once — promoted from the narrow-roles
    hypothesis' candidate refinement: infrastructure before the system's bootstrap, so
    the bootstrap wires up to real services and validates the ground; the infrastructure
    role's territory.)* The governed ground the system will run on: the environment
@@ -97,7 +109,7 @@ tail; whether it generalizes further stays an open question.)*
    *Exit: the chosen environment runs; the services the reasoning chain requires are
    up, constrained to need; both manuals exist.*
 
-4. **System bootstrapped.** *(re-carved from the former working-ground step — it is the
+5. **System bootstrapped.** *(re-carved from the former working-ground step — it is the
    system being built that is born here; the coder's territory.)* The system brought to
    life on the established infrastructure: stack and tooling chosen and initialized —
    the system's name, description, starting dependencies; layout settled (node beside
@@ -205,12 +217,13 @@ the first projecting project.
 ## Lifecycle note
 
 Skeleton v1, amended in place by its first adopting project's fork — the deviations
-and their why live in that fork's `fork.log.md` (entries 0001–0005, 0008), which is
-the change history; this note carries only standing. Lived by that project so far:
+and their why live in that fork's `fork.log.md` (entries 0001–0005, 0008, 0010), which
+is the change history; this note carries only standing. Lived by that project so far:
 the *problem framed* composite step and its inner chain, need-driven adoption and
 the steps-and-how-docs coupling (first exercised at the infrastructure step's exit —
-the guide born, then the pointer), the molded vocabulary, and the *infrastructure
-established* step itself. Still unlived: the *system bootstrapped* re-carve. All
-amendments are owed confirmation, correction, or reversal at that project's
-finalization correction pass. Each project's finalization owes this doc a correction
-pass — that is how the skeleton earns generality.
+the guide born, then the pointer), the molded vocabulary, the *infrastructure
+established* step itself, and the *remote established* step (placed from the lived
+lesson of creating the remote late). Still unlived: the *system bootstrapped*
+re-carve. All amendments are owed confirmation, correction, or reversal at that
+project's finalization correction pass. Each project's finalization owes this doc a
+correction pass — that is how the skeleton earns generality.

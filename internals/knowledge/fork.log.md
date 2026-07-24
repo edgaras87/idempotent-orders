@@ -244,3 +244,30 @@ hoc becomes part of the walk, asked deliberately at every future service setup
 instead of remembered by luck — the walkthrough kind's birth and its
 institutionalization are one decision. The postgres walkthrough is the step's
 worked example.
+
+**0010 — Remote established: a new preparation step after problem framed.** Tenth
+deviation; `realization/workbench-backend-realization.map.md` amended in place — a
+new step 3 inserted between *problem framed* and *infrastructure established*
+(later steps renumbered): **Remote established** — human-only, mechanical, no
+session work: the repo's private off-machine home created, history pushed. Why
+this anchor and not birth: *problem framed*'s exit is the first moment both
+prerequisites exist — **viability** (before it, the project is deliberately
+undefined and may dissolve at zero cost; after it, the reasoning chain stands and
+the first slice is named) and **surface** (under an exit-anchored projection
+cadence the thin README lands at this exit, supplying the description a remote
+wants). A second reason folded in from the same reasoning: a **birth name may be
+provisional** — a node can be seeded before the project is truly known — and a
+local rename is free while a remote rename is the expensive kind (URLs, clones,
+links); so the step confirms the name against the framing first, fixing it into
+the world at the last cheap moment. Private by default per the adopting project's
+visibility stance; publishing stays a separate decision. Provenance: the lived
+lesson — this project created its remote late, mid-preparation (between
+*infrastructure established* and *system bootstrapped*), cost-free only by luck;
+the step is placed so no later project re-derives the when-and-where. Not an
+inner step of *problem framed*: that step is one nature of work — the problem's
+reasoning, the thinker's territory — and a remote is mechanical ground, the
+human's hands, consistent with the grouping principle (entries 0001, 0004).
+Marked lived-once with the late-creation caveat; owed confirmation at this
+project's finalization pass; rides the flow-back batch (knowledge log 0008) —
+with a note that the workbench birth guide's boundary may want a matching
+mention (birth: local only; the remote deliberately deferred to this step).
