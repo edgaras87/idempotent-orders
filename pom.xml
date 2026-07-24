@@ -54,6 +54,24 @@
 			<scope>test</scope>
 		</dependency>
 
+		<!-- Persistence: plain JDBC (JdbcClient) — SQL stays visible in the
+		     project's code; structure is described once, in migrations. No ORM,
+		     no entities, no second schema description, deliberately (log 0007).
+		     No "-test" companion exists for JDBC: database access is verified
+		     through Testcontainers integration tests against real PostgreSQL. -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-jdbc</artifactId>
+		</dependency>
+
+		<!-- The PostgreSQL wire driver — runtime scope: needed to run, never
+		     compiled against. Version managed by the Boot parent. -->
+		<dependency>
+			<groupId>org.postgresql</groupId>
+			<artifactId>postgresql</artifactId>
+			<scope>runtime</scope>
+		</dependency>
+
 	</dependencies>
 
 	<build>

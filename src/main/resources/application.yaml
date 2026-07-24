@@ -1,3 +1,26 @@
 spring:
   application:
     name: idempotent-orders
+
+  # The one identity this application ever holds: the DML-only runtime role.
+  # No migrator credentials exist anywhere in this configuration, in any
+  # profile — schema arrives solely through the compose-side Flyway one-shot
+  # (log 0007; the layered claim: the app's shape is the first line, the
+  # database's grant system the last).
+  datasource:
+    # Host port carries machine variance like the compose ground does;
+    # database is idempotent_orders — never the postgres maintenance DB.
+    # No currentSchema parameter: search_path is pinned server-side for the
+    # runtime identity (see infrastructure-coder.manual.md).
+    url: jdbc:postgresql://localhost:${POSTGRES_PORT:5432}/idempotent_orders
+    username: idempotent_orders_runtime
+    # Local-dev default matches the bootstrap SQL's literal; override by env
+    # when an environment ever needs a real secret.
+    password: ${DB_RUNTIME_PASSWORD:runtime_local}
+
+management:
+  endpoint:
+    health:
+      # Local project: expose component detail so the database connection is
+      # visibly part of health — the wiring inspectable with zero custom code.
+      show-details: always

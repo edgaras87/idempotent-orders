@@ -84,3 +84,41 @@ and the dedicated-admin tier (already placed by the model as the shared-cluster
 extension, not the local base). The bootstrap SQL changed → full reset run
 (`down --volumes`, `up -d`), the catalog suite and the behavioral DDL-refusal
 check re-run clean against the hardened ground.
+
+**0006 — preparation / system bootstrapped: Spring Boot skeleton born, pruned,
+verified starting on JDK 21.** The stack decided in `log.md` 0007 made real at its
+first step. Generated via Spring Initializr (Maven, Java 21, jar; group `com.edge`,
+artifact `idempotent-orders`, package `com.edge.idempotentorders`) with exactly two
+dependencies — Spring Web and Actuator — persistence, migration tooling,
+Testcontainers, validation, and convenience tooling all deliberately unselected,
+each arriving only at the step or slice that earns it. Extracted into the repo root
+beside `internals/` (layout settled: node beside code, standard Maven layout, one
+base package). Pruned on arrival: `HELP.md`, empty `static/` and `templates/`,
+generated `application.properties` replaced by `application.yaml` carrying the
+application name only; generated empty pom metadata blocks removed; the repo's
+`.gitignore` extended with the Maven/build set rather than replaced by the
+generated one; generated `.gitattributes` kept. Verified: `./mvnw test` green
+(generated context test, no database involved); `./mvnw spring-boot:run` starts
+announcing Java 21; `GET /actuator/health` → `{"status":"UP"}`; graceful Ctrl+C
+shutdown. The skeleton runs database-blind by design — the ground wiring is the
+next step's own change.
+
+**0007 — preparation / system bootstrapped: skeleton wired to the ground as the
+runtime identity; the wiring made visible through health.** The app met the
+established infrastructure per the coder manual: `spring-boot-starter-jdbc` and the
+PostgreSQL driver (runtime scope) added — no `-test` companions exist for either on
+the Boot 4 line; database access is verified through the Testcontainers harness
+(next step) instead. Datasource configured to
+`localhost:${POSTGRES_PORT:5432}/idempotent_orders` as
+**`idempotent_orders_runtime`** — the application's one identity; password
+env-passed with the local literal `runtime_local` as default; **no `currentSchema`
+parameter** — `search_path` is pinned server-side for the identity, so unqualified
+names resolve without client-side help. **No migrator anything, anywhere in the
+configuration** — the layered claim's first line now real in the artifact. Actuator
+health opened to component detail (`show-details: always` — local project), making
+the database connection a visible part of `/actuator/health` with zero custom code.
+Verified: ground up (`podman compose up -d`), `./mvnw spring-boot:run`, health →
+`{"status":"UP"}` with the `db` component UP against PostgreSQL; `./mvnw test`
+green — the context test needs no database (the pool connects lazily; nothing in
+the skeleton touches the datasource yet), so the app remains startable with the
+ground down, degrading only in what health reports.
