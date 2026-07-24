@@ -152,3 +152,26 @@ the datasource, so the single `application.yaml` stands. Proof test:
 migrations, exactly right for the deliberately empty migrations home; the query
 succeeding is the pipeline demonstrated end to end (container → migrate → context →
 query). Verified: `./mvnw test` green — the image pulled, the harness loop live.
+
+**0009 — preparation / system bootstrapped: first adversity test green — the
+harness proven to create concurrency through the full stack.** The map exit's
+"trivial adversity-generating test" made real: a throwaway probe endpoint
+(`GET /probe/db` — `SELECT 1` via `JdbcClient` as the runtime identity, javadoc'd
+as scaffolding that dies when the first real slice lands) hammered by
+`ConcurrentProbeIT` on the `AbstractWebDbIT` base — **100 requests lined up behind
+a latch and released at one instant** (virtual threads, Java 21), each a genuine
+HTTP → app → real-PostgreSQL round-trip; every response 200 with the correct
+body. Deliberately trivial — the probe holds no invariant to violate; what the
+green run proves is the machinery: the harness *creates* the definition's dominant
+adversity dimension (concurrency) through the same door a real caller uses,
+against the same database major the ground runs. The pool queues under the load
+(Hikari's default sizing) and all requests still complete — noise-free at this
+scale. S2's race evidence is this exact shape aimed at a real invariant; the
+chosen slice has somewhere to land. One Boot-4 modularization hiccup lived on
+the way: the web test context failed to load —
+`NoClassDefFoundError: RestTemplateBuilder` — because `TestRestTemplate`'s
+`resttestclient` module introspects `RestTemplateBuilder` from the separate
+`spring-boot-restclient` module, which nothing pulled in; fixed by adding that
+module test-scope (the application itself makes no outbound HTTP calls).
+Verified: `./mvnw test` green — context test, migration pipeline, and the
+concurrent probe on one shared container.

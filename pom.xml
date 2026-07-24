@@ -98,6 +98,17 @@
 			<scope>test</scope>
 		</dependency>
 
+		<!-- TestRestTemplate's foundation: Boot 4 ships RestTemplateBuilder in
+		     its own restclient module, which the resttestclient auto-config
+		     introspects — without it the web test context fails to load (lived:
+		     NoClassDefFoundError RestTemplateBuilder). Test scope only; the
+		     application itself makes no outbound HTTP calls. -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-restclient</artifactId>
+			<scope>test</scope>
+		</dependency>
+
 		<!-- Flyway as a HARNESS tool, test scope only — the test-side applier
 		     of the same migration files the compose one-shot applies to the
 		     real ground. Deliberately never a runtime dependency (log 0007). -->
