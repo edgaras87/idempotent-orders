@@ -45,8 +45,32 @@ shows the invariant surviving. The method and the system model behind it live in
 [`internals/knowledge/realization/`](internals/knowledge/realization/) — this README
 never restates them.
 
+## Stack
+
+Java 21 · Spring Boot (Spring JDBC — plain SQL, no ORM) · PostgreSQL 17 · Flyway ·
+podman compose. Two deliberate constraints govern the ground: **Flyway is the only
+DDL path**, and **database roles split authority** — the application connects as a
+DML-only identity and carries no migration machinery at all; the database's grant
+system refuses it DDL. Both are demonstrated live, not asserted (see the operator
+manual's verification section).
+
+## Run it
+
+```sh
+podman compose up -d                      # the ground: PostgreSQL under its constraints
+podman compose run --rm flyway migrate    # schema, when migrations exist (none yet)
+./mvnw spring-boot:run                    # the service — http://localhost:8080/actuator/health
+./mvnw test                               # evidence harness: real PostgreSQL via Testcontainers
+```
+
+Setup details, verification checks, and the Testcontainers-on-podman test runtime:
+[`internals/infrastructure.manual.md`](internals/infrastructure.manual.md).
+
 ## Status
 
-**Problem framed** — intent, system definition, and the slice registry stand; no code
-yet. Next: infrastructure, the system's bootstrap, then the first slice (duplicate
-suppression) to evidence.
+**Preparation exited** — the reasoning chain stands (intent, definition, slice
+registry), the governed ground runs, and the system skeleton is live on it: wired
+to PostgreSQL as the runtime identity, with an evidence harness proven able to
+create concurrency through the full stack. No business behavior yet, by design.
+Next: the first slice — **duplicate suppression** — specified and carried to
+evidence.
