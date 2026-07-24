@@ -254,8 +254,11 @@ touch one doc. Execution is **per-step**: the human confirms the plan, then each
 touched docs are delivered complete at that step's state, applied, and committed — **one
 step = one commit**, message per the git convention, granularity derived from the plan.
 A change small enough to be one step needs no plan document — a plan line in the reply
-suffices. Whether problem-plane work runs change plans too, or the method's slice flow
-is its own change shape, is an open question this node answers by lived work.
+suffices. A step is **one logical change**; its commits follow the git convention,
+which may split state from content (lived at *system bootstrapped*, `knowledge.log.md`
+0012). Preparation-type problem work runs change plans — confirmed by that step's
+lived pass; the slice flow is expected to be its own change shape (the method's
+`specify → plan → write → document`), judged at the first slice's start.
 
 **Amending a plan mid-execution:** the plan has a freeze line — executed steps are
 backed by commits, frozen, never rewritten; the remainder is **soft**, freely redrawn
@@ -280,9 +283,11 @@ request.**
 
 ## Open now
 
-- **Infrastructure established** — underway per its change plan: podman decided
-  (problem log 0005), the worklog and the human manual born at the environment's setup;
-  next PostgreSQL under its constraints, the Postgres role model, the coder manual, and
-  the exit's map reeval test.
-- Then system bootstrapped, and into execution.
+- **Preparation exited** (`knowledge.log.md` 0012) — the flow-back is due: the
+  batch (fork log 0001–0011, branch diffs, the riding notes) handed through the
+  human before any refresh; the Spring-bootstrap walkthrough candidate decided at
+  the distillation pass and riding if born.
+- **Execution opens at S1** — the first-slice judgment point (0006, extended by
+  0012): thinker-role standing and the coder-role/IDE-vehicle question, decided on
+  the bootstrap's lived evidence; the slice-flow shape judged there too.
 - **Visibility** — this repo starts private; publish only on a real reason.

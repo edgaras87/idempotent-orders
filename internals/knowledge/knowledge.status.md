@@ -2,50 +2,48 @@
 
 *Rewritten freely (at minimum at session end); owes nothing to its previous version.*
 
-**Where things stand:** the node runs, and **`infrastructure established` is
-exited** — the change plan that carried it (eight steps, redrawn twice mid-flight
-under the amendment flow) is fully executed and dead. Since the last snapshot, the
-node's law grew two kinds at their first instances — **worklog**
-(`knowledge.log.md` 0009: the placement claim lived successfully) and **manual**
-(0010: internal-never-public, the two-audience shape now real with both instances
-standing) — and the fork gained its **first addition**:
-`realization/workbench-postgres-role.model.md` (fork 0007 — prefix-now, provisional;
-its first lived application succeeded: the catalog suite and the behavioral DDL
-refusal both clean). The **map's exit test ran at the step's close and was refined in session**
-(0011): first nothing-born, then **yes-as-method** on the human's recall evidence —
-`realization/workbench-infrastructure-establishment.guide.md` born (fork 0008, the
-guide kind's first use, the steps-and-how-docs coupling exercised for the first
-time: lived work → guide → the map's pointer), with four flow-back notes riding
-alongside (the infrastructure vocabulary and manual-accretion pattern — both
-carried into the guide — the per-service manual question, the worklog placement
-evidence). The fork stands at **six deviations + three additions** (0009: the postgres setup walkthrough — the walkthrough kind's first use, the reuse question answered in favor of a ready sequence — and the establishment guide's new step 8, distilling service walkthroughs as a deliberate move); the *problem framed* carving, the projection's
-first anchor, the infrastructure step, and the worklog placement are now **lived**;
-confirmation owed at the finalization pass. The thinker-role standing is unchanged
-(steward-only expected throughout; first-slice check formally open — 0006).
+**Where things stand:** the node runs, and **preparation is exited** — *system
+bootstrapped* executed under a seven-step change plan (`knowledge.log.md` 0012),
+answering the vision's work-shape question: **preparation-type problem work runs
+change plans, confirmed**; a step is one logical change, its commits per the git
+convention (the keep-state-separate granularity lived at step 6). The plan survived
+a full pre-execution redraw (the human's prior bootstrap walkthrough as ordinary
+input — parts adopted, stale decisions rejected) and mid-step fix-forwards without
+churn. Since the last snapshot the fork grew its **fourth deviation-entry beyond
+the additions**: `core/workbench-git.convention.md` extended with the **`app`
+scope** for the system's own source (fork 0011 — the convention's own deferred
+code-commit seam exercised at its first lived need; the coining `define(src)`
+commit kept as evidence). The **coder-role/IDE-vehicle question** surfaced
+mid-step, was weighed, and is **parked at the first-slice judgment point** (0006,
+extended by 0012) with the bootstrap's strain evidence in hand — the browser loop
+carried the code work; its cost sat exactly in the test-iteration round trips.
+Read-only IDE steward sessions cleared as decision-free.
 
-Position, in the map's names: **`preparation` → before `system bootstrapped`** — the
-phase's last step; its exit closes preparation and **triggers the flow-back** (0008:
-the fork log + branch diffs through the human, the 0011 notes riding along). The
-problem's own position is mastered in the problem plane's `status.md`.
+Position, in the map's names: **`preparation` exited → before `execution`.** The
+exit **triggers the flow-back** (0008): the batch — `fork.log.md` 0001–0011, the
+branches' diffs against upstream, the riding notes (0011's four, the
+registry-structure note, the projection-anchors note, 0012's granularity wrinkle) —
+handed through the human, **before any refresh**. The problem's own position is
+mastered in the problem plane's `status.md`.
 
 **Shape** *(snapshot; the repo is the master)*:
 
 ```text
 internals/knowledge/
-├── knowledge.vision.md          kinds list complete (worklog, manual added)
-├── knowledge.log.md             entries 0001–0011
+├── knowledge.vision.md          work-shape question resolved; Open now at the phase turn
+├── knowledge.log.md             entries 0001–0012
 ├── knowledge.status.md
 ├── knowledge-steward.instructions.md
-├── fork.log.md                  entries 0001–0009 (0007–0009: the additions)
-├── core/                        general node-system knowledge (unchanged)
+├── fork.log.md                  entries 0001–0011 (0007–0009 additions; 0011 app scope)
+├── core/
 │   ├── workbench-nodes.model.md
 │   ├── workbench-roles.model.md
-│   ├── workbench-git.convention.md
+│   ├── workbench-git.convention.md      ← amended (fork 0011: the app scope)
 │   └── workbench-naming.convention.md
-└── realization/                 the backend-shaped set
+└── realization/
     ├── workbench-five-layer-system.model.md
     ├── workbench-correctness-driven-backend.model.md
-    ├── workbench-backend-realization.map.md       ← amended (fork 0001–0005, 0008)
+    ├── workbench-backend-realization.map.md       ← amended (fork 0001–0005, 0008, 0010)
     ├── workbench-doc-projection.skeleton.md       ← amended (fork 0006)
     ├── workbench-postgres-role.model.md           ← born (fork 0007), lived
     ├── workbench-infrastructure-establishment.guide.md  ← born (fork 0008), lived once
@@ -53,19 +51,17 @@ internals/knowledge/
 ```
 
 **Unsettled:**
-- **System bootstrapped** — the next phase-step; the coder manual is its ready
-  handoff. Whether its work runs as a change plan or its own shape is the vision's
-  still-open question, decided at its start.
-- **Flow-back at preparation's exit** — one step away; the batch: fork log (nine
-  entries), branch diffs, the 0011 notes, the registry-structure note (0008), and
-  one late note: projection anchors follow what the *surface* needs, not what froze
-  internally — why infrastructure's exit earned no anchor (its substance is
-  operator-facing; the reviewer-facing delta belongs whole to *system
-  bootstrapped*).
-- **The manuals' genre flips** — problem-plane decisions, watched from here as the
-  manual kind's first genre exercise.
-- **The first-slice judgment point** — the last formal thinker-role check (0006).
-- **Steward lens** — source list refreshed with the fork's three additions; the
-  human's vehicle custom-instructions field needs the matching paste.
+- **The flow-back** — due now, before S1 and before any refresh; the batch
+  enumerated above. The *system bootstrapped* re-carve (fork 0004) is now
+  **lived** — its confirmation rides the batch.
+- **The Spring-bootstrap walkthrough candidate** — the exit test's deferred half
+  (0012): decided at a distillation pass from the plan + worklog 0006–0009 +
+  lived corrections; if born, a fork addition (`workbench-` prefixed, walkthrough
+  kind's second use) joining the batch.
+- **The first-slice judgment point** — at S1's start: thinker-role standing, the
+  coder/IDE-vehicle question, and the slice-flow shape — all on lived evidence.
+- **The manuals' genre flips** — problem-plane decisions, ripening as S1
+  exercises the ground.
 
-**Next:** system bootstrapped — the stack evaluation opens it.
+**Next:** the flow-back handoff and the walkthrough distillation pass; then
+execution — S1's `specify-correctness`, opening with the judgment point.

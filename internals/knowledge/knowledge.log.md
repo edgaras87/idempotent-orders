@@ -179,3 +179,49 @@ more services; **(d)** the worklog placement claim (0009) lived successfully —
 at the first executed step, duplicating nothing. The role model's lived evidence
 already rides via fork 0007. Position advances: *system bootstrapped* is the next
 phase-step — and preparation's exit after it triggers the flow-back itself.
+
+**0012 — System bootstrapped exited under the change-plan flow; the work-shape
+question answered; the coder/vehicle question parked at the first-slice judgment
+point.** One session-arc, three moves, closing preparation on the node's side:
+
+1. **The vision's open work-shape question answered on lived evidence:**
+   *system bootstrapped* — problem-plane preparation work — ran as a **change
+   plan** (seven steps), and the flow held under real strain: a full pre-execution
+   redraw when the human's prior bootstrap walkthrough arrived as ordinary input
+   (Initializr discipline and the Podman/Testcontainers setup adopted; JPA,
+   in-app Flyway, Lombok rejected against the decided ground); mid-step
+   discoveries fixed forward inside uncommitted steps without plan churn (the
+   Testcontainers config route lived three ways before settling; Boot 4's
+   `restclient` modularization caught at the adversity test); records riding in
+   their steps' commits throughout. One lived wrinkle recorded honestly: step 6
+   landed as **two commits** (README `revise`, status `map`) — the git
+   convention's keep-state-separate granularity outranked the plan's
+   one-step-one-commit line; the plan law reads henceforth as *one step = one
+   logical change*, commits per the convention. Standing: **preparation-type
+   problem work runs change plans — confirmed**; the slice flow is expected to be
+   its own change shape (the method's `specify → plan → write → document`),
+   judged at S1's start.
+
+2. **The coder-role/vehicle question — surfaced, weighed, deliberately parked.**
+   The IDE vehicle (direct repo hands, agentic test-running) surfaced mid-step as
+   a live option and maps exactly onto the map's coder territory; the human chose
+   to run the bootstrap browser-steward-style — more faithful to earned-by-need
+   (the bootstrap proved ~90% deterministic delivery), hands-on value for the
+   human, and it turns the **first-slice judgment point (0006)** into a decision
+   on lived strain evidence rather than anticipation. That judgment point now
+   formally carries both questions: thinker-role standing *and* coder-role/IDE
+   vehicle — with the bootstrap's evidence in hand (the browser loop carried the
+   code work; its cost concentrated exactly where predicted, in the
+   test-iteration steps' paste-and-fix round trips). Read-only IDE steward
+   sessions were cleared as decision-free (the steward always could read; no law
+   changes until write hands are granted).
+
+3. **The exit test and the flow-back trigger.** The map's steps-and-how-docs test
+   at this exit: run at the phase turn with the walkthrough question — a
+   Spring-bootstrap walkthrough candidate (commit-by-commit, why/what-it-gives
+   form, per the human's expressed intent) — **decision deferred to the next
+   session's distillation pass**, from the plan, worklog 0006–0009, and the
+   lived corrections; if born, a fork addition riding the batch. Preparation's
+   exit **triggers the flow-back now** (0008's batch: fork log 0001–0011, branch
+   diffs, the riding notes, the walkthrough if born). Position: execution's edge;
+   S1 next.
