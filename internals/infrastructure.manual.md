@@ -168,3 +168,79 @@ podman compose run --rm flyway validate  # applied vs. on-disk consistency
 
 `info` against the fresh ground correctly reports: schema empty, history table not
 yet created, no migrations found.
+
+## Test runtime — Testcontainers on podman
+
+The evidence harness (`src/test/.../testsupport/`) starts throwaway PostgreSQL
+containers through **Testcontainers**, which speaks the Docker API. On this ground
+that API is served by **podman's user socket** — one-time setup below. (On a
+machine with Docker instead, Testcontainers auto-detects it and none of this is
+needed; podman is this project's environment, so podman is what this manual walks.)
+
+### Set up (once per machine)
+
+```sh
+# 1) expose podman's Docker-compatible API on the rootless user socket
+systemctl --user enable --now podman.socket
+
+# 2) tell Testcontainers where that socket is, and disable Ryuk —
+#    Testcontainers' cleanup sidecar, which misbehaves under rootless podman
+```
+
+For step 2, prefer the persistent, IDE-friendly form — `~/.testcontainers.properties`:
+
+```properties
+docker.host=unix:///run/user/1000/podman/podman.sock
+ryuk.disabled=true
+```
+
+(replace `1000` with your uid — `id -u`). The environment-variable form works too, but must reach
+every JVM that runs tests (shell *and* the IDE's test runner):
+
+```sh
+export DOCKER_HOST=unix:///run/user/$(id -u)/podman/podman.sock
+export TESTCONTAINERS_RYUK_DISABLED=true
+```
+
+### Verify
+
+```sh
+systemctl --user status podman.socket          # active (listening)
+curl --unix-socket /run/user/$(id -u)/podman/podman.sock \
+     http://localhost/_ping                    # → OK
+./mvnw test                                    # harness tests pull postgres:17 and run green
+```
+
+### Troubleshooting
+
+- **"Could not find a valid Docker environment"** — the socket isn't reachable:
+  check the `status` line above, confirm the socket *file* exists at the path, and
+  confirm the property/env actually reaches the failing JVM (IDE test runs do not
+  inherit shell exports — the properties file avoids the whole class of problem).
+- **Socket "active" but the file is missing** — `systemctl --user status
+  podman.socket` can report *active (listening)* while the socket file itself is
+  gone: `ls -l /run/user/$(id -u)/podman/podman.sock` → *No such file or
+  directory*. Active is not enough by itself — the test JVM must reach the actual
+  file. Recover by restarting the user units, then confirm the file exists:
+
+  ```sh
+  systemctl --user stop podman.socket podman.service
+  systemctl --user start podman.socket
+  ls -l /run/user/$(id -u)/podman/podman.sock
+  ```
+
+- **The properties file seems ignored** — check its location first: it must be
+  exactly `~/.testcontainers.properties` (the *home* directory, leading dot). In
+  the project root it is read by nobody — lived here as a "Could not find a valid
+  Docker environment" failure that vanished the moment the file moved to `$HOME`.
+- **Works in terminal, fails in the IDE** — same cause: the IDE's test JVM never
+  saw `DOCKER_HOST`. Use `~/.testcontainers.properties`, or set the variables in
+  the IDE's run configuration.
+- **Leftover test containers** — the accepted cost of disabling Ryuk: a hard-killed
+  test JVM can strand its container. `podman ps` to see them,
+  `podman rm -f <id>` to clear; they are throwaways, nothing of the ground's data
+  lives in them.
+- The compose ground and the test runtime are **independent**: `./mvnw test` needs
+  no `podman compose up` — the harness brings its own database and migrates it
+  itself (the same migration files, applied by the harness instead of the
+  one-shot).

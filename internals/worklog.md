@@ -122,3 +122,33 @@ Verified: ground up (`podman compose up -d`), `./mvnw spring-boot:run`, health �
 green — the context test needs no database (the pool connects lazily; nothing in
 the skeleton touches the datasource yet), so the app remains startable with the
 ground down, degrading only in what health reports.
+
+**0008 — preparation / system bootstrapped: evidence harness stood up —
+Testcontainers on podman, harness-side Flyway.** Two things stood up together.
+**The test runtime:** Testcontainers speaks the Docker API; on this ground that is
+podman's rootless user socket — `podman.socket` enabled, the socket path and
+`ryuk.disabled=true` (the cleanup sidecar misbehaves under rootless podman) set via
+`~/.testcontainers.properties`, chosen over env vars so IDE test runs need no
+inherited shell exports; setup, verification, and troubleshooting landed as the
+operator manual's new *Test runtime* section (a light infrastructure re-entry —
+material adapted from the human's prior-project walkthrough, arriving as ordinary
+input). **The harness:** test-scope dependencies added — `testcontainers-postgresql`
+(Testcontainers 2 artifact names on the Boot 4 line), `spring-boot-testcontainers`
+(`@ServiceConnection` wiring), and Flyway (`flyway-core` +
+`flyway-database-postgresql`) as a **harness tool, never a runtime dependency**;
+Surefire's include set widened so `*IT.java` runs under the one standard
+`./mvnw test`. Three base classes under `testsupport/`: `AbstractPostgresIT` — one
+singleton postgres:17 container per test JVM (same major as the ground), started in
+the static initializer with lifecycle deliberately ours, `@ServiceConnection`
+wiring the test datasource from the field, and the harness-side migrate applying
+`filesystem:infrastructure/flyway/migrations` — the one migrations home, no
+classpath copy to drift — before any context boots (the principle held in the test
+tier: something outside the app migrates; the app runs); `AbstractDbIT` — context
+without HTTP, `JdbcClient` injected to match the app's own data-access choice;
+`AbstractWebDbIT` — random-port full stack, Boot 4's `resttestclient`
+TestRestTemplate packages. No test profile born — `@ServiceConnection` overrides
+the datasource, so the single `application.yaml` stands. Proof test:
+`MigrationPipelineIT` — `flyway_schema_history` exists and holds zero applied
+migrations, exactly right for the deliberately empty migrations home; the query
+succeeding is the pipeline demonstrated end to end (container → migrate → context →
+query). Verified: `./mvnw test` green — the image pulled, the harness loop live.

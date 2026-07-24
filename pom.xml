@@ -72,6 +72,47 @@
 			<scope>runtime</scope>
 		</dependency>
 
+		<!--
+			Evidence harness (test infrastructure only). The principle carried
+			into the test tier: something outside the app migrates; the app runs.
+			The harness starts a throwaway PostgreSQL container, applies the one
+			migrations home (infrastructure/flyway/migrations) itself, then boots
+			the app context against it — the app under test stays exactly as
+			shipped: no migration machinery, one identity's posture.
+		-->
+
+		<!-- Real PostgreSQL in tests — evidence runs against the real store,
+		     never an in-memory substitute (the invariants live in PostgreSQL's
+		     atomic primitives; a substitute would test a different database). -->
+		<dependency>
+			<groupId>org.testcontainers</groupId>
+			<artifactId>testcontainers-postgresql</artifactId>
+			<scope>test</scope>
+		</dependency>
+
+		<!-- @ServiceConnection: Spring wires the test datasource from the
+		     container field — no url/credentials duplicated in test config. -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-testcontainers</artifactId>
+			<scope>test</scope>
+		</dependency>
+
+		<!-- Flyway as a HARNESS tool, test scope only — the test-side applier
+		     of the same migration files the compose one-shot applies to the
+		     real ground. Deliberately never a runtime dependency (log 0007). -->
+		<dependency>
+			<groupId>org.flywaydb</groupId>
+			<artifactId>flyway-core</artifactId>
+			<scope>test</scope>
+		</dependency>
+		<!-- Flyway's PostgreSQL support module (required by flyway-core ≥10). -->
+		<dependency>
+			<groupId>org.flywaydb</groupId>
+			<artifactId>flyway-database-postgresql</artifactId>
+			<scope>test</scope>
+		</dependency>
+
 	</dependencies>
 
 	<build>
@@ -81,6 +122,20 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+			<!-- Test execution: the project's integration tests are *IT.java and
+			     run under the one standard command, ./mvnw test — so Surefire's
+			     include set is widened to pick them up alongside unit tests. -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<configuration>
+					<includes>
+						<include>**/*Test.java</include>
+						<include>**/*Tests.java</include>
+						<include>**/*IT.java</include>
+					</includes>
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>
