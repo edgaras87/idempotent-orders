@@ -211,3 +211,36 @@ log 0011, then soft); the human's recall evidence — a next project would have 
 re-derive the sequence from nothing — refined the outcome to yes-as-method in the
 same session; 0011 records the refinement on its side. Rides the flow-back batch
 (knowledge log 0008) with the rest.
+
+**0009 — Postgres setup walkthrough born; the guide gains its distill step.**
+Ninth entry, the fork's third addition plus one guide amendment — one decision in
+two moves. **Move one:**
+**`realization/workbench-postgres-setup.walkthrough.md`** — the PostgreSQL setup as
+an end-to-end walkable sequence, scripts included (compose service + Flyway one-shot,
+credentials split, the bootstrap SQL with its full recall comments, the catalog
+verification suite, bring-up, both verifications, the reset path, the handoff facts),
+project-agnostic under `<project>` placeholders, the podman/Flyway context flagged
+where it binds. First use of the **walkthrough** kind in `realization/` — an
+end-to-end *do this* for one concrete capability: narrower than a guide (one
+service, not a step's territory), reusable unlike a manual. Placement: in
+`realization/`, not a new branch — branches split by knowledge type, and a
+walkthrough is a kind within the backend set, beside models, guides, and skeletons.
+Why born now rather than deferred: the reuse question (whether guide + model + worked
+example suffice for the next Postgres-using project) answered by the human in favor
+of a ready walkthrough — re-deriving even mechanically was judged not worth it. The
+**second-master risk accepted and mitigated by declared mastery**: the walkthrough's
+header names `workbench-postgres-role.model.md` the master of the authority shape —
+on any conflict the model wins and the walkthrough is corrected; corrections flow
+model → walkthrough, never the reverse. Standing: prefix-now (authored for the
+workbench, lineage in the name, the not-yet-mastered note in the header), **lived
+once** through this project's setup; rides the flow-back batch (knowledge log 0008);
+owed confirmation by the second using project. **Move two:**
+`realization/workbench-infrastructure-establishment.guide.md` gains **step 8 —
+distill service walkthroughs**: per service stood up, one test (long, sequenced,
+likely to recur?); yes → a walkthrough born under the same discipline (masters
+nothing, model-named, placeholder names, second-project confirmation owed); no →
+nothing, the manuals and record suffice. Why in the guide: the move just made ad
+hoc becomes part of the walk, asked deliberately at every future service setup
+instead of remembered by luck — the walkthrough kind's birth and its
+institutionalization are one decision. The postgres walkthrough is the step's
+worked example.

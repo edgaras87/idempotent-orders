@@ -18,7 +18,7 @@ guide kind's first use, the steps-and-how-docs coupling exercised for the first
 time: lived work → guide → the map's pointer), with four flow-back notes riding
 alongside (the infrastructure vocabulary and manual-accretion pattern — both
 carried into the guide — the per-service manual question, the worklog placement
-evidence). The fork stands at **six deviations + two additions**; the *problem framed* carving, the projection's
+evidence). The fork stands at **six deviations + three additions** (0009: the postgres setup walkthrough — the walkthrough kind's first use, the reuse question answered in favor of a ready sequence — and the establishment guide's new step 8, distilling service walkthroughs as a deliberate move); the *problem framed* carving, the projection's
 first anchor, the infrastructure step, and the worklog placement are now **lived**;
 confirmation owed at the finalization pass. The thinker-role standing is unchanged
 (steward-only expected throughout; first-slice check formally open — 0006).
@@ -36,7 +36,7 @@ internals/knowledge/
 ├── knowledge.log.md             entries 0001–0011
 ├── knowledge.status.md
 ├── knowledge-steward.instructions.md
-├── fork.log.md                  entries 0001–0008 (0007–0008: the additions)
+├── fork.log.md                  entries 0001–0009 (0007–0009: the additions)
 ├── core/                        general node-system knowledge (unchanged)
 │   ├── workbench-nodes.model.md
 │   ├── workbench-roles.model.md
@@ -48,14 +48,15 @@ internals/knowledge/
     ├── workbench-backend-realization.map.md       ← amended (fork 0001–0005, 0008)
     ├── workbench-doc-projection.skeleton.md       ← amended (fork 0006)
     ├── workbench-postgres-role.model.md           ← born (fork 0007), lived
-    └── workbench-infrastructure-establishment.guide.md  ← born (fork 0008), lived once
+    ├── workbench-infrastructure-establishment.guide.md  ← born (fork 0008), lived once
+    └── workbench-postgres-setup.walkthrough.md    ← born (fork 0009), lived once
 ```
 
 **Unsettled:**
 - **System bootstrapped** — the next phase-step; the coder manual is its ready
   handoff. Whether its work runs as a change plan or its own shape is the vision's
   still-open question, decided at its start.
-- **Flow-back at preparation's exit** — one step away; the batch: fork log (eight
+- **Flow-back at preparation's exit** — one step away; the batch: fork log (nine
   entries), branch diffs, the 0011 notes, the registry-structure note (0008).
 - **The manuals' genre flips** — problem-plane decisions, watched from here as the
   manual kind's first genre exercise.

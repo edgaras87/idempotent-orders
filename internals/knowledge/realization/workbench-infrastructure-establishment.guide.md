@@ -69,6 +69,18 @@ aren't settled, the step isn't ready.
    did a generalizable shape emerge beyond this guide? Findings that aren't
    structure ride the project's flow-back batch as notes.
 
+8. **Distill service walkthroughs.** Per service stood up, one test: **was the
+   setup long, sequenced, and likely to recur in later projects?** If yes — a
+   **walkthrough** is born in `realization/` as a fork addition: the service's
+   end-to-end *do this*, scripts included with their recall comments, project
+   names as placeholders, the environment context flagged where it binds — so no
+   later project re-derives or even re-assembles the same sequence. Discipline:
+   the walkthrough **masters nothing** — governing claims stay with their model
+   (named in the walkthrough's header; on conflict the model wins, corrections
+   flow model → walkthrough); it is owed confirmation by its second using
+   project. If no — nothing born; the manuals and the record suffice. Worked
+   example: `workbench-postgres-setup.walkthrough.md`.
+
 ## Vocabulary (the step's own, mastered by the walking project's coder manual)
 
 - **Execution Environment** — the local runtime host for infrastructure.
