@@ -52,6 +52,13 @@ workbench is **batched**; flow-back precedes any refresh; a refresh replaces `co
 - **`realization/workbench-doc-projection.skeleton.md`** — the doc-projection skeleton
   (unlived): the starting picture for the project's public surface; instantiated, never a
   master.
+- **`realization/workbench-postgres-role.model.md`** — how database authority splits
+  into roles on PostgreSQL (fork addition, lived here; masters the authority shape).
+- **`realization/workbench-infrastructure-establishment.guide.md`** — how the
+  *infrastructure established* step is walked (fork addition, lived once).
+- **`realization/workbench-postgres-setup.walkthrough.md`** — the PostgreSQL setup
+  end-to-end, scripts included (fork addition, lived once; the role model wins on any
+  conflict).
 
 Ground rules:
 

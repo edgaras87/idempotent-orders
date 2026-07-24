@@ -57,12 +57,15 @@ internals/knowledge/
   handoff. Whether its work runs as a change plan or its own shape is the vision's
   still-open question, decided at its start.
 - **Flow-back at preparation's exit** — one step away; the batch: fork log (nine
-  entries), branch diffs, the 0011 notes, the registry-structure note (0008).
+  entries), branch diffs, the 0011 notes, the registry-structure note (0008), and
+  one late note: projection anchors follow what the *surface* needs, not what froze
+  internally — why infrastructure's exit earned no anchor (its substance is
+  operator-facing; the reviewer-facing delta belongs whole to *system
+  bootstrapped*).
 - **The manuals' genre flips** — problem-plane decisions, watched from here as the
   manual kind's first genre exercise.
 - **The first-slice judgment point** — the last formal thinker-role check (0006).
-- **Steward lens refresh** — now lags the old map picture, three kind births, and
-  the deferral standing; non-authoritative (the vision wins), so still not urgent —
-  refresh when the lens is next touched.
+- **Steward lens** — source list refreshed with the fork's three additions; the
+  human's vehicle custom-instructions field needs the matching paste.
 
 **Next:** system bootstrapped — the stack evaluation opens it.
