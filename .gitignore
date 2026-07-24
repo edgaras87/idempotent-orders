@@ -4,3 +4,18 @@
 
 # local credentials — template committed as .env.example
 .env
+
+# Maven build output — reproduced by any build, never committed
+target/
+
+# Maven wrapper jar is fetched by the wrapper itself
+!.mvn/wrapper/maven-wrapper.properties
+
+# OS filesystem noise
+.DS_Store
+Thumbs.db
+
+# runtime log files the app or tools write locally — noise, not record docs
+# (matches only *.log files; the tracked log.md / worklog.md records are .md)
+*.log
+

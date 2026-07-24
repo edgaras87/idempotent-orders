@@ -1,2 +1,11 @@
-# Set default behavior to automatically normalize line endings.
+# One line-ending truth: git normalizes text files and checks them out LF
+# everywhere — protects the repo from CRLF noise if ever touched from Windows.
 * text=auto eol=lf
+
+# The Maven wrapper is a shell script — CRLF breaks it ("bad interpreter").
+# Pinned LF explicitly so no environment can mangle a cloner's build.
+/mvnw text eol=lf
+
+# The wrapper's Windows batch file is the one deliberate CRLF exception —
+# batch files want CRLF; applies to mvnw.cmd only.
+*.cmd text eol=crlf

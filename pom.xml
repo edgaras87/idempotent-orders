@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>4.1.0</version>
+		<relativePath/> <!-- lookup parent from repository -->
+	</parent>
+	<groupId>com.edge</groupId>
+	<artifactId>idempotent-orders</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>idempotent-orders</name>
+	<description>Correctness-driven idempotent order creation service</description>
+
+	<properties>
+		<java.version>21</java.version>
+	</properties>
+
+	<!--
+		Dependency convention: every runtime starter is paired with its Boot 4
+		"-test" companion in test scope. Dependencies enter only at the step or
+		slice that earns them — nothing ahead of need.
+	-->
+	<dependencies>
+
+		<!-- Operational visibility: health/info endpoints. /actuator/health is how
+		     the running skeleton — and, once wired, its database connection — is
+		     shown alive without any custom code. -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-actuator</artifactId>
+		</dependency>
+		<!-- Test companion: actuator endpoint support inside test contexts. -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-actuator-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+
+		<!-- The service's API surface: Spring MVC controllers on the embedded
+		     server. The create-order endpoint — the boundary where the
+		     idempotency guarantee is sold — lives on this stack. -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-webmvc</artifactId>
+		</dependency>
+		<!-- Test companion: MVC test support (MockMvc, web-slice testing) plus
+		     the core test kit (JUnit Jupiter, AssertJ, Spring Test). -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-webmvc-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+
+	</dependencies>
+
+	<build>
+		<plugins>
+			<!-- Spring Boot packaging: repackages the jar as an executable
+			     application and provides the spring-boot:run dev loop. -->
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>
