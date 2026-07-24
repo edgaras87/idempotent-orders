@@ -127,3 +127,43 @@ a DML-only identity, so the principle is enforced by the database's own grant
 system, not by convention. The concrete role model is worked knowledge — born next
 into the fork's `realization/` (its record there); this project's wiring of it lands
 in the manuals.
+
+**0007 — Stack decided: Java 21 + Spring Boot on Maven, Spring JDBC; Flyway stays
+compose-side; the migrations' home confirmed unmoved.** The *system bootstrapped*
+phase-step opened — its own evaluation run first, this entry its close. **(a)** **The
+stack: Java 21, Spring Boot, Maven, Spring JDBC (`JdbcClient`), the PostgreSQL
+driver.** The evaluation ran on five criteria drawn from the chain's outputs —
+evidence-harness power dominant (the harness must *create* the definition's
+adversities: concurrent hammering for S2, duplicate injection for S1/S3, process kill
+mid-creation for S4), then correctness-by-construction expressiveness, reviewer
+legibility in minutes (the intent's audience), fit to the established ground (thin
+SQL, no auto-DDL), and delivery weight. On criteria alone the field led with Go
+(harness ergonomics, compiled-binary kill/restart), Kotlin (type expressiveness), and
+Rust (fluency-gated depth signal); the **deciding input was the human's fluency and
+interview posture** — Spring roles are the target, which flips the legibility
+criterion (to the target reviewer, Spring *is* the most legible stack) and makes
+defending guarantees in the interview stack worth more than marginal criterion
+scores. Spring held thin as the choice's own condition: **Spring JDBC, no
+ORM/JPA/Hibernate** — structure is described once (in migrations), no auto-DDL
+exists to forbid, and the correctness decisions stay visible in the project's code
+rather than in auto-configuration. The JVM's heavier kill-restart loop for S4's
+evidence is the named, accepted cost. **(b)** **Flyway stays compose-side — the
+application carries no migration machinery and knows one identity.** The in-app
+alternative (Spring's startup-Flyway with a second, migrator-credentialed
+connection, dev-profile-scoped) was weighed from the human's prior-project shape and
+rejected: it satisfies role separation but reopens 0006's principle at the process
+boundary — the running application would execute DDL at startup and hold migrator
+credentials in its environment, turning an artifact property into an
+environment-configuration policy, and splitting dev startup semantics from
+production's. The claim is kept **layered**: the application's shape is the first
+line (no Flyway on its classpath, no second credential slot in any profile), the
+grant system the last (the runtime identity is refused DDL by the database —
+demonstrated at the ground's establishment). Revisit path stated: if the one-command
+migrate loop proves genuinely painful in lived work, that evidence reopens this as a
+new logged decision — anticipation does not. **(c)** **The migrations' home is
+confirmed at `infrastructure/flyway/migrations/`** — Flyway is compose-side
+infrastructure, so its files stay under `infrastructure/`; the provisional-home
+question (open since the ground's establishment) closes as *no move*. Migrations
+**stay empty until a slice earns schema** — no dummy baseline migration: Flyway's
+history table is born by a zero-migration `migrate`, so the pipeline is provable
+without seeding the real migration path with a placeholder.
