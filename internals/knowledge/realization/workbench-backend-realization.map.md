@@ -120,6 +120,10 @@ tail; whether it generalizes further stays an open question.)*
    *Exit: the system skeleton runs wired to the real services; layout and conventions
    settled; a trivial adversity-generating test runs green; the chosen slice has
    somewhere to land.*
+   *A lived, stack-specific ready sequence:
+   `workbench-spring-boot-bootstrap.walkthrough.md` (Spring Boot on an established
+   PostgreSQL ground) — applies only where the step's own stack evaluation lands on
+   Spring; other stacks distill their own at their first lived pass.*
 
 **Phase exit — into `execution`:** the chosen slice's `specify-correctness` can start
 with nothing missing around it. The **worklog** is born at the first real executed step.
@@ -222,8 +226,9 @@ is the change history; this note carries only standing. Lived by that project so
 the *problem framed* composite step and its inner chain, need-driven adoption and
 the steps-and-how-docs coupling (first exercised at the infrastructure step's exit —
 the guide born, then the pointer), the molded vocabulary, the *infrastructure
-established* step itself, and the *remote established* step (placed from the lived
-lesson of creating the remote late). Still unlived: the *system bootstrapped*
-re-carve. All amendments are owed confirmation, correction, or reversal at that
+established* step itself, the *remote established* step (placed from the lived
+lesson of creating the remote late), and the *system bootstrapped* re-carve —
+now lived by that project's first pass (its Spring-stack ready sequence distilled:
+the walkthrough above). All amendments are owed confirmation, correction, or reversal at that
 project's finalization correction pass. Each project's finalization owes this doc a
 correction pass — that is how the skeleton earns generality.

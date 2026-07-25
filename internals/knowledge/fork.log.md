@@ -292,3 +292,30 @@ history fixed forward, and it is this entry's own evidence. Rides the flow-back
 batch (knowledge log 0008); owed the usual confirmation — whether `app` generalizes
 or projects want the system's name as the token is the next adopting project's
 question.
+
+**0012 — Spring Boot bootstrap walkthrough born; the map's step gains a
+stack-flagged pointer; the re-carve marked lived.** Twelfth entry, the fork's
+fourth addition plus one map amendment — one decision in two moves, the
+steps-and-how-docs coupling's second exercise at a step exit. **Move one:**
+**`realization/workbench-spring-boot-bootstrap.walkthrough.md`** — the *system
+bootstrapped* step as an end-to-end ready sequence for the Spring stack, on an
+established PostgreSQL ground: the five-commit shape (decision recorded → skeleton
+→ runtime wiring → harness → adversity probe), the extract-into-existing-repo
+discipline Initializr tutorials never cover, harness-side Flyway as the test-tier
+realization of *something outside the app migrates*, and the compressed
+lived-traps list (Boot 4 renames, the `spring-boot-restclient` hole, Testcontainers
+2 names, the properties-file `$HOME` trap, the active-socket-missing-file
+recovery, no dummy baseline migration). Walkthrough kind's second use; same
+discipline as 0009: masters nothing (the stack evaluation, the role model, and the
+postgres walkthrough named as its masters/assumptions), `<project>` placeholders,
+prefix-now, **lived once** through the distilling project's pass; owed
+confirmation by the second bootstrapping project. Why born: the exit test's recall
+evidence — a next Spring project would re-derive Initializr pruning, four Boot-4
+naming traps, the podman test-runtime setup, and the harness shape from nothing,
+all lived here at real cost; the reuse question was answered in favor of ready
+sequences at 0009 and holds. **Move two:** the map's *system bootstrapped* step
+gains the pointer — **stack-flagged**: the walkthrough applies only where the
+step's own evaluation lands on Spring; other stacks distill their own — keeping
+the map stack-agnostic while the coupling rule's direction (lived work → knowledge
+→ pointer) is honored; the lifecycle note's re-carve line updated from unlived to
+lived. Rides the flow-back batch (knowledge log 0008), completing it.

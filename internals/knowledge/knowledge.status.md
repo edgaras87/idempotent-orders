@@ -31,10 +31,10 @@ mastered in the problem plane's `status.md`.
 ```text
 internals/knowledge/
 ├── knowledge.vision.md          work-shape question resolved; Open now at the phase turn
-├── knowledge.log.md             entries 0001–0012
+├── knowledge.log.md             entries 0001–0013
 ├── knowledge.status.md
 ├── knowledge-steward.instructions.md
-├── fork.log.md                  entries 0001–0011 (0007–0009 additions; 0011 app scope)
+├── fork.log.md                  entries 0001–0012 (0007–0009, 0012 additions; 0011 app scope)
 ├── core/
 │   ├── workbench-nodes.model.md
 │   ├── workbench-roles.model.md
@@ -47,21 +47,19 @@ internals/knowledge/
     ├── workbench-doc-projection.skeleton.md       ← amended (fork 0006)
     ├── workbench-postgres-role.model.md           ← born (fork 0007), lived
     ├── workbench-infrastructure-establishment.guide.md  ← born (fork 0008), lived once
-    └── workbench-postgres-setup.walkthrough.md    ← born (fork 0009), lived once
+    ├── workbench-postgres-setup.walkthrough.md    ← born (fork 0009), lived once
+    └── workbench-spring-boot-bootstrap.walkthrough.md   ← born (fork 0012), lived once
 ```
 
 **Unsettled:**
-- **The flow-back** — due now, before S1 and before any refresh; the batch
-  enumerated above. The *system bootstrapped* re-carve (fork 0004) is now
-  **lived** — its confirmation rides the batch.
-- **The Spring-bootstrap walkthrough candidate** — the exit test's deferred half
-  (0012): decided at a distillation pass from the plan + worklog 0006–0009 +
-  lived corrections; if born, a fork addition (`workbench-` prefixed, walkthrough
-  kind's second use) joining the batch.
+- **The flow-back** — due now, before S1 and before any refresh; the **batch is
+  complete** (0013): fork log 0001–0012, the branches' diffs against upstream,
+  the riding notes. The *system bootstrapped* re-carve (fork 0004) is lived —
+  its confirmation rides the batch.
 - **The first-slice judgment point** — at S1's start: thinker-role standing, the
   coder/IDE-vehicle question, and the slice-flow shape — all on lived evidence.
 - **The manuals' genre flips** — problem-plane decisions, ripening as S1
   exercises the ground.
 
-**Next:** the flow-back handoff and the walkthrough distillation pass; then
-execution — S1's `specify-correctness`, opening with the judgment point.
+**Next:** the flow-back handoff (human's hands); then execution — S1's
+`specify-correctness`, opening with the judgment point.

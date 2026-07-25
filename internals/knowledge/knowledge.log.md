@@ -225,3 +225,17 @@ point.** One session-arc, three moves, closing preparation on the node's side:
    exit **triggers the flow-back now** (0008's batch: fork log 0001–0011, branch
    diffs, the riding notes, the walkthrough if born). Position: execution's edge;
    S1 next.
+
+**0013 — The exit test's deferred half closed: yes-as-method; the flow-back batch
+complete.** The distillation pass run (deferred by 0012): verdict
+**yes-as-method** — the recall evidence stronger than the infrastructure step's
+(Initializr pruning, four Boot-4 naming traps, the Testcontainers-on-podman setup
+with two location/socket traps, the harness-side Flyway shape, the probe pattern —
+none re-derivable cheaply). Born as the fork's fourth addition:
+`realization/workbench-spring-boot-bootstrap.walkthrough.md`, in the human's
+commit-by-commit why/what-it-gives form, project-agnostic under placeholders; the
+map's step given a **stack-flagged** pointer and its lifecycle re-carve line
+marked lived (the record: fork log 0012). With it the **flow-back batch is
+complete**: fork log 0001–0012, the branches' diffs against upstream, the riding
+notes — handed through the human, before any refresh. Then execution: S1 opening
+with the first-slice judgment point.
