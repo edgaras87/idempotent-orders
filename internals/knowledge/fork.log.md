@@ -319,3 +319,26 @@ step's own evaluation lands on Spring; other stacks distill their own — keepin
 the map stack-agnostic while the coupling rule's direction (lived work → knowledge
 → pointer) is honored; the lifecycle note's re-carve line updated from unlived to
 lived. Rides the flow-back batch (knowledge log 0008), completing it.
+
+**0013 — Flow-back accepted; branches refreshed from the workbench masters; the
+divergence baseline reset.** Thirteenth entry — not a deviation but the fork
+lifecycle's closing act for the first divergence story. The flow-back batch
+(entries 0001–0012, the branches' diffs against upstream, the riding notes) was
+handed through the human and worked at the workbench; the masters adopted the
+amendments and the four additions. Then the refresh, per the vision's refresh
+rule: **`core/` and `realization/` replaced wholesale with the current
+workbench masters** — twelve files, copied over, no merging; the node's four
+docs and this log untouched (this log lives beside the branches precisely so a
+refresh cannot reach it); the session vehicle's uploads refreshed to match.
+The refresh's real payload beyond near-identical bodies: the **headers** —
+mastered standing, genres, recut lifecycle notes — and the four former
+additions (0007 role model, 0008 guide, 0009 and 0012 walkthroughs) now
+arriving **as shipped masters**, their prefix-now / not-yet-mastered standings
+resolved by acceptance. Effect on this record: entries 0001–0012 are the
+history of a divergence that no longer stands — they read against the
+*pre-flow-back* upstream and stay frozen as that story's evidence; **from this
+entry, divergence is measured against the refreshed masters**, and the next
+deviation opens a new story. Owed-confirmation notes riding those entries
+("this project's finalization pass", "the second using project") survive the
+reset unchanged — they are lived-evidence obligations, carried now by the
+masters' own lifecycle notes, not divergence claims.
