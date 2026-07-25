@@ -2,14 +2,14 @@
 
 > **A workbench walkthrough — an end-to-end *do this* for one concrete capability:**
 > bootstrapping a Spring Boot system for the *system bootstrapped* step, on an
-> already-established PostgreSQL ground. Distilled from one project's lived pass
-> (its plan, worklog, and corrections); **not yet workbench-mastered** — the
-> `workbench-` prefix is destination lineage; owed confirmation by the second
-> bootstrapping project. **Masters nothing:** the stack decision itself belongs to
-> the step's own evaluation (fluency and audience are deciding inputs — this
-> walkthrough applies only if that evaluation lands on Spring); the ground's
-> authority shape is `workbench-postgres-role.model.md`'s; the ground's setup is
-> `workbench-postgres-setup.walkthrough.md`'s. On any conflict, those win.
+> already-established PostgreSQL ground. Genre: **capture** — distilled from one
+> project's lived pass (its plan, worklog, and corrections); **lived once**, owed
+> confirmation by the second bootstrapping project. **Masters nothing:** the stack
+> decision itself belongs to the step's own evaluation (fluency and audience are
+> deciding inputs — this walkthrough applies only if that evaluation lands on
+> Spring); the ground's authority shape is `workbench-postgres-role.model.md`'s; the
+> ground's setup is `workbench-postgres-setup.walkthrough.md`'s. On any conflict,
+> those win.
 >
 > **Assumptions:** the infrastructure step is exited per
 > `workbench-infrastructure-establishment.guide.md` — PostgreSQL runs under the
@@ -240,3 +240,14 @@ scope for the system's own source).
 6. Ryuk off under rootless podman; accept occasional stranded throwaways.
 7. No dummy baseline migration — Flyway's history table is born by a
    zero-migration migrate; keep the migrations home honestly empty until earned.
+
+---
+
+## Lifecycle note
+
+Lived once, by the project that distilled it (its plan, worklog, and lived
+corrections the sources). Owed confirmation by the second bootstrapping project;
+applies only where the *system bootstrapped* step's own stack evaluation lands on
+Spring — other stacks distill their own. Its masters win on conflict (header).
+Corrections arrive as ordinary updates, decided and logged at the node that
+masters this doc — the log, not this note, is the change history.

@@ -1,13 +1,15 @@
 # workbench-doc-projection.skeleton.md
 
 > **A workbench skeleton: the reusable starting picture of a project's doc projection.**
-> A skeleton is not a model (it may carry wholly unlived shape, marked as such) and not a
+> A skeleton is not a model (it may carry unlived shape, marked as such) and not a
 > live artifact: a correctness-driven backend project **instantiates** it — copies the
 > picture, trims, extends, redraws freely — as its **own** projection rules; the skeleton
 > is never the project's master. What a project actually projects, and when, is that
-> project's own decision (a setting, stated in its vision). **Unlived** — shipped as shape
-> so no project starts from zero; the first projecting project corrects it, and settled
-> parts graduate to a model only after lived use.
+> project's own decision (a setting, stated in its vision). Genre: **capture** —
+> **partially lived**: the first adopting project committed to the exit-anchored cadence
+> and has lived its first two anchors; the slice write-ups, the `public/` plane, and the
+> finalization pass remain unlived, and the correction pass plus the genre flip stay
+> owed by that project's finalization.
 
 ---
 
@@ -63,12 +65,12 @@ dictated here. The starting picture, shaped for the portfolio-facing case: **eve
 projection at the realization map's own exits** (`workbench-backend-realization.map.md`),
 thickness growing with substance:
 
-- **at *problem framed*** *(unlived — anchored by the first adopting project's fork: the
+- **at *problem framed*** *(lived once — anchored by the first adopting project: the
   reasoning chain's exit is where its substance freezes)* — the thin README, the whole
   starting surface: the why (intent, one paragraph), the what (the L2 paragraph), the
   planned-invariants list (from the registry), the method note, an honest status line;
-- **at *system bootstrapped*** — the README grows its delta: stack, and how to run what
-  now exists;
+- **at *system bootstrapped*** *(lived once)* — the README grows its delta: stack, and
+  how to run what now exists;
 - **at each *slice completed*** — the slice's public write-up (the `document` stage pointed
   outward, nearly free because the substance is frozen); the `public/` plane is earned at
   the first of these; the README grows its demonstrated-invariants list;
@@ -92,11 +94,12 @@ just-become-true, won't-change substance is projected, keeping sync cost near ze
 
 ## Lifecycle note
 
-Skeleton v1, unlived, molded by its first adopting project's fork (the why:
-that fork's `fork.log.md`, entry 0006): the projection cadence anchored one exit
-earlier — a *problem framed* anchor added (the thin README fed by the whole reasoning
-chain: intent, definition, registry), the former first anchor renamed to the map's
-current vocabulary (*system bootstrapped*) and trimmed to its delta, and the intent row
-added to the what-projects table. Each projecting project's finalization owes this doc a
-correction pass; graduation of any part into a model happens only after lived use,
-through the workbench steward.
+Skeleton v1, molded by its first adopting project (the why: this node's log — the
+change history, never this note): the cadence anchored one exit earlier — a *problem
+framed* anchor added, the former first anchor renamed to the map's vocabulary
+(*system bootstrapped*) and trimmed to its delta, the intent row added to the
+what-projects table. Lived so far, by that project: the first two anchors, each with
+its README landing at its exit. The slice write-ups, the `public/` plane, and the
+finalization polish remain unlived. Each projecting project's finalization owes this
+doc a correction pass; graduation of any part into a model happens only after lived
+use, through this node's steward.

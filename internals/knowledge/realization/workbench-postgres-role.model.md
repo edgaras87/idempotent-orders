@@ -1,12 +1,10 @@
 # workbench-postgres-role.model.md
 
 > **A workbench model: how database authority is split into roles on PostgreSQL.**
-> **Provisional — and not yet workbench-mastered:** authored *for* the workbench inside
-> its first using project, from prior-work input; it reaches the workbench through that
-> project's flow-back, with this first lived application as its evidence (standing and
-> record: that project's `fork.log.md`). Generic PostgreSQL throughout — a using
-> project's concrete names, passwords, and wiring live in that project's own manuals,
-> never here.
+> Genre: **define** — mastered here, grounded in one lived application (its first using
+> project's PostgreSQL setup); provisional at its edges until further projects confirm
+> or correct it. Generic PostgreSQL throughout — a using project's concrete names,
+> passwords, and wiring live in that project's own manuals, never here.
 
 ---
 
@@ -128,13 +126,8 @@ ground files, referencing this model, never restating it.
 
 ## Lifecycle note
 
-Born inside its first using project from prior-work input; corrected in the same
-session before first use (database ownership moved out of `migrator`; the
-application-schema rule stated; `runtime` as the data identity's name; the cluster
-naming seam added), and extended after the first lived application from the same
-prior work's scripts (explicit database connect control; the public-schema revoke
-made part of the shape). First lived application: that project's PostgreSQL setup
-(its worklog is the happened-record). Owed with the project's flow-back batch:
-confirmation or correction from the lived wiring, then workbench mastery.
-Corrections arrive as ordinary model updates, logged at the node that masters this
-doc.
+One lived application so far — the first using project's PostgreSQL setup (its
+worklog the happened-record); owed confirmation or correction from that project's
+finalization pass, and from each further using project. Corrections arrive as
+ordinary model updates, decided and logged at the node that masters this doc — the
+log, not this note, is the change history.

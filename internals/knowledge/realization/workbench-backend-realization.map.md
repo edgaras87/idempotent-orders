@@ -49,16 +49,16 @@ tail; whether it generalizes further stays an open question.)*
 1. **Node bootstrapped.** Vision, log, status, steward — the node runs by its rhythm.
    *Exit: sessions proceed without re-deciding the basics.*
 
-2. **Problem framed.** *(unlived — a composite step grouping the problem's
+2. **Problem framed.** *(lived once — a composite step grouping the problem's
    reasoning chain: one nature of work, the thinker's territory under the narrow-roles
-   hypothesis below; adopted from one project's decided-but-not-yet-lived
-   preparation, owed confirmation at that project's finalization correction pass.)*
+   hypothesis below; carved and then lived whole by the first adopting project, owed
+   confirmation at that project's finalization correction pass.)*
    Its inner steps, in order:
 
-    - **project-intent** *(unlived)* — why the project exists, for whom, and what "done"
-      means: purpose, audience, success criteria, deliberate tradeoffs — the *why*
-      upstream of the definition's *what*. Intent never describes what the system is or
-      does — that is the definition's job.
+    - **project-intent** *(lived once)* — why the project exists, for whom, and what
+      "done" means: purpose, audience, success criteria, deliberate tradeoffs — the
+      *why* upstream of the definition's *what*. Intent never describes what the system
+      is or does — that is the definition's job.
       *Exit: downstream scope and cadence questions are answerable by reference, not
       re-argued.*
     - **system-definition** — what is being built, authoritatively stated
@@ -77,7 +77,7 @@ tail; whether it generalizes further stays an open question.)*
    *Phase-step exit: the reasoning chain stands — intent, definition, registry — and
    the first slice is named.*
 
-   *Open questions the first lived pass must answer:* does folding the first-slice
+   *Open questions the finalization pass must answer:* does folding the first-slice
    choice into registry-birth survive lived work, or does the choice deserve its own
    step again? Does the grouping principle — map steps mirroring role territory —
    generalize?
@@ -109,14 +109,14 @@ tail; whether it generalizes further stays an open question.)*
    *Exit: the chosen environment runs; the services the reasoning chain requires are
    up, constrained to need; both manuals exist.*
 
-5. **System bootstrapped.** *(re-carved from the former working-ground step — it is the
-   system being built that is born here; the coder's territory.)* The system brought to
-   life on the established infrastructure: stack and tooling chosen and initialized —
-   the system's name, description, starting dependencies; layout settled (node beside
-   code); the project's conventions and baselines stated where the work demands them
-   (folder layout, naming, recurring code patterns); an empty-but-running system
-   skeleton wired to the real services; an evidence harness able to run one
-   adversity-generating test end to end.
+5. **System bootstrapped.** *(lived once — re-carved from the former working-ground
+   step: it is the system being built that is born here; the coder's territory.)* The
+   system brought to life on the established infrastructure: stack and tooling chosen
+   and initialized — the system's name, description, starting dependencies; layout
+   settled (node beside code); the project's conventions and baselines stated where
+   the work demands them (folder layout, naming, recurring code patterns); an
+   empty-but-running system skeleton wired to the real services; an evidence harness
+   able to run one adversity-generating test end to end.
    *Exit: the system skeleton runs wired to the real services; layout and conventions
    settled; a trivial adversity-generating test runs green; the chosen slice has
    somewhere to land.*
@@ -130,8 +130,9 @@ with nothing missing around it. The **worklog** is born at the first real execut
 
 ## Map adoption — need-driven, not scheduled
 
-*(unlived — replaces the former scheduled "realization mapped" step; owed confirmation
-at the proposing project's finalization pass.)*
+*(lived once — replaces the former scheduled "realization mapped" step: the first
+adopting project ran its whole preparation against its fork copy, molding it in place,
+no separate map ever needed; owed confirmation at its finalization pass.)*
 
 A project **adopts** this skeleton as its map by working against its fork copy directly,
 molding it in place under the project's fork rules — grouping, trimming, extending,
@@ -144,9 +145,9 @@ project decision at its moment of need, never a preparation step.
 
 ### Steps and how-docs — how the map couples to knowledge
 
-*(lived once — first exercised at the infrastructure step's exit: the guide born from
-the lived walk, then the step's pointer added; owed further confirmation with the
-rest.)*
+*(lived twice — exercised at the infrastructure step's exit, the guide born from the
+lived walk and only then the step's pointer added, and again at system bootstrapped's,
+the Spring walkthrough; owed further confirmation with the rest.)*
 
 The map carries *what steps and when*; where the **how** of a step is distilled, it
 lives as a knowledge doc in `realization/` and the step **points** at it (as
@@ -207,7 +208,7 @@ To be confirmed, corrected, or discarded by lived work — then modeled.
 Evidence and guarantees made legible as the visible product; what proved reusable (map
 skeleton corrections included) distilled back upstream; the node closed out.
 
-**Doc projection (starting picture: `workbench-doc-projection.skeleton.md`, unlived):**
+**Doc projection (starting picture: `workbench-doc-projection.skeleton.md`):**
 internal truth projected to a public surface — `definition/vision → internal docs →
 public/ docs → README` — derived from internals and **never a second master**. What
 projects, what never does, how much, and the exit-anchored cadence are the skeleton's
@@ -220,15 +221,12 @@ the first projecting project.
 
 ## Lifecycle note
 
-Skeleton v1, amended in place by its first adopting project's fork — the deviations
-and their why live in that fork's `fork.log.md` (entries 0001–0005, 0008, 0010), which
-is the change history; this note carries only standing. Lived by that project so far:
-the *problem framed* composite step and its inner chain, need-driven adoption and
-the steps-and-how-docs coupling (first exercised at the infrastructure step's exit —
-the guide born, then the pointer), the molded vocabulary, the *infrastructure
-established* step itself, the *remote established* step (placed from the lived
-lesson of creating the remote late), and the *system bootstrapped* re-carve —
-now lived by that project's first pass (its Spring-stack ready sequence distilled:
-the walkthrough above). All amendments are owed confirmation, correction, or reversal at that
-project's finalization correction pass. Each project's finalization owes this doc a
-correction pass — that is how the skeleton earns generality.
+Skeleton v1, reshaped by its first adopting project's lived preparation and adopted
+back into this master (the why: this node's log — the change history, never this
+note). Lived once, by that project: the *problem framed* composite and its inner
+chain, need-driven adoption, the steps-and-how-docs coupling (exercised twice), the
+molded vocabulary, the *remote established* placement, *infrastructure established*,
+and the *system bootstrapped* re-carve. All of it stays owed confirmation,
+correction, or reversal at that project's finalization correction pass; the execution
+and finalization phases remain shaped-only. Each project's finalization owes this doc
+a correction pass — that is how the skeleton earns generality.

@@ -8,12 +8,11 @@
 > roles, grants, the why — is mastered in `workbench-postgres-role.model.md`; on
 > any conflict, **the model wins** and this doc is corrected to match. The step
 > frame around it: `workbench-infrastructure-establishment.guide.md`, moves 3–6.
-> **Lived once and not yet workbench-mastered**: distilled from its first walking
-> project (worklog 0001–0005 the happened-record), riding that project's flow-back;
-> owed confirmation by the second using project — especially where its ground
-> differs. **Context it assumes** (noted where it binds): the Execution Environment
-> is **podman local containers** driven by a compose file, and **Flyway** runs as a
-> compose one-shot as the only DDL path.
+> Genre: **capture** — **lived once** (its first walking project's worklog the
+> happened-record); owed confirmation by the second using project — especially
+> where its ground differs. **Context it assumes** (noted where it binds): the
+> Execution Environment is **podman local containers** driven by a compose file,
+> and **Flyway** runs as a compose one-shot as the only DDL path.
 >
 > Placeholders throughout: `<project>` — underscored in SQL identifiers
 > (`<project>_migrator`), hyphenated where your project naming allows it
@@ -343,9 +342,9 @@ inspection: runtime.
 
 ## Lifecycle note
 
-Born from its first walk (the walking project's worklog is the happened-record) at
-that project's request: the reuse question answered by a walkthrough rather than
-deferred. Reaches workbench mastery through the project's flow-back; owed
-confirmation, correction, or generalization by the second using project. The model
-masters the authority shape — corrections flow model → walkthrough, never the
-reverse.
+Lived once, by its first walking project (that project's worklog the
+happened-record). Owed confirmation, correction, or generalization by the second
+using project — especially where its ground differs. The model masters the
+authority shape — corrections flow model → walkthrough, never the reverse.
+Corrections arrive as ordinary updates, decided and logged at the node that masters
+this doc — the log, not this note, is the change history.

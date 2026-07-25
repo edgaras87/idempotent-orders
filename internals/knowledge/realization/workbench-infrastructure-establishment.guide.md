@@ -2,14 +2,14 @@
 
 > **A workbench guide: how the *infrastructure established* step is walked** — from no
 > infrastructure to a governed, verified ground the system bootstrap can wire to. A
-> guide is a walkable *how* for a recurring step — not a model (no claim about what
-> things are), not a manual (no single project's operating truth). **Lived once** (by
-> the first walking project — its worklog is the happened-record) **and not yet
-> workbench-mastered**: authored *for* the workbench, riding its project's flow-back;
-> **owed confirmation, correction, or generalization by the next establishing
-> project** — deviations a different ground forces are exactly the evidence this
-> guide's next revision wants. Generic throughout; a walking project's concrete
-> choices land in its own record and manuals, never here.
+> guide is a walkable *how* for a recurring piece of work — not a model (no claim
+> about what things are), not a manual (no single project's operating truth); audience:
+> any role or human walking the step. Genre: **capture** — **lived once** (by the
+> first walking project — its worklog is the happened-record); **owed confirmation,
+> correction, or generalization by the next establishing project** — deviations a
+> different ground forces are exactly the evidence this guide's next revision wants.
+> Generic throughout; a walking project's concrete choices land in its own record and
+> manuals, never here.
 
 ---
 
@@ -92,9 +92,8 @@ aren't settled, the step isn't ready.
 
 ## Lifecycle note
 
-Born at its first walk's exit, from that walk's recall evidence (the exit test's
-outcome refined: a next project should not re-derive this sequence). Owed
+Lived once, by the first walking project (its worklog the happened-record). Owed
 confirmation by the next establishing project — especially where its ground differs:
-no containers, several services, other constraint families. Reaches workbench
-mastery through its project's flow-back; corrections arrive as ordinary updates,
-logged at the node that masters this doc.
+no containers, several services, other constraint families. Corrections arrive as
+ordinary updates, decided and logged at the node that masters this doc — the log,
+not this note, is the change history.
