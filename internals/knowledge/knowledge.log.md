@@ -110,23 +110,19 @@ finalization. Why this point: mid-project flow-back is the vision's own provisio
 "something big", and the preparation re-carving qualifies — but of the six deviations
 only two are lived at *problem framed*'s exit; by preparation's exit essentially all
 will be, so the batch ships confirmations with lived evidence rather than proposals,
-and the workbench steward integrates once, not twice. The finalization pass still owes
-its correction sweep regardless (including the map hypothesis' scope note per 0006).
-One flow-back candidate noted for the batch beyond the fork log itself: the registry
-structure proved out at birth but is single-area-shaped — a **responsibility-area
-column** is the extension a multi-area project would need (surfaced by comparison with
-the human's prior system-of-systems registry, arriving as ordinary input). Trigger
-clause: if the workbench births another project before preparation's exit, the
-flow-back runs early so no stale skeleton is seeded.
+one handoff instead of two. What rides: `fork.log.md` entire, the branches' diffs
+against upstream, and flow-back notes born of lived work — first among them the
+**registry-structure note**: the registry's lived structure (standing vocabulary,
+evidence-pointer column, the fold pattern) is knowledge the skeleton's next revision
+may want; the note travels with the batch, the workbench decides. The vision's fork
+rules already carry the law; this entry only fixes the *when* and opens the batch's
+riding-notes list (grown by later entries as work surfaces them).
 
-**0009 — Worklog kind born at its first instance; the last expected kind.** The
-node's law gains the **worklog** kind — the append-only happened-record of executed
-work: what was actually done, that the outputs alone don't show — coupled to the map
-by shared step and phase names, every entry self-contained; entries appended as work
-happens and never rewritten; **no genre** (record handling, beside the logs and
-statuses); the map yields to the worklog when reality corrects orientation, never the
-reverse. One line in the vision's kinds list; the "expected next" line retired — all
-expected kinds are now born. Born for the first instance now landing on the problem
+**0009 — Worklog kind born at its first instance; the map's placement claim lived.**
+The node's law gains the **worklog** kind — the append-only happened-record of
+executed work; coupled to the map by shared step and phase names, every entry
+self-contained; no genre (record handling) — one line in the vision's kinds list,
+born for the first instance now landing on the problem
 plane: **`worklog.md`** at `internals/` root (bare subject per the vision's naming
 vocabulary), birthing at *infrastructure established*'s environment setup — the map's
 placement ("the worklog is born at the first real executed step") judged to mean work
@@ -239,3 +235,62 @@ marked lived (the record: fork log 0012). With it the **flow-back batch is
 complete**: fork log 0001–0012, the branches' diffs against upstream, the riding
 notes — handed through the human, before any refresh. Then execution: S1 opening
 with the first-slice judgment point.
+
+**0014 — The first-slice judgment point decided: steward-only confirmed for the
+thinker's territory; the coder role born at a requirements seam; the slice-flow
+shape set.** The point (0006, extended by 0012) reached at S1's entry, after the
+flow-back's acceptance and the refresh (fork log 0013). One decision in three
+parts:
+
+1. **Thinker-role standing — steward-only confirmed, the question closed.** The
+   lived evidence is as complete as preparation can make it: the whole framing
+   chain, the registry's birth, and both later preparation steps ran steward-only
+   without role-context strain — the strain that did surface (the bootstrap's
+   test-iteration round trips) is vehicle cost, not the context competition the
+   hypothesis predicts; the scope grounds (0006: single service, one
+   responsibility area) stand unchanged. Closed rather than deferred a third
+   time: a deferral would move the same answer to S2; closure welds nothing —
+   strain in slice work would reverse by a new entry. Parked at **finalization**:
+   the **thinker-distillation question** — whether a generalizable thinker shape
+   (territory, sources, lens skeleton) is distilled to the workbench as
+   instantiate-by-need knowledge, honestly marked reasoned-not-lived, since this
+   project will end without living the split. The need criterion sharpened in
+   session for that distillation: the thinker pays when the *problem context*
+   outgrows sharing a head with node custody — project type (finite vs.
+   ever-growing product) correlates because an unclosed registry compounds
+   problem context indefinitely, but strain is the criterion, size and lifetime
+   only its drivers.
+
+2. **The coder role born — a role boundary with a requirements handoff, not a
+   vehicle swap.** The parked coder/IDE question answered structurally: the
+   steward's territory ends where reasoning freezes into the slice's correctness
+   spec; the **coder** — living in the IDE, hands on the code — receives
+   requirements (invariants, guarantees, evidence expectations), produces the
+   implementation plan itself, and implements; the spec is the seam artifact
+   that localizes any strain to one side. The law holds without amendment
+   stretch: the vision's sole-writer rule covers the two planes' artifacts —
+   code is the system, on neither plane; the bootstrap's steward-delivered code
+   was practice, not law. **Review and commit stay the human's hands.** The
+   role is minimal at birth: a lens only (identity, sources, handoff contract,
+   boundaries — a spec gap goes back to the steward, never filled in place);
+   the coder's methods are distilled after S1's lived pass, per the coupling
+   rule — never authored from imagination. Accepted risk, named: S1 tests the
+   flow shape, the role, and the vehicle at once — mitigated by the seam.
+
+3. **The slice-flow shape — set by the same seam.** The expectation from 0012
+   (the slice flow as its own change shape) lands as a **role-split shape**:
+   `specify-correctness` (steward, browser) → handoff → `plan → write` (coder,
+   IDE) → `document` (steward, browser — evidence and write-up to the problem
+   plane). Not a change plan: the flow's steps differ in role and vehicle, which
+   a change plan's one-writer step sequence doesn't model. The fork's
+   correctness-driven model stays untouched — a candidate deviation only after
+   S1 lives the shape (lived work → knowledge, the new divergence story's first
+   possible entry).
+
+Riding notes parked with the point: **(a)** for the next flow-back batch — the
+**bootstrap seam speculation**: the same requirements handoff may fit *system
+bootstrapped* (steward hands system requirements; a coder bootstraps in the IDE);
+speculation until S1's coder has lived, then evidence for the walkthrough's next
+revision. **(b)** A **vehicle-upload trim** for execution sessions (the lived
+setup guides/walkthroughs dropped from uploads, the repo untouched) was proposed
+and **declined for now** — vehicle handling, revisitable without ceremony.
