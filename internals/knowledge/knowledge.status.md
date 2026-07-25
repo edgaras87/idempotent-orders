@@ -2,64 +2,67 @@
 
 *Rewritten freely (at minimum at session end); owes nothing to its previous version.*
 
-**Where things stand:** the node runs, and **preparation is exited** — *system
-bootstrapped* executed under a seven-step change plan (`knowledge.log.md` 0012),
-answering the vision's work-shape question: **preparation-type problem work runs
-change plans, confirmed**; a step is one logical change, its commits per the git
-convention (the keep-state-separate granularity lived at step 6). The plan survived
-a full pre-execution redraw (the human's prior bootstrap walkthrough as ordinary
-input — parts adopted, stale decisions rejected) and mid-step fix-forwards without
-churn. Since the last snapshot the fork grew its **fourth deviation-entry beyond
-the additions**: `core/workbench-git.convention.md` extended with the **`app`
-scope** for the system's own source (fork 0011 — the convention's own deferred
-code-commit seam exercised at its first lived need; the coining `define(src)`
-commit kept as evidence). The **coder-role/IDE-vehicle question** surfaced
-mid-step, was weighed, and is **parked at the first-slice judgment point** (0006,
-extended by 0012) with the bootstrap's strain evidence in hand — the browser loop
-carried the code work; its cost sat exactly in the test-iteration round trips.
-Read-only IDE steward sessions cleared as decision-free.
+**Where things stand:** the phase turn is complete on the node's side. The
+**flow-back is done** — the batch (fork log 0001–0012, the branches' diffs, the
+riding notes) handed through the human and accepted at the workbench; then the
+**refresh**, per the vision's rule: `core/` and `realization/` replaced wholesale
+with the current masters (twelve files, no merging; the node's docs and
+`fork.log.md` untouched), recorded as **fork log 0013** — the divergence baseline
+reset; entries 0001–0012 are the closed first story; the four former additions now
+arrive as shipped masters, their prefix-now standings resolved. The next deviation
+opens a new story against the refreshed masters.
 
-Position, in the map's names: **`preparation` exited → before `execution`.** The
-exit **triggers the flow-back** (0008): the batch — `fork.log.md` 0001–0011, the
-branches' diffs against upstream, the riding notes (0011's four, the
-registry-structure note, the projection-anchors note, 0012's granularity wrinkle) —
-handed through the human, **before any refresh**. The problem's own position is
-mastered in the problem plane's `status.md`.
+The **first-slice judgment point is decided** (`knowledge.log.md` 0014), three
+parts: **(1)** thinker standing **closed** — steward-only for the thinker's whole
+territory, confirmed on strain-free evidence and scope grounds; the
+thinker-distillation question parked at finalization. **(2)** The **coder role
+born** — a requirements seam, not a vehicle swap: the steward's territory ends at
+the slice's correctness spec; the coder (IDE, hands on code — the system, on
+neither plane) produces the implementation plan and the code from it; the human
+reviews and commits everything; the sole-writer law untouched. Lens:
+`coder.instructions.md`, minimal, methods distilled only after S1's lived pass.
+**(3)** The **slice-flow shape set**: `specify-correctness` (steward, browser) →
+handoff → `plan → write` (coder, IDE) → `document` (steward, browser). The vision's
+roles and naming sections rewritten accordingly.
+
+Position, in the map's names: **`execution` open — S1 at `specify-correctness`.**
 
 **Shape** *(snapshot; the repo is the master)*:
 
 ```text
 internals/knowledge/
-├── knowledge.vision.md          work-shape question resolved; Open now at the phase turn
-├── knowledge.log.md             entries 0001–0013
+├── knowledge.vision.md          two roles; slice-flow shape set; Open now at S1's entry
+├── knowledge.log.md             entries 0001–0014
 ├── knowledge.status.md
 ├── knowledge-steward.instructions.md
-├── fork.log.md                  entries 0001–0012 (0007–0009, 0012 additions; 0011 app scope)
-├── core/
+├── coder.instructions.md        ← born (0014); minimal by design
+├── fork.log.md                  entries 0001–0013 (0013: refresh, baseline reset)
+├── core/                        ← refreshed from workbench masters
 │   ├── workbench-nodes.model.md
 │   ├── workbench-roles.model.md
-│   ├── workbench-git.convention.md      ← amended (fork 0011: the app scope)
+│   ├── workbench-git.convention.md
 │   └── workbench-naming.convention.md
-└── realization/
+└── realization/                 ← refreshed from workbench masters
     ├── workbench-five-layer-system.model.md
     ├── workbench-correctness-driven-backend.model.md
-    ├── workbench-backend-realization.map.md       ← amended (fork 0001–0005, 0008, 0010)
-    ├── workbench-doc-projection.skeleton.md       ← amended (fork 0006)
-    ├── workbench-postgres-role.model.md           ← born (fork 0007), lived
-    ├── workbench-infrastructure-establishment.guide.md  ← born (fork 0008), lived once
-    ├── workbench-postgres-setup.walkthrough.md    ← born (fork 0009), lived once
-    └── workbench-spring-boot-bootstrap.walkthrough.md   ← born (fork 0012), lived once
+    ├── workbench-backend-realization.map.md
+    ├── workbench-doc-projection.skeleton.md
+    ├── workbench-postgres-role.model.md
+    ├── workbench-infrastructure-establishment.guide.md
+    ├── workbench-postgres-setup.walkthrough.md
+    └── workbench-spring-boot-bootstrap.walkthrough.md
 ```
 
 **Unsettled:**
-- **The flow-back** — due now, before S1 and before any refresh; the **batch is
-  complete** (0013): fork log 0001–0012, the branches' diffs against upstream,
-  the riding notes. The *system bootstrapped* re-carve (fork 0004) is lived —
-  its confirmation rides the batch.
-- **The first-slice judgment point** — at S1's start: thinker-role standing, the
-  coder/IDE-vehicle question, and the slice-flow shape — all on lived evidence.
-- **The manuals' genre flips** — problem-plane decisions, ripening as S1
-  exercises the ground.
+- **S1's spec handoff** — the correctness spec's kind and name are birthed at
+  `specify-correctness` (problem-plane decisions); the coder lens presumes it.
+- **The coder's first lived pass** — feeds its method distillation and the parked
+  bootstrap-seam riding note (next flow-back batch), both after, never before.
+- **Owed at finalization** — the thinker-distillation question (0014); the map's
+  single-service-declined-the-split note (0006); the fork's owed confirmations,
+  carried by the masters' lifecycle notes.
+- **Vehicle trim** — proposed, declined for now (0014's riding note); revisitable
+  without ceremony.
 
-**Next:** the flow-back handoff (human's hands); then execution — S1's
-`specify-correctness`, opening with the judgment point.
+**Next:** S1, duplicate suppression — the steward opens `specify-correctness`; the
+request-identity contract (folded concern 4) opened inside it.

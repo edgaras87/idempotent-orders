@@ -103,43 +103,59 @@ doc projection follows the fork's
 skeleton's exit-anchored cadence from the *problem framed* anchor on — projection owed
 at each of the map's named exits, thickness per the skeleton.
 
-## Roles, and the steward
+## Roles
 
-One role at birth: the **steward** — sole writer of both planes' artifacts, **in
-authority, not hands**: it delivers complete files; the human applies them and commits.
-Further roles are earned by the work, never created ahead of it. (What roles, lenses, and
-stewards *are*: `core/workbench-roles.model.md` — knowledge, not this node's law.)
-**Every rule has exactly one master doc** — this node's rules live in this vision; a lens
-carries bootstrap summaries, declared non-authoritative, naming this vision as master: on
-any conflict, the vision wins.
+Two roles. **Further roles are earned by the work, never created ahead of it.** (What
+roles, lenses, and stewards *are*: `core/workbench-roles.model.md` — knowledge, not this
+node's law.) **Every rule has exactly one master doc** — this node's rules live in this
+vision; a lens carries bootstrap summaries, declared non-authoritative, naming this
+vision as master: on any conflict, the vision wins.
 
-**The role split — a hypothesis, not yet law.** Today the steward handles **both
-planes**. The expected shape, carried as the narrow-roles hypothesis in
-`realization/workbench-backend-realization.map.md`: the steward's native subject is the
-**knowledge plane** — the node's docs, the fork, the roles — while producing problem
-artifacts is different work with different context; the steward thins into a custodian
-(record, orientation, context-preparation) and delegates to a **thinker** role — the
-problem's reasoning and its projection: the problem-framing chain (intent, definition,
-registry-birth), the slice-registry (the concern map made actionable — the
-execution phase's control point), slice selection, closing slices on evidence, and
-internal truth projected to the public surface. That thinker is precisely the separate
-role that uses the working knowledge to produce the problem artifacts. The split is
-enacted **only by need** — a decision of this node, in its log — and confirmed,
-corrected, or discarded by the lived work. *(Standing: deferred twice on strain-free
-evidence, the second time on scope grounds — a single-service project is expected to
-run steward-only throughout; `knowledge.log.md` 0004, 0006. The first-slice judgment
-point remains formally open.)*
+**The steward** — at birth: sole writer of **both planes' artifacts**, **in authority,
+not hands**: it delivers complete files; the human applies them and commits. Its lens:
+`knowledge-steward.instructions.md`.
+
+**The coder** — born at S1's entry (`knowledge.log.md` 0014): lives in the **IDE, hands
+on the code** — the system's source, which is the project itself, on **neither plane**;
+the steward's sole-writer law is untouched by its birth. The seam between the roles is a
+**requirements handoff**: the steward's territory ends where reasoning freezes into the
+slice's correctness spec (invariants, guarantees, evidence expectations); the coder
+receives that spec, produces the **implementation plan itself**, implements, and runs
+the evidence — it is handed requirements, never an implementation-ready plan. The coder
+never writes the planes' artifacts; a spec gap goes **back to the steward**, never
+filled in place. **The human reviews and commits everything**, both roles' output alike.
+The coder's lens: `coder.instructions.md` — minimal at birth; its methods are distilled
+only after lived work, per the map's coupling rule.
+
+**The slice-flow shape** (set at the judgment point, 0014): `specify-correctness`
+(steward, browser) → handoff → `plan → write` (coder, IDE) → `document` (steward,
+browser — evidence and write-up to the problem plane). Not a change plan: the flow's
+steps differ in role and vehicle. First lived pass: S1.
+
+**The narrow-roles hypothesis — thinker standing closed for this project.** The
+hypothesis stays carried in `realization/workbench-backend-realization.map.md`: a
+custodian steward delegating the problem's reasoning to a **thinker** role. For this
+project the question is **closed at the first-slice judgment point** (`knowledge.log.md`
+0004, 0006, 0014): steward-only for the thinker's whole territory, confirmed on lived
+strain-free evidence and scope grounds; a reversal would be a new log entry on new
+strain. Owed at **finalization**: the **thinker-distillation question** — whether a
+generalizable thinker shape (territory, sources, lens skeleton) is distilled to the
+workbench as instantiate-by-need knowledge, honestly marked reasoned-not-lived — and
+the map's note that a single-service project declined the split.
 
 ## Naming
 
 Naming follows `core/workbench-naming.convention.md`. This node's own vocabulary under
 it: the node's docs carry the subject `knowledge` (`knowledge.vision.md`,
-`knowledge.log.md`, `knowledge.status.md`, `knowledge-steward.instructions.md`); the
-fork's record is `fork.log.md`; problem-plane artifacts carry **bare subjects**
-(`log.md`, `status.md`, `worklog.md`, `project.intent.md`, `system.definition.md`,
-`slices.registry.md`, `infrastructure.manual.md`) — the repo name plus `internals/`
-scope them; the shipped knowledge files keep their **`workbench-`** prefix, their
-provenance. The convention's flattening guard is satisfied here by construction.
+`knowledge.log.md`, `knowledge.status.md`, `knowledge-steward.instructions.md`); role
+lenses beyond the steward's carry the **bare role name** as subject
+(`coder.instructions.md`) — the repo scopes them, and lenses are per-repo, never
+inherited; the fork's record is `fork.log.md`; problem-plane artifacts carry **bare
+subjects** (`log.md`, `status.md`, `worklog.md`, `project.intent.md`,
+`system.definition.md`, `slices.registry.md`, `infrastructure.manual.md`) — the repo
+name plus `internals/` scope them; the shipped knowledge files keep their
+**`workbench-`** prefix, their provenance. The convention's flattening guard is
+satisfied here by construction.
 
 ## Artifact kinds in use
 
@@ -235,7 +251,10 @@ delivers complete files; the human applies them, commits (per
 `core/workbench-git.convention.md`, the separation law observed), and refreshes the
 session vehicle's uploads, which may lag — in session, the newest agreed version is
 current, not the upload. Material from earlier work arrives as **ordinary input**.
-Nothing is created from a template or ahead of need.
+Nothing is created from a template or ahead of need. The coder's sessions run
+differently by design — in the IDE, hands on the code, under its lens — but the
+human's review-and-commit hands and the planes' steward-only law hold there unchanged
+(the roles section above).
 
 **The change flow:** `comprehend → plan → change`. **Comprehend** comes first and
 touches no planning: the idea is reasoned against what exists; its exit is the decision
@@ -257,8 +276,8 @@ A change small enough to be one step needs no plan document — a plan line in t
 suffices. A step is **one logical change**; its commits follow the git convention,
 which may split state from content (lived at *system bootstrapped*, `knowledge.log.md`
 0012). Preparation-type problem work runs change plans — confirmed by that step's
-lived pass; the slice flow is expected to be its own change shape (the method's
-`specify → plan → write → document`), judged at the first slice's start.
+lived pass; the slice flow runs the **role-split shape** (the roles section above),
+set at the judgment point and first lived at S1.
 
 **Amending a plan mid-execution:** the plan has a freeze line — executed steps are
 backed by commits, frozen, never rewritten; the remainder is **soft**, freely redrawn
@@ -283,11 +302,15 @@ request.**
 
 ## Open now
 
-- **Preparation exited** (`knowledge.log.md` 0012) — the flow-back is due: the
-  batch (fork log 0001–0011, branch diffs, the riding notes) handed through the
-  human before any refresh; the Spring-bootstrap walkthrough candidate decided at
-  the distillation pass and riding if born.
-- **Execution opens at S1** — the first-slice judgment point (0006, extended by
-  0012): thinker-role standing and the coder-role/IDE-vehicle question, decided on
-  the bootstrap's lived evidence; the slice-flow shape judged there too.
+- **Execution open at S1** (duplicate suppression, registry chosen-next), starting at
+  `specify-correctness` — the request-identity contract (the folded concern 4) opened
+  inside it. S1 is the **role-split shape's first lived pass**: the coder's first
+  session, the spec handoff's first exercise; its lived evidence feeds the coder's
+  method distillation and the parked bootstrap-seam note (both after, never before).
+- **Riding for the next flow-back batch** — the bootstrap-seam speculation (0014):
+  the requirements handoff may fit *system bootstrapped* too; evidence only once S1's
+  coder has lived.
+- **Owed at finalization** — the thinker-distillation question (0014); the map's
+  single-service-declined-the-split note (0006); the fork entries' owed
+  confirmations, carried now by the masters' lifecycle notes.
 - **Visibility** — this repo starts private; publish only on a real reason.
